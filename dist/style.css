@@ -219,13 +219,6 @@ select{border:1px solid var(--rule);border-radius:10px;padding:9px 34px 9px 12px
 .notebook-exam{display:inline-block;margin:18px 0 0 60px;font-size:16px}
 
 footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid var(--rule);font-size:14px;color:var(--muted);display:flex;align-items:center;justify-content:space-between;gap:20px}
-dialog{max-width:460px;width:calc(100% - 36px);padding:30px;border:1px solid var(--rule);border-radius:16px;background:var(--paper);color:var(--ink)}
-dialog::backdrop{background:rgba(29,39,66,.45)}
-dialog h2{margin:16px 0 12px}
-dialog p,dialog li{font-size:16px}
-dialog ol{padding-left:20px}
-dialog li{padding:4px 0}
-#close-install{position:absolute;right:12px;top:10px;width:40px;height:40px;border:0;background:none;font-size:26px;color:var(--muted)}
 
 @media(max-width:1150px){
  :root{--side:214px}
@@ -289,13 +282,12 @@ dialog li{padding:4px 0}
  .notebook-reference,.notebook-exam{margin-left:38px}
  .notebook-reference{font-size:19px;padding:14px 16px}
  footer{margin-left:0;padding:14px 16px 14px 34px;gap:10px;flex-wrap:wrap}
- dialog{padding:24px}
 }
 @media(max-width:380px){.pp-grid{grid-template-columns:1fr}}
-@media(display-mode:standalone){body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}[data-install]{display:none}}
+@media(display-mode:standalone){body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{scroll-behavior:auto!important}}
 @media print{
- #sidebar,.topbar,.practice,.lesson-toc,.back,footer,.verb-tools,dialog,.notebook-meta select,.bottom-band{display:none!important}
+ #sidebar,.topbar,.practice,.lesson-toc,.back,footer,.verb-tools,.notebook-meta select,.bottom-band{display:none!important}
  main{margin:0;padding:0;max-width:none}main::before,.page-header::before,.notebook-header::before{display:none}
  body{background:#fff;color:#000;font-size:11pt}
  .lesson-layout{display:block}h1{font-size:28pt}

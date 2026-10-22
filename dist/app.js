@@ -29,8 +29,3 @@ function route(){const parts=location.hash.slice(1).split('/'),id=parts[0]||'acc
 $('#search').oninput=e=>{const q=searchNorm(e.target.value);const r=$('#results');if(!q){r.hidden=true;return}const matches=modules.filter(m=>searchNorm(m.title+' '+m.subtitle+' '+m.sections.map(s=>s.join(' ')).join(' ')).includes(q));const vv=verbs.filter(v=>searchNorm(v.join(' ')).includes(q));r.innerHTML=matches.slice(0,6).map(m=>`<a href="#${m.id}">${m.title}<small>${m.subtitle}</small></a>`).join('')+vv.slice(0,5).map(v=>`<a href="#verbes/${encodeURIComponent(v[0])}">${v[0]}<small>Conjugaison · participe ${v[2]}</small></a>`).join('');if(!r.innerHTML)r.innerHTML='<p>Aucun résultat. Essaie « passé », « depuis » ou « prendre ».</p>';r.hidden=false};
 document.addEventListener('click',e=>{if(!e.target.closest('.search-wrap'))$('#results').hidden=true;if(e.target.closest('#results a')){$('#results').hidden=true;$('#search').value=''}});document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeMenu();$('#results').hidden=true}});window.addEventListener('hashchange',route);route();
 $('.skip').onclick=e=>{e.preventDefault();main.focus();main.scrollIntoView()};
-
-const installDialog = $('#install-dialog');
-document.querySelectorAll('[data-install]').forEach(button=>button.onclick=()=>{closeMenu();installDialog.showModal()});
-$('#close-install').onclick=()=>installDialog.close();
-installDialog.addEventListener('click',e=>{if(e.target===installDialog){const r=installDialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)installDialog.close()}});
