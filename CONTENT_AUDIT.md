@@ -34,3 +34,13 @@ A structured revision summary, not a transcription of every source word or exerc
 ## Verification
 
 Present forms compared with the supplied 27-verb sheet. Generated imperfect forms checked against independently listed stems and spelling exceptions; compound forms checked for avoir/être, reflexive placement and plural agreement. Browser checks cover new sections and reference lists. No proficiency assessment or progress-record change.
+
+## Follow-up, 22 October 2026
+
+Re-read the same archive, including the scanned PDFs and embedded images. Coverage above still holds. Three gaps were filled:
+
+- Cours 6 PC-IMP observation sheet: added *être en train de* to the imperfect and four new "which continuation is logical?" choice questions to Choisir le bon passé.
+- Cours 1 participle reminder: the verb page now groups participles by final sound (é, u, i, autres) as the handout does, with forms from later stories marked.
+- Cours 6 and 8 vocabulary: Vocabulaire et expressions had no practice; added five word-bank choice questions (annonce, titulaire, maîtriser, disposition, fondée).
+
+Errors noticed in the source handouts (not reproduced on the site): "Le verbe est directement relié au verbe" (COD intro; should be the complement); "heureux de vous faire votre connaissance" (present sheet, item 12); "quelle est votre plus grand défaut" (Devoir 4); "Les enfant lui écrivent" (pronoun riddles); the exam sheet announces 10 sections but lists 11.

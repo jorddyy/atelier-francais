@@ -33,10 +33,11 @@ Buildless static revision website. Hosting directory: `dist`.
 - `dist/style.css`: responsive layouts and print styles.
 - Preserve module IDs to keep bookmarks working. Add lesson references to existing topics when extending them.
 - New modules have `id`, `n`, `title`, `subtitle`, `lessons`, `tag`, `color`, `intro`, `sections`, `en`, `source`, `q`.
-- Questions are [prompt, accepted answers separated by |, explanation]. Only use constrained prompts whose answers can be checked reliably. Do not grade open writing by exact matching.
+- Questions are [prompt, accepted answers separated by |, explanation]. Write ___ where the answer goes: it becomes an inline blank; prompts without ___ get an answer line below. Add a fourth item, an array of options containing the answer, to make a choice question. Only use constrained prompts whose answers can be checked reliably. Do not grade open writing by exact matching.
 - The current lesson filter covers 1–8; increase its range when adding later lessons. Update coverage labels and exam scope only with source evidence.
+- `participleGroups` lists past participles by final sound (é, u, i, autres), as in the Cours 1 reminder. A third item `1` marks forms met in later stories and homework.
 - Verb array: infinitive, six comma-separated present forms, past participle, optional auxiliary (defaults to avoir). The generator handles the current 27 verbs; review new spelling exceptions explicitly before extending it.
-- No external libraries, fonts, analytics or runtime network requests. No local proficiency scores or saved exercise responses. Google Sheets remains the sole assessed progress record.
+- No external libraries, analytics or third-party network requests. Fonts (Fraunces, Source Sans 3, SIL OFL) are self-hosted in `dist/fonts/`. No local proficiency scores or saved exercise responses. Google Sheets remains the sole assessed progress record.
 - Listening excluded by user request.
 
 ## Sources reviewed
@@ -47,10 +48,10 @@ See `CONTENT_AUDIT.md` for the source-by-source content check and scope decision
 
 ## QA
 
-JavaScript syntax checks; desktop preview; phone layouts at 390 and 360 CSS pixels using browser iframes; lesson filtering; verb/tense selection including manger imparfait; exercise validation; mobile navigation; search; narrow-table overflow check.
+JavaScript syntax checks; desktop preview; phone layouts at 390 and 360 CSS pixels using browser iframes; lesson filtering; verb page with all four tenses, including manger imparfait; exercise validation; mobile navigation; search; narrow-table overflow check.
 
 ## Handbook design and Android install
 
-The landing view follows the selected course-notebook design: warm ivory, burgundy chapter numbers, fine gold rules and grouped topic links. Conjugation examples appear inside the relevant chapters, not on the homepage. The lesson filter keeps the original group numbers stable. `icons/rooster.svg` is the original vector logo; `icons/flag.svg` remains the favicon. PNG app icons are rendered from the rooster and tricolour emblem, with a separate maskable safe-zone variant.
+The design is a French school notebook (cahier Seyès): warm paper, ink-blue text, a red margin line, Seyès ruling behind page titles and highlighter on key forms in examples. The home page is a table of contents with dotted leaders and fiche numbers. Conjugation examples appear inside the relevant chapters, not on the homepage. The lesson filter keeps the original group numbers stable. `icons/rooster.svg` is the original vector logo; `icons/flag.svg` remains the favicon. PNG app icons are rendered from the rooster and tricolour emblem, with a separate maskable safe-zone variant.
 
 `manifest.webmanifest` declares identity, scope, start URL, standalone display and PNG icons. The HTML requests the manifest with credentials because hosting remains private. Firefox Android installation is through the browser menu; the in-page link provides instructions, not a fake browser install prompt. No service worker or offline cache is added. Network and existing hosting authentication are still required. Do not claim Android installation was device-tested from a desktop preview.
