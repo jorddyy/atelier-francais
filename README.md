@@ -44,11 +44,11 @@ Buildless static revision website. Hosting directory: `dist`.
 
 Current coverage uses `french_course_syllabus_v1.md` (3 November 2026) and `FrenchB1m_lesson1-14.tar`. The original review below used `FrenchB1m_lesson1-8.zip`. Read textual grammar and communication handouts, present verb PDF, exam document and the embedded EN and past-participle images. Image-only narrative exercises were not reproduced. All exercises on the site are newly authored. Supplemental agreement and pronoun-order rules are explicitly labelled.
 
-See `CONTENT_AUDIT.md` for the source-by-source content check and scope decisions (21 October 2026).
+See `CONTENT_AUDIT.md` for the source-by-source content check and scope decisions. Its latest sections (3 November 2026) cover lessons 9–14 and the future-tense supplement; the 21 October section records the original review of lessons 1–8.
 
 ## QA
 
-JavaScript syntax checks; desktop preview; phone layouts at 390 and 360 CSS pixels using browser iframes; lesson filtering; verb page with all four tenses, including manger imparfait; exercise validation; mobile navigation; search; narrow-table overflow check.
+JavaScript syntax checks; desktop preview; phone layouts at 390 and 360 CSS pixels using browser iframes; lesson filtering; verb page with all seven forms, including manger imparfait and irregular subjunctive, conditional and future stems; exercise validation; mobile navigation; search; narrow-table overflow check.
 
 ## Handbook design and Android install
 
@@ -58,7 +58,7 @@ The design is a French school notebook (cahier Seyès): warm paper, ink-blue tex
 
 ## Curriculum update, 3 November 2026
 
-Current scope is Cours 1–14, based on FrenchB1m_lesson1-14.tar. There are 15 stable topic modules and six verb forms (present, imperfect, passé composé, plus-que-parfait, present subjunctive and present conditional). New modules are subjonctif, opinions, conditionnel, reproches and doubles. Listening stays excluded. Refer to the latest CONTENT_AUDIT.md section for source corrections and limits.
+Current scope is Cours 1–14, based on FrenchB1m_lesson1-14.tar. This update added five modules (15 in total) and two verb forms (six in total: present, imperfect, passé composé, plus-que-parfait, present subjunctive and present conditional). The future-tense supplement below brings the current totals to 16 modules and seven verb forms. New modules in this update are subjonctif, opinions, conditionnel, reproches and doubles. Listening stays excluded. Refer to the latest CONTENT_AUDIT.md section for source corrections and limits.
 
 ## Future-tense supplement, 3 November 2026
 

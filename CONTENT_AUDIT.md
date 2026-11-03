@@ -31,6 +31,8 @@ Checked against the attached FrenchB1m_lesson1-8.zip and syllabus, not just the 
 
 A structured revision summary, not a transcription of every source word or exercise. Low-value incidental vocabulary, source story details, historical company figures and source exercise solutions are intentionally omitted. Conditional politeness, double-pronoun order and detailed reflexive agreement are labelled reference additions rather than full taught units. Future programme topics remain excluded. Exact final-exam questions and the relationship between the oral /20 rubric and /50 total remain unspecified by the source.
 
+Superseded on 3 November 2026: present conditional and double pronouns are now full modules (`conditionnel`, `doubles`), and the future is covered by the `futur` supplement. See the sections below.
+
 ## Verification
 
 Present forms compared with the supplied 27-verb sheet. Generated imperfect forms checked against independently listed stems and spelling exceptions; compound forms checked for avoir/être, reflexive placement and plural agreement. Browser checks cover new sections and reference lists. No proficiency assessment or progress-record change.

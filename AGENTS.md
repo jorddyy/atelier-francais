@@ -35,7 +35,7 @@ This GitHub repository does not automatically deploy to it. Running locally need
 
 ## Curriculum update, 3 November 2026
 
-Current scope is Cours 1–14, based on FrenchB1m_lesson1-14.tar. There are 15 stable topic modules and six verb forms (present, imperfect, passé composé, plus-que-parfait, present subjunctive and present conditional). New modules are subjonctif, opinions, conditionnel, reproches and doubles. Listening stays excluded. Refer to the latest CONTENT_AUDIT.md section for source corrections and limits.
+Current scope is Cours 1–14, based on FrenchB1m_lesson1-14.tar. This update added five modules (15 in total) and two verb forms (six in total: present, imperfect, passé composé, plus-que-parfait, present subjunctive and present conditional). The future-tense supplement below brings the current totals to 16 modules and seven verb forms. New modules in this update are subjonctif, opinions, conditionnel, reproches and doubles. Listening stays excluded. Refer to the latest CONTENT_AUDIT.md section for source corrections and limits.
 
 ## Future-tense supplement, 3 November 2026
 
