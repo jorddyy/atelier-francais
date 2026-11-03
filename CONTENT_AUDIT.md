@@ -44,3 +44,20 @@ Re-read the same archive, including the scanned PDFs and embedded images. Covera
 - Cours 6 and 8 vocabulary: Vocabulaire et expressions had no practice; added five word-bank choice questions (annonce, titulaire, maîtriser, disposition, fondée).
 
 Errors noticed in the source handouts (not reproduced on the site): "Le verbe est directement relié au verbe" (COD intro; should be the complement); "heureux de vous faire votre connaissance" (present sheet, item 12); "quelle est votre plus grand défaut" (Devoir 4); "Les enfant lui écrivent" (pronoun riddles); the exam sheet announces 10 sections but lists 11.
+
+
+## Source update, 3 November 2026
+
+Reviewed FrenchB1m_lesson1-14.tar: 56 files (37 DOCX, 14 PDFs, 5 MP3s). Read source text and new embedded teaching images/scanned pages. Rendered DOCX to establish current pagination. Audio itself not verified; the supplied track-42 transcript was read. Existing lessons 1–8 retain their broad folder mapping; MICHELIN.docx is now explicitly indexed in Cours 8.
+
+Added five modules, preserving all prior IDs: subjunctive formation/mood (9–11, 13); opinions (10, 13); present conditional, requests/advice (11–12); reproaches and contextual past conditional (11–13); double pronouns (13–14). Extended existing pronoun lesson tags and all lesson filters to 14. Added subjunctive and present conditional to all 27 verb paradigms, and homework-6-style writing practice without exposing the assigned answer. Updated exam dates from the live Sheet, explicitly distinguishing appointment slots from test durations.
+
+Source corrections: il faut + infinitive, without que; indicative/subjunctive is not reducible to objective/subjective or certain/uncertain; adjective + que is not universally subjunctive; de sorte que depends on purpose/consequence. The categorical y/en prohibition is false (j’y en ai mis deux). Full past-conditional formation, conditional irregular stems, imperative pronoun order and si hypotheses are labelled supporting references where they go beyond supplied dedicated teaching sheets.
+
+Original worksheet answers and the homework-4 correction are not published. Listening stays excluded. Teacher resource links and administrative documents are indexed in the syllabus rather than becoming website lessons. Programme module numbers are not lesson-folder numbers. Future perfect and full themed units not evidenced in the archive remain outside confirmed coverage.
+
+Validation: syntax checks passed for both JavaScript files; irregular subjunctive/conditional spot checks passed; all 14 lesson filters resolve to content and all 15 IDs are unique. Browser verified lesson-14 filtering, new exercise feedback and the new content at 360/390-pixel iframe widths. This is responsive-layout QA, not physical-phone testing.
+
+## Future-tense supplement, 3 November 2026
+
+16 modules, 27 verbs and seven verb forms. Module `futur` has no lesson number and appears under Compléments. Cours 12 includes the future of aimer as a comparison for conditional formation, but no standalone future unit was supplied. The supplement covers futur proche/simple and does not expand futur antérieur. Verified persisted course update: 56 files, 14 lessons, 40 existing tracker topics and 13 evidence rows; new supplementary topic 41 is unassessed.
