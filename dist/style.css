@@ -250,7 +250,7 @@ select{border:1px solid var(--rule);border-radius:10px;padding:9px 34px 9px 12px
 .checklist .tip b{font:inherit;font-weight:600}
 .checklist label:has(input:checked) b:first-of-type{color:var(--vert)}
 .checklist label:hover{background:rgba(240,232,216,.45)}
-.practice-sub{margin:26px 0 2px;font-size:24px}
+.practice-sub{margin:26px 0 2px;font-size:24px;scroll-margin-top:20px}
 .practice-note{font-size:15px;color:var(--muted)}
 .practice .blank.wide{font-size:18px;padding:10px 12px;min-height:46px}
 
@@ -267,6 +267,55 @@ select{border:1px solid var(--rule);border-radius:10px;padding:9px 34px 9px 12px
 .recit-head .recit-intro{font-size:16px;margin:0}
 .recit-sofar{font:16px/1.6 var(--serif);color:var(--ink-soft);margin:8px 0 0}
 .recit-sofar b{font-weight:600;color:var(--bleu)}
+.recit-earlier{margin:8px 0 0;padding:6px 12px;background:var(--card);font-size:15px}
+.recit-earlier summary{font-weight:500;font-size:15px;color:var(--ink-soft);padding:6px 0;margin:-6px 0}
+.recit-earlier[open] summary{margin-bottom:0}
+.recit-earlier>div{max-height:38vh;overflow:auto;padding:4px 0 6px}
+.recit-earlier .recit-intro{font-size:15px;margin:4px 0 0}
+.recit-earlier .recit-sofar{margin-top:6px}
+.recit-last{color:var(--ink)}
+
+/* Reading: each text set like a printed sheet laid on the notebook page */
+.reading-advice{max-width:720px;margin:0 0 18px;padding:9px 14px;font-size:15px;line-height:1.5;color:var(--ink-soft);background:var(--card);border:1px dashed #cdbfa5;border-radius:10px}
+.reading-advice b{color:var(--rouge);font-weight:600}
+.reading-list{list-style:none;margin:16px 0 8px;padding:0;background:var(--card);border:1px solid var(--rule);border-radius:12px}
+.reading-list li+li{border-top:1px solid #ebe3d3}
+.reading-list a{display:flex;align-items:center;gap:14px;padding:12px 16px;min-height:60px;color:var(--ink);text-decoration:none}
+.reading-list .toc-text{flex:1;min-width:0}
+.reading-list .toc-title{font-size:20px}
+.reading-list a:hover .toc-title{color:var(--bleu);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.reading-list .chip{flex-shrink:0;font:italic 14px var(--serif);color:var(--rouge)}
+.reading-n{font:italic 500 22px/1 var(--serif);color:var(--rouge);min-width:18px;text-align:right}
+.reading-layout{display:grid;gap:8px;max-width:700px}
+.reading-doc{background:var(--card);border:1px solid var(--rule);border-radius:3px;box-shadow:0 1px 0 #e6dcc8,0 12px 26px -16px rgba(40,30,10,.4);padding:22px 32px 14px;scroll-margin-top:20px}
+.reading-doc:focus{outline:none}
+.doc-kind{display:flex;justify-content:space-between;gap:12px;margin:0 0 14px;padding-bottom:6px;border-bottom:1.5px solid var(--ink-soft);font:600 12px/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--rouge)}
+.doc-kind span{font-weight:400;letter-spacing:.04em;text-transform:none;font-size:13px;color:var(--muted)}
+.reading-doc h1{font-size:32px;line-height:1.15;margin:0 0 14px}
+.doc-body p{font:18px/1.72 var(--serif);margin:0 0 .9em}
+.reading-lexique{background:var(--card);margin:14px 0 0}
+.reading-lexique .vocab{list-style:none;padding:0;margin:12px 0 2px}
+.reading-questions{margin-top:22px}
+.reading-questions .question>p{font-size:17px}
+.reread{display:inline-block;font-size:15px;margin:2px 0 4px;min-height:32px}
+.choices button:disabled{cursor:default}
+.choices.answered button:not(.right):not(.wrong){opacity:.55}
+.choices.answered button:not(.right):not(.wrong):hover{border-color:var(--rule)}
+.reading-score{border-top:1.5px solid var(--ink-soft);padding:14px 0 18px}
+.score-line{font:500 24px var(--serif);margin:0 0 4px}
+.score-line b{font-weight:600;color:var(--bleu)}
+.reading-score>p:not(.score-line){font-size:16px;color:var(--ink-soft)}
+@media(min-width:1200px){
+ /* Laptop: the text stays in view beside the questions */
+ .reading-layout{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:32px;max-width:1080px;align-items:start}
+ .reading-col{position:sticky;top:16px;max-height:calc(100vh - 32px);overflow:auto;padding:0 4px 16px 0;scrollbar-width:thin;scrollbar-color:#d6c9b0 transparent}
+ .reading-doc{padding:18px 26px 8px}
+ .reading-doc h1{font-size:27px;margin-bottom:10px}
+ .doc-kind{margin-bottom:10px}
+ .doc-body p{font-size:17px;line-height:1.64;margin-bottom:.75em}
+ .reading-questions{margin-top:0;padding:22px 22px 8px}
+ .reread{display:none}
+}
 
 /* Oral: drawn topic and timers */
 .practice>.btn{margin:4px 0 6px}
@@ -443,13 +492,35 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
  .recits .recit{padding:14px 14px 4px;margin:16px -4px 6px}
  .recit h3{font-size:21px}
  .recit .question>p{font-size:17px}
+ /* Quiz under way: compact header and tools so the question sits near the top */
+ .quiz-page.running .back{margin-bottom:6px}
+ .quiz-page.running .page-header{padding:4px 0 6px;margin-bottom:10px}
+ .quiz-page.running .page-header::before{display:none}
+ .quiz-page.running .page-header h1{font-size:26px;margin:0}
+ .quiz-page.running .page-header>p{display:none}
+ .quiz-page.running .quiz-tools{flex-wrap:nowrap;margin-bottom:10px;gap:8px}
+ .quiz-page.running .quiz-tools label{flex:1 1 0;min-width:0}
+ .quiz-page.running .tools-label{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+ .quiz-page.running .quiz-tools .btn{flex:0 0 auto;padding:8px 14px}
+ .quiz .recit-head{margin:10px 0 0;padding:10px 12px}
+ .quiz .recit-head h3{font-size:19px}
+ .quiz .question{padding:10px 0 12px}
+ .progress-bar{margin:6px 0 12px}
+ .reading-advice{font-size:14px;padding:8px 12px}
+ .reading-list a{padding:12px;gap:10px}
+ .reading-list .toc-title{font-size:18px}
+ .reading-layout{margin:0 -4px 0 -6px}
+ .reading-doc{padding:16px 18px 8px}
+ .reading-doc h1{font-size:26px}
+ .doc-body p{font-size:17px;line-height:1.7}
+ .reading-questions{margin-left:0;margin-right:0}
 }
 @media(max-width:380px){.pp-grid{grid-template-columns:1fr}}
 @media(display-mode:standalone){body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}}
 @keyframes search-in{from{opacity:0;transform:translateY(-4px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 @media print{
- #sidebar,.topbar,.practice,.lesson-toc,.back,footer,.verb-tools,.notebook-meta select,.bottom-band{display:none!important}
+ .skip,#sidebar,.topbar,.practice,.lesson-toc,.back,footer,.verb-tools,.notebook-meta select,.bottom-band{display:none!important}
  main{margin:0;padding:0;max-width:none}main::before,.page-header::before,.notebook-header::before{display:none}
  body{background:#fff;color:#000;font-size:11pt}
  .lesson-layout{display:block}h1{font-size:28pt}
@@ -463,4 +534,12 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
  .steps>li,.bank section,.checklist li{break-inside:avoid}
  .bank,.checklist,.steps>li::before{background:#fff}
  .bank{grid-template-columns:1fr 1fr}
+ /* Reading: text then questions with their options, no controls or answers */
+ .reading-layout{display:block;max-width:none;margin:0}
+ .reading-col{position:static;max-height:none;overflow:visible}
+ .reading-doc{box-shadow:none;background:#fff;border-color:#999;break-inside:avoid}
+ .practice.reading-questions{display:block!important;background:#fff;border:0;padding:0;margin:18pt 0 0}
+ .reading-questions>p,.reread,#reading-score,.reading-questions .feedback,#draw-text{display:none!important}
+ .reading-questions .question{break-inside:avoid}
+ .reading-questions .choices button{background:#fff;border-color:#999;opacity:1!important;text-decoration:none;min-height:0;padding:2px 10px}
 }

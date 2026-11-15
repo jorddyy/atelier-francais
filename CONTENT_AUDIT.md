@@ -99,3 +99,8 @@ Verification: JavaScript syntax and diff-whitespace checks passed. Module IDs ar
 ## Generations fiche folded into exam pages, 15 November 2026
 
 The `generations` module (former fiche 21) was the only theme-based fiche. Its vocabulary and the handout's generation dates now live in the `generations` and `cohabitation` oral topics, its writing tasks in the writing subjects, and its subjunctive question in `subjonctif`. `#generations` redirects to `#oral/generations`. The notebook has 20 modules; cours 16 is still covered by `adverbes`.
+
+## Reading texts, 15 November 2026
+
+The six reading texts in `lectures` (`dist/exam-content.js`), with their vocabulary and questions, are newly authored on course themes (work, interviews, cohabitation, change of career, company history); they are not copied from handouts and are not exam texts.
+The "three texts with questions" format of the reading part comes from the owner's description of the exam, not from a re-read of B1- EXAMEN.docx in this update.

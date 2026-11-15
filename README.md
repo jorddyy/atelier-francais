@@ -30,7 +30,7 @@ Buildless static revision website. Hosting directory: `dist`.
 ## Extend
 
 - `dist/content.js`: topic modules, source references, lesson tags, questions and verb data.
-- `dist/exam-content.js`: exam preparation: `oralGuide`, `oralTopics`, `writingGuide` and `extraQuestions` (shapes in `AGENTS.md`). Optional at runtime; app.js tests each global with `typeof`.
+- `dist/exam-content.js`: exam preparation: `oralGuide`, `oralTopics`, `writingGuide`, `extraQuestions`, `recits` and `lectures` (shapes in `AGENTS.md`). Optional at runtime; app.js tests each global with `typeof`.
 - `dist/app.js`: navigation, search, exercises and conjugation rendering.
 - `dist/style.css`: responsive layouts and print styles.
 - Preserve module IDs to keep bookmarks working. Add lesson references to existing topics when extending them.
@@ -68,7 +68,7 @@ At that update, scope was Cours 1–14, based on FrenchB1m_lesson1-14.tar. This 
 
 ## Current curriculum, 15 November 2026
 
-21 modules, lessons 1–16, 27 verbs and seven verb forms. New IDs: `relatifs`, `relief`, `demonstratifs`, `adverbes`, `generations`. Existing IDs and the separate `futur` supplement are preserved. Source comparison found 41 files unchanged in place, 14 identical files under renamed lesson folders, one revised DOCX with no substantive exam change, and nine added paths (including two identical copies of homework 7). No existing material moved to another lesson number. The two relative-pronoun handouts are different and both were reviewed, including their embedded images.
+20 modules (after folding `generations` into the exam pages), lessons 1–16, 27 verbs and seven verb forms. New IDs: `relatifs`, `relief`, `demonstratifs`, `adverbes`. Existing IDs and the separate `futur` supplement are preserved. Source comparison found 41 files unchanged in place, 14 identical files under renamed lesson folders, one revised DOCX with no substantive exam change, and nine added paths (including two identical copies of homework 7). No existing material moved to another lesson number. The two relative-pronoun handouts are different and both were reviewed, including their embedded images.
 
 `SOURCE_MANIFEST.json` is the current file/lesson map. Do not treat historical counts below/above as current totals. Original documents, lyrics, student lists and listening/video answers are not included in the repository. New exercises are independently authored. The live Google Sheet remains the separate progress record; this website update does not assess the learner or change tracker evidence.
 
@@ -89,3 +89,10 @@ Still no saved state and no listening exercises. QA for this update: syntax chec
 - On phones the top bar is a single 57 px row; the search opens from a magnifier icon and closes with ×, Escape or navigation.
 
 QA: syntax checks; headless Chromium (CDP) at 360, 390 and 1280 px for the closed/open phone header, a search from it, the mobile menu, the récits block and deep link, the récits quiz to its result, and the existing routes; no horizontal overflow or console errors. Not tested on a physical phone.
+
+## Reading practice, 15 November 2026
+
+- Préparer la lecture (`#lire`, one text at `#lire/<id>`): six short texts from `lectures` in `exam-content.js` (article, courriel, annonce, témoignage), a closed "Aide : vocabulaire", five multiple-choice questions per text with explanations, and a score per text (first answer counts). The text stays beside the questions on laptops; phones get a "Revoir le texte ↑" link. Text and questions print without controls.
+- Quiz fixes: on phones the récits mode keeps the blank in view (compact header, story so far folded to its last sentence, card scrolled into view on each question); the récits result links to `#choisir/recits`. Shorter search placeholder; "Transforme" anchor gets the section scroll margin.
+
+QA: syntax checks; headless Chromium (CDP) at 360×640, 390×844 and 1280×800: list and text views answered to the score, both quiz modes run to the end with the answer field fully visible on every question load, search, print to PDF, existing routes; no horizontal overflow or console errors. Not tested on a physical phone or with a real keyboard.
