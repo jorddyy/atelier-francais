@@ -112,6 +112,7 @@ summary{cursor:pointer;font-weight:600;color:var(--ink);padding:9px 0;margin:-9p
 summary::marker{color:var(--rouge)}
 details p{margin:12px 0 0}
 details[open] summary{margin-bottom:-5px}
+.fr{font-family:var(--serif);font-style:italic;color:var(--ink);background:linear-gradient(transparent 70%,var(--marker) 70% 94%,transparent 94%);padding:0 1px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 
 /* Tense roles and timeline */
 .tense-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
@@ -527,7 +528,7 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
  .content-section,.notebook-chapter{break-inside:avoid}
  details{display:none}a{text-decoration:none;color:inherit}
  .example,.formula,.warning,table,.verb-card{background:#fff}
- .example b,.lesson-body td b{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+ .example b,.lesson-body td b,.fr{print-color-adjust:exact;-webkit-print-color-adjust:exact}
  .timers,.quiz-tools,.tabs,textarea,.wc,.chip[href],.nav-exam{display:none!important}
  [role=tabpanel][hidden]{display:block!important}
  .print-only{display:block}
