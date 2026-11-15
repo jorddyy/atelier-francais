@@ -204,12 +204,12 @@ const extraQuestions = {
     ["Je pense à mes vacances. Mets en relief « mes vacances » avec la structure « Ce …, c’est … ».", "ce à quoi je pense, c’est à mes vacances|ce à quoi je pense c’est à mes vacances|ce à quoi je pense, c’est mes vacances|ce à quoi je pense c’est mes vacances|ce à quoi je pense, ce sont mes vacances|ce à quoi je pense ce sont mes vacances", "Penser à quelque chose : ce à quoi. Comme dans le cours (Ce à quoi elle pense, c’est son avenir), le « à » après c’est est facultatif."]
   ],
   opinions: [
-    ["Je crois qu’il vient. Mets à la forme négative. Commence par : Je ne crois pas", "je ne crois pas qu’il vienne|je ne crois pas qu'il vienne", "Je ne crois pas que + subjonctif."],
-    ["Je pense que le télétravail est utile. Mets à la forme négative. Commence par : Je ne pense pas", "je ne pense pas que le télétravail soit utile", "Être au subjonctif : soit."],
-    ["Je trouve que c’est normal. Mets à la forme négative. Commence par : Je ne trouve pas", "je ne trouve pas que ce soit normal", "C’est devient ce soit au subjonctif."],
-    ["Je suis sûr que vous avez raison. Mets à la forme négative. Commence par : Je ne suis pas", "je ne suis pas sûr que vous ayez raison|je ne suis pas sûre que vous ayez raison", "Avoir au subjonctif : vous ayez."],
+    ["Je crois qu’il vient. Mets à la forme négative et adapte le mode du verbe qui suit. Commence par : Je ne crois pas", "je ne crois pas qu’il vienne|je ne crois pas qu'il vienne", "Je ne crois pas que + subjonctif."],
+    ["Je pense que le télétravail est utile. Mets à la forme négative et adapte le mode du verbe qui suit. Commence par : Je ne pense pas", "je ne pense pas que le télétravail soit utile", "Être au subjonctif : soit."],
+    ["Je trouve que c’est normal. Mets à la forme négative et adapte le mode du verbe qui suit. Commence par : Je ne trouve pas", "je ne trouve pas que ce soit normal", "C’est devient ce soit au subjonctif."],
+    ["Je suis sûr que vous avez raison. Mets à la forme négative et adapte le mode du verbe qui suit. Commence par : Je ne suis pas", "je ne suis pas sûr que vous ayez raison|je ne suis pas sûre que vous ayez raison", "Avoir au subjonctif : vous ayez."],
     ["Je pense que le projet est utile. Remplace « Je pense que » par une expression d’opinion sans « que », du type « … moi, ».", "selon moi, le projet est utile|selon moi le projet est utile|pour moi, le projet est utile|pour moi le projet est utile|d’après moi, le projet est utile|d’après moi le projet est utile|à mon avis, le projet est utile|à mon avis le projet est utile", "Selon moi + indicatif, sans que."],
-    ["Je pense que tous les enfants ont besoin d’un téléphone portable. Mets à la forme négative. Commence par : Je ne pense pas", "je ne pense pas que tous les enfants aient besoin d’un téléphone portable|je ne pense pas que tous les enfants aient besoin d’un portable", "Je ne pense pas que + subjonctif : ils ont → qu’ils aient."]
+    ["Je pense que tous les enfants ont besoin d’un téléphone portable. Mets à la forme négative et adapte le mode du verbe qui suit. Commence par : Je ne pense pas", "je ne pense pas que tous les enfants aient besoin d’un téléphone portable|je ne pense pas que tous les enfants aient besoin d’un portable", "Je ne pense pas que + subjonctif : ils ont → qu’ils aient."]
   ],
   subjonctif: [
     ["Nous partons. Commence par : Il faut que nous", "il faut que nous partions", "Partir : nous partions."],
