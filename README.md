@@ -82,3 +82,10 @@ The exam is half oral, so the notebook now has an "Examen" group (sidebar, and c
 - The quiz draws 20 questions from all fiches (optionally by group or lesson range), one at a time, with the source fiche linked; it ends with the score and the fiches to revisit.
 
 Still no saved state and no listening exercises. QA for this update: syntax checks; headless Chromium at 360, 390 and 1280 px for the home, oral (topic drawn, aids open, timer finished), writing, quiz (mid-quiz and result), a fiche with Transforme, `#test`, the mobile menu, search, lesson filter and print media; no horizontal overflow found. Not tested on a physical phone.
+
+## Récits and phone header, 15 November 2026
+
+- `recits` (in `exam-content.js`, shape in `AGENTS.md`): four short stories with 6–7 blanks each, shown as continuous texts under "Récits à compléter" on the fiche Choisir le bon passé (`#choisir/recits`) and as the quiz mode "Récits au passé" (stories shuffled, sentences in order, all items counted).
+- On phones the top bar is a single 57 px row; the search opens from a magnifier icon and closes with ×, Escape or navigation.
+
+QA: syntax checks; headless Chromium (CDP) at 360, 390 and 1280 px for the closed/open phone header, a search from it, the mobile menu, the récits block and deep link, the récits quiz to its result, and the existing routes; no horizontal overflow or console errors. Not tested on a physical phone.

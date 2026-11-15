@@ -65,3 +65,8 @@ All question checking goes through `bindQuestions` in app.js. Nothing is saved: 
 ## Generations fiche folded into exam pages, 15 November 2026
 
 The `generations` module (former fiche 21) was the only theme-based fiche. Its vocabulary and the handout's generation dates now live in the `generations` and `cohabitation` oral topics, its writing tasks in the writing subjects, and its subjunctive question in `subjonctif`. `#generations` redirects to `#oral/generations`. The notebook has 20 modules; cours 16 is still covered by `adverbes`.
+
+## Récits and compact phone header, 15 November 2026
+
+- `recits = [{id, title, intro, items:[[promptWith___AndInfinitive, 'answer|alternative', explanation]]}]` in `dist/exam-content.js` (optional, checked with `typeof`). Items are read in order as one story (passé composé / imparfait / plus-que-parfait). They appear only on the fiche `choisir`, in the "Récits à compléter" block (`#choisir/recits` deep-links to it; `#<fiche>/<sectionId>` scrolls to any id on a fiche), and in the quiz filter "Récits au passé": stories in random order, items in order, story title, intro and the story so far shown above each item, count = total items. They are never part of the 20-question mixed draws. Search finds them under "récit".
+- Phone header (≤760 px): one 57 px row with brand, search icon (`#search-toggle`) and Sommaire. The icon opens the search field over the row (`body.search-open`); `#search-close`, Escape, choosing a result or any route change close it. `--topbar-h` defaults to 57px for the mobile menu, and `html{scroll-padding-top:68px}` keeps scrolled sections below the sticky bar. Laptop layout unchanged (search always visible).

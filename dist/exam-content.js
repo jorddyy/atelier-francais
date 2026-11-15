@@ -252,3 +252,46 @@ const extraQuestions = {
     ["Elle parle d’une manière claire. Remplace « d’une manière claire » par un adverbe en -ment. Commence par : Elle parle", "elle parle clairement", "Clair + e + ment."]
   ]
 };
+
+const recits = [
+  { id: "panne", title: "La panne de tram", intro: "Léa travaille dans un bureau au centre-ville et prend le tram tous les jours.",
+    items: [
+      ["Ce matin-là, il ___ (pleuvoir) très fort et le ciel était tout gris.", "pleuvait", "Description du décor : imparfait."],
+      ["Depuis deux ans, Léa ___ (prendre) chaque matin le tram de 7 h 40, et il était presque toujours à l’heure.", "prenait", "Habitude dans le passé (chaque matin) : imparfait."],
+      ["Mais ce jour-là, le tram ___ (s’arrêter) brusquement entre deux stations.", "s’est arrêté|s'est arrêté", "Action soudaine et unique (ce jour-là, brusquement) : passé composé ; verbe pronominal avec être."],
+      ["Le conducteur a annoncé qu’un camion ___ (tomber) en panne sur les rails quelques minutes plus tôt.", "était tombé", "Action antérieure à l’annonce (quelques minutes plus tôt) : plus-que-parfait avec être."],
+      ["Les passagers ___ (rester) bloqués pendant quarante minutes, puis ils ont enfin pu descendre.", "sont restés", "Durée limitée et terminée : « pendant » n’impose pas l’imparfait ; passé composé avec être, accord au masculin pluriel."],
+      ["Finalement, Léa ___ (arriver) au bureau avec une heure de retard.", "est arrivée", "Action terminée qui fait avancer le récit : passé composé avec être, accord au féminin."],
+      ["Elle était trempée, car elle ___ (ne pas prendre) son parapluie en quittant la maison.", "n’avait pas pris|n'avait pas pris", "Cause antérieure au moment raconté : plus-que-parfait ; la négation encadre l’auxiliaire."]
+    ] },
+  { id: "entretien", title: "L’entretien d’embauche", intro: "Karim cherche un poste d’ingénieur à Genève et raconte son premier entretien.",
+    items: [
+      ["Le jour de l’entretien, Karim ___ (être) très nerveux et il avait mal au ventre.", "était", "État physique et moral, description : imparfait."],
+      ["Heureusement, il ___ (préparer) ses réponses avec une amie le week-end précédent.", "avait préparé", "Action antérieure au jour de l’entretien (le week-end précédent) : plus-que-parfait."],
+      ["Il ___ (arriver) dans le hall à 9 h 50, dix minutes avant l’heure prévue.", "est arrivé", "Action ponctuelle et datée : passé composé avec être."],
+      ["Il ___ (relire) son CV dans la salle d’attente quand une femme l’a appelé.", "relisait", "Action en cours, interrompue par une autre (quand… a appelé) : imparfait."],
+      ["Elle ___ (se présenter) : c’était la directrice des ressources humaines.", "s’est présentée|s'est présentée", "Action unique qui fait avancer le récit : passé composé ; verbe pronominal, accord au féminin."],
+      ["L’entretien ___ (durer) une heure, puis la directrice l’a raccompagné jusqu’à la porte.", "a duré", "Durée limitée et terminée, suivie d’une autre action (puis) : passé composé."],
+      ["En rentrant chez lui, Karim pensait qu’il ___ (bien répondre) à toutes les questions.", "avait bien répondu", "Action antérieure à « pensait » : plus-que-parfait ; l’adverbe se place entre l’auxiliaire et le participe."]
+    ] },
+  { id: "cern", title: "Premier jour au CERN", intro: "Marta est physicienne et vient de commencer un contrat au CERN.",
+    items: [
+      ["Le lundi 3 mars, Marta ___ (se lever) à six heures, bien avant son réveil.", "s’est levée|s'est levée", "Action unique et datée : passé composé ; verbe pronominal, accord au féminin."],
+      ["Elle ne connaissait personne à Genève, car elle ___ (arriver) de Madrid seulement deux jours plus tôt.", "était arrivée", "Action antérieure au moment raconté (deux jours plus tôt) : plus-que-parfait avec être, accord au féminin."],
+      ["À l’accueil, il y ___ (avoir) une longue file de nouveaux arrivants qui attendaient leur badge.", "avait", "Description de la scène : imparfait."],
+      ["Marta ___ (attendre) pendant une heure et demie, puis elle a enfin reçu son badge.", "a attendu", "Durée limitée et terminée : « pendant » n’impose pas l’imparfait ; passé composé."],
+      ["Vers midi, son responsable ___ (venir) la chercher pour déjeuner.", "est venu", "Action ponctuelle qui fait avancer le récit : passé composé avec être."],
+      ["Le restaurant ___ (être) plein et tout le monde parlait anglais ou français.", "était", "Description du décor : imparfait."],
+      ["Après le déjeuner, elle n’a pas pu entrer dans son bâtiment : elle ___ (laisser) son badge sur la table du restaurant.", "avait laissé", "Cause antérieure à « n’a pas pu entrer » : plus-que-parfait."]
+    ] },
+  { id: "demenagement", title: "Un déménagement à Lisbonne", intro: "Julie et sa sœur Inès vivent maintenant à Lisbonne et racontent leur arrivée.",
+    items: [
+      ["En janvier, Julie a trouvé un poste à Lisbonne, une ville où elle ___ (passer) des vacances trois ans plus tôt.", "avait passé", "Action antérieure à « a trouvé » (trois ans plus tôt) : plus-que-parfait."],
+      ["Sans hésiter, sa sœur Inès ___ (décider) de partir avec elle.", "a décidé", "Décision ponctuelle : passé composé."],
+      ["Les deux sœurs ___ (partir) de Lille le 1er avril, avec seulement quatre valises.", "sont parties", "Action datée et terminée : passé composé avec être, accord au féminin pluriel."],
+      ["Quand elles sont arrivées devant leur nouvel immeuble, il ___ (faire) déjà nuit et la rue était vide.", "faisait", "Description du décor au moment de l’arrivée : imparfait."],
+      ["Mais il y avait un problème : la veille, le propriétaire ___ (ne pas déposer) les clés chez la voisine.", "n’avait pas déposé|n'avait pas déposé", "Action antérieure au moment raconté (la veille) : plus-que-parfait ; la négation encadre l’auxiliaire."],
+      ["Finalement, elles ___ (s’installer) pour la nuit dans un petit hôtel du quartier.", "se sont installées", "Action terminée qui conclut l’épisode : passé composé ; verbe pronominal, accord au féminin pluriel."],
+      ["Le lendemain, Inès a écrit à sa mère : « Hier, nous ___ (être) très fatiguées, mais aujourd’hui tout va bien ! »", "étions", "État passager (fatigue) : imparfait, même avec « hier »."]
+    ] }
+];

@@ -61,7 +61,7 @@ nav .nav-break{margin-top:16px}
 #results small{display:block;color:var(--muted);font:14px var(--sans)}
 #results p{font-size:15px;padding:8px 12px;margin:0}
 .print-button{border:0;background:none;color:var(--ink-soft);padding:8px 0;font-size:14px;text-decoration:underline;text-underline-offset:3px}
-#menu,.mobile-brand{display:none}
+#menu,.mobile-brand,.icon-button{display:none}
 
 /* Page frame with the red margin line of a French notebook */
 main{margin-left:var(--side);max-width:1240px;padding:40px 48px 72px 88px;min-height:80vh;position:relative}
@@ -254,6 +254,20 @@ select{border:1px solid var(--rule);border-radius:10px;padding:9px 34px 9px 12px
 .practice-note{font-size:15px;color:var(--muted)}
 .practice .blank.wide{font-size:18px;padding:10px 12px;min-height:46px}
 
+/* Récits: each story reads as one continuous text, numbered in the margin */
+.recits .recit{margin:22px 0 8px;padding:18px 20px 6px;background:var(--paper);border:1px solid var(--rule);border-left:3px solid var(--rouge);border-radius:4px 12px 12px 4px}
+.recit h3{font-size:23px;margin:0 0 4px}
+.recit-intro{font:italic 18px/1.55 var(--serif);color:var(--ink-soft);margin:0 0 6px}
+.recit .question{border-top:0;padding:6px 0 10px}
+.recit .question>p{font:18px/1.75 var(--serif);margin-bottom:6px}
+.recit .answer-row button{padding:6px 16px;font-size:14px}
+.recit-head{margin:14px 0 4px;padding:12px 16px;background:var(--paper);border-left:3px solid var(--rouge);border-radius:4px 10px 10px 4px}
+.recit-head h3{font-size:21px;margin:0 0 2px}
+.recit-head .eyebrow{font-size:14px;margin-bottom:2px}
+.recit-head .recit-intro{font-size:16px;margin:0}
+.recit-sofar{font:16px/1.6 var(--serif);color:var(--ink-soft);margin:8px 0 0}
+.recit-sofar b{font-weight:600;color:var(--bleu)}
+
 /* Oral: drawn topic and timers */
 .practice>.btn{margin:4px 0 6px}
 #oral-practice{margin:20px 0 36px}
@@ -346,20 +360,30 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
 }
 @media(max-width:760px){
  body{font-size:16px}
- #sidebar{display:none;top:var(--topbar-h,116px);width:100%;height:calc(100dvh - var(--topbar-h,116px));background:var(--paper);padding:12px 20px 20px;border:0}
+ #sidebar{display:none;top:var(--topbar-h,57px);width:100%;height:calc(100dvh - var(--topbar-h,57px));background:var(--paper);padding:12px 20px 20px;border:0}
  .brand{display:none}
  body.menu-open #sidebar{display:flex}
  body.menu-open{overflow:hidden}
  nav{width:100%;max-width:520px;margin:0 auto}
  nav a{font-size:16px;padding:10px 12px}
  .side-note{margin-top:10px;padding-top:10px}
- .topbar{position:sticky;top:0;z-index:25;margin-left:0;padding:10px 16px;min-height:0;flex-wrap:wrap;background:var(--paper);gap:8px 12px}
- .mobile-brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--ink);font:500 20px var(--serif)}
+ /* Phone header: one 56 px row (brand, search icon, Sommaire); the search field opens over it. */
+ html{scroll-padding-top:68px}
+ .topbar{position:sticky;top:0;z-index:25;margin-left:0;padding:6px 12px 6px 16px;min-height:57px;background:var(--paper);gap:6px}
+ .mobile-brand{display:flex;align-items:center;gap:9px;min-height:44px;text-decoration:none;color:var(--ink);font:500 20px var(--serif);white-space:nowrap}
  .mobile-brand b{font-weight:500;color:var(--rouge);margin-left:.25em}
- #menu{display:block;margin-left:auto;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:6px 14px;font-size:15px;min-height:40px}
+ .icon-button{display:inline-grid;place-items:center;width:44px;height:44px;flex-shrink:0;border:0;border-radius:50%;background:none;color:var(--ink-soft);padding:0}
+ .icon-button:hover{color:var(--bleu);background:var(--paper-2)}
+ #search-toggle{margin-left:auto}
+ #menu{display:block;background:var(--card);border:1px solid var(--rule);border-radius:999px;padding:6px 16px;font-size:15px;min-height:44px}
  .print-button{display:none}
- .search-wrap{order:3;width:100%}
- #search{font-size:16px}
+ .search-wrap{display:none;position:absolute;inset:6px 12px;width:auto;padding:0 2px 0 14px;z-index:2;box-shadow:0 2px 10px rgba(40,30,10,.08)}
+ body.search-open .search-wrap{display:flex;animation:search-in .16s ease-out}
+ body.search-open .mobile-brand,body.search-open #search-toggle{visibility:hidden}
+ .search-wrap #search-close{display:inline-grid;width:44px;height:42px}
+ #search{font-size:16px;padding:0;height:42px}
+ #search::-webkit-search-cancel-button{display:none}
+ #results{max-height:calc(100dvh - 80px)}
  main{margin-left:0;padding:22px 16px 40px 34px}
  main::before{left:20px}
  h1{font-size:34px}
@@ -416,10 +440,14 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
  .quiz-tools label{flex:1 1 200px}
  .quiz-tools .btn{flex:1 1 auto;justify-content:center}
  .wc-bar{flex-basis:90px}
+ .recits .recit{padding:14px 14px 4px;margin:16px -4px 6px}
+ .recit h3{font-size:21px}
+ .recit .question>p{font-size:17px}
 }
 @media(max-width:380px){.pp-grid{grid-template-columns:1fr}}
 @media(display-mode:standalone){body{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{scroll-behavior:auto!important;transition:none!important}}
+@keyframes search-in{from{opacity:0;transform:translateY(-4px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
 @media print{
  #sidebar,.topbar,.practice,.lesson-toc,.back,footer,.verb-tools,.notebook-meta select,.bottom-band{display:none!important}
  main{margin:0;padding:0;max-width:none}main::before,.page-header::before,.notebook-header::before{display:none}
