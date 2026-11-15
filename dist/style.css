@@ -152,6 +152,7 @@ details[open] summary{margin-bottom:-5px}
 .feedback:empty{display:none}
 .success{color:var(--vert)}
 .review{color:var(--rouge)}
+.almost{color:#a35a00}
 
 .source{font-size:14px;color:var(--muted);margin:26px 0;overflow-wrap:anywhere}
 .bottom-band{border-top:1px solid var(--rule);margin-top:28px;padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:20px;font-size:16px}
