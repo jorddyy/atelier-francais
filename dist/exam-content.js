@@ -1,0 +1,252 @@
+// Contenu pour l’examen B1- : oral, écrit, exercices de transformation.
+const oralGuide = {
+  steps: [
+    ["1. Présenter le document", `<p>Annonce le <b>type</b> de document, le <b>thème</b> et la question posée.</p><ul><li>Le document que j’ai choisi est <b>un article</b> / <b>un reportage</b> / <b>une affiche</b>. Il <b>traite de</b>… / Il s’agit de…</li><li>Le <b>thème</b> principal, c’est… Le document <b>pose la question</b> suivante : …</li><li>Je vais d’abord présenter les <b>points forts</b>, puis les <b>points faibles</b>, et je terminerai par <b>mon opinion</b>.</li></ul>`],
+    ["2. Les points forts (avantages)", `<p>Donne deux ou trois avantages, chacun avec un exemple.</p><ul><li><b>Un premier avantage</b>, c’est que… Par exemple, …</li><li><b>Ce qui est bien</b>, c’est… / Ce qui me paraît positif, c’est…</li><li>Cela <b>permet de</b> + infinitif : cela permet de gagner du temps.</li></ul>`],
+    ["3. Les points faibles (inconvénients)", `<p>Annonce le changement avec un connecteur d’opposition, puis donne aussi deux ou trois inconvénients avec exemples.</p><ul><li><b>En revanche</b>, il y a aussi des inconvénients. <b>Le principal problème</b>, c’est que…</li><li><b>Ce qui pose problème</b>, c’est… / <b>Ce dont on parle moins</b>, c’est…</li><li>Il est <b>dommage que</b> + subjonctif : il est dommage que les gens se sentent seuls.</li></ul>`],
+    ["4. Mon opinion et un exemple personnel", `<p>Donne clairement ton avis, puis raconte une expérience (passé composé et imparfait).</p><ul><li><b>Selon moi</b> / <b>À mon avis</b> / En ce qui me concerne, …</li><li><b>Je pense que</b> + indicatif ; <b>je ne pense pas que</b> + subjonctif.</li><li><b>Je vais vous donner un exemple</b> : l’année dernière, je travaillais… et un jour, j’ai décidé de…</li></ul>`],
+    ["5. Conclure", `<p>Résume en une ou deux phrases et propose une solution ou une hypothèse.</p><ul><li><b>Pour conclure</b> / En résumé / Pour terminer, je dirais que…</li><li><b>À mon avis</b>, la meilleure solution serait de… (conditionnel)</li><li>Si on <b>pouvait</b> + infinitif, on <b>pourrait</b> + infinitif.</li></ul>`],
+    ["6. Répondre aux questions de l’examinateur", `<p>Ne reste pas muet : reformule, précise, défends ta position.</p><ul><li><b>Si j’ai bien compris</b>, vous me demandez si… Alors, …</li><li><b>Je n’y avais pas pensé</b>, mais… / C’est une bonne question.</li><li><b>Je comprends votre point de vue</b>, cependant je reste convaincu(e) que… / Je suis d’accord avec vous <b>sur ce point</b>.</li></ul>`]
+  ],
+  connectors: [
+    ["Commencer", ["Tout d’abord", "Pour commencer", "D’abord", "Je vais commencer par…", "Dans un premier temps"]],
+    ["Ajouter", ["De plus", "En plus", "Ensuite", "Par ailleurs", "Non seulement… mais aussi…"]],
+    ["Opposer, nuancer", ["Mais", "En revanche", "Par contre", "Cependant", "Pourtant", "Même si + indicatif"]],
+    ["Donner un exemple", ["Par exemple", "Comme", "Ainsi", "Je pense notamment à…", "Pour illustrer cela, je vais vous donner un exemple"]],
+    ["Cause", ["Parce que", "Car", "En effet", "À cause de + nom (cause négative)", "Grâce à + nom (cause positive)"]],
+    ["Conséquence", ["Donc", "Alors", "C’est pourquoi", "Par conséquent", "Du coup (oral)"]],
+    ["Conclure", ["Pour conclure", "En résumé", "Pour terminer", "En conclusion", "Finalement"]],
+    ["Gagner du temps, reformuler", ["Comment dire…", "Je voulais dire que…", "En d’autres termes", "Autrement dit", "Laissez-moi réfléchir un instant", "C’est-à-dire"]]
+  ],
+  grid: [
+    ["Parler assez longtemps sur le thème (au moins 3 minutes)", 2, `Prépare <b>trois</b> avantages, <b>trois</b> inconvénients et un exemple personnel : cela fait déjà 3 minutes. Développe chaque idée avec « parce que » et « par exemple ».`],
+    ["Présenter le sujet de manière simple et directe", 1, `Commence toujours par la même phrase : <b>« Le document traite de… »</b> + le thème en une phrase. Ne raconte pas tout le document.`],
+    ["Dégager et présenter les avantages et les inconvénients", 4, `C’est la plus grosse partie : <b>deux ou trois</b> avantages <b>et</b> deux ou trois inconvénients, chacun avec un exemple concret. Annonce ton plan.`],
+    ["Exprimer une opinion personnelle illustrée par des exemples", 2, `Dis clairement <b>« Selon moi… »</b>, puis raconte une expérience vécue (<b>passé composé + imparfait</b>) ou un exemple de ton pays.`],
+    ["Relier les idées logiquement, utiliser des connecteurs", 2, `Utilise au moins un connecteur par étape : <b>d’abord, de plus, en revanche, par exemple, pour conclure</b>. Évite de répéter « et puis ».`],
+    ["Répondre à l’examinateur, préciser, défendre sa position", 2, `Écoute la question, reformule-la (<b>« Si j’ai bien compris… »</b>), réponds avec un argument et un exemple. Si tu ne comprends pas, demande de répéter.`],
+    ["Lexique général et lexique du thème, périphrases", 3, `Prépare 6 à 8 mots précis sur le thème. Si un mot te manque, utilise une <b>périphrase</b> : « c’est l’endroit où on… », « c’est quand on… ».`],
+    ["Morphosyntaxe : phrases simples et complexes, conjugaison", 3, `Montre les structures du cours : un <b>subjonctif</b> (je ne pense pas que), un <b>conditionnel</b> (il faudrait), une <b>relative</b> (qui, que, dont, ce qui), un pronom (y, en) et des temps du passé bien conjugués. Garde des phrases simples mais correctes.`],
+    ["Phonologie : prononciation claire, intonation marquée", 1, `Parle lentement, fais des pauses entre les idées et marque l’intonation (montante pour une question, descendante pour une affirmation). Articule les liaisons : <b>les_amis, vous_avez</b>.`]
+  ],
+  prep: [
+    `Tu as <b>7 minutes</b> de préparation, puis 5 à 6 minutes de passage (monologue + questions). Prends <b>1 à 2 minutes</b> pour lire le document et repérer le thème. Souligne les mots-clés ; ne traduis pas chaque phrase.`,
+    `Note des <b>mots-clés</b>, pas des phrases complètes : sinon tu vas lire au lieu de parler. Un tableau « + / – » en deux colonnes suffit.`,
+    `Prépare un <b>exemple personnel</b> au passé (ce qui s’est passé, comment c’était) et ton <b>opinion en une phrase</b> avec un subjonctif ou un conditionnel.`,
+    `Écris à l’avance <b>tes connecteurs</b> dans la marge : d’abord, de plus, en revanche, par exemple, pour conclure.`,
+    `Pense aux questions possibles : « Et vous, qu’en pensez-vous ? », « Dans votre pays ? ». Prépare une réponse courte pour chacune.`
+  ]
+};
+
+const oralTopics = [
+  { id: "teletravail", title: "Le télétravail", document: "Un article de journal intitulé « Le télétravail : une chance ou un piège ? ».",
+    pour: ["On gagne du temps, car on ne prend pas les transports.", "On organise sa journée plus librement.", "On est souvent plus concentré, sans bruit ni interruptions."],
+    contre: ["On peut se sentir isolé, loin de ses collègues.", "La frontière entre vie privée et travail devient floue.", "Il faut un espace calme et du bon matériel chez soi."],
+    vocab: [["le télétravail", "remote work"], ["le coworking", "shared workspace"], ["le trajet", "commute"], ["la visioconférence", "video call"], ["l’isolement (m.)", "isolation"], ["se concentrer", "to concentrate"], ["la flexibilité", "flexibility"], ["l’équilibre vie privée–vie professionnelle", "work–life balance"]],
+    amorce: "Ce qui me plaît dans le télétravail, c’est la liberté, mais je ne pense pas qu’on puisse travailler seul tous les jours.",
+    questions: ["Et vous, préférez-vous travailler au bureau ou à la maison ?", "Le coworking pourrait-il être une solution, selon vous ?", "Le télétravail est-il possible dans votre métier ?"] },
+  { id: "semaine4", title: "La semaine de quatre jours", document: "Un reportage télévisé : « Quatre jours de travail par semaine : l’essai de plusieurs entreprises ».",
+    pour: ["Trois jours de repos permettent de mieux récupérer et de s’occuper de sa famille.", "Les employés sont souvent plus motivés et moins stressés.", "L’entreprise attire plus facilement de nouveaux talents."],
+    contre: ["Les journées de dix heures sont très fatigantes.", "Certains métiers (hôpital, magasins) s’adaptent difficilement.", "Il faut faire le même travail en moins de temps, ce qui peut augmenter le stress."],
+    vocab: [["la semaine de quatre jours", "four-day week"], ["la fatigue", "tiredness"], ["la productivité", "productivity"], ["le salaire", "salary"], ["récupérer", "to recover"], ["les horaires (m.)", "working hours"], ["la charge de travail", "workload"], ["le jour de repos", "day off"]],
+    amorce: "Si on travaillait quatre jours par semaine, je serais plus motivé, mais il faudrait que les journées ne soient pas trop longues.",
+    questions: ["Pensez-vous que tous les métiers puissent passer à quatre jours ?", "Que feriez-vous de votre jour libre ?", "Accepteriez-vous des journées plus longues pour avoir un jour de repos en plus ?"] },
+  { id: "uniforme", title: "L’uniforme à l’école ou au travail", document: "Un débat à la télévision : « Faut-il remettre l’uniforme à l’école ? ».",
+    pour: ["Tous les élèves sont à égalité : on ne voit pas les différences de richesse.", "Les enfants pensent au travail plutôt qu’à la mode.", "Les parents n’ont pas besoin d’acheter beaucoup de vêtements."],
+    contre: ["L’uniforme limite la liberté d’expression des jeunes.", "Il coûte cher, surtout pour les familles nombreuses.", "Il ne règle pas les vrais problèmes, comme le harcèlement."],
+    vocab: [["l’uniforme (m.)", "uniform"], ["la tenue", "outfit, dress"], ["l’égalité (f.)", "equality"], ["la liberté d’expression", "freedom of expression"], ["le harcèlement", "bullying, harassment"], ["le règlement", "rules, regulations"], ["s’habiller", "to get dressed"], ["le vêtement", "garment"]],
+    amorce: "Ce que je trouve important, c’est que les élèves se sentent égaux, mais je ne suis pas sûr que l’uniforme soit la meilleure solution.",
+    questions: ["Avez-vous porté un uniforme quand vous étiez enfant ?", "Faut-il aussi un uniforme au travail, par exemple dans les banques ?", "Dans votre pays, y a-t-il des uniformes à l’école ?"] },
+  { id: "voiture", title: "La fin des voitures à moteur thermique", document: "Un article : « L’Union européenne veut mettre fin à la vente des voitures neuves à moteur thermique ».",
+    pour: ["Les voitures électriques polluent moins en ville et font moins de bruit.", "Elles aident à lutter contre le réchauffement climatique.", "On dépend moins du pétrole."],
+    contre: ["Elles coûtent encore très cher.", "Il n’y a pas assez de bornes de recharge, surtout à la campagne.", "La fabrication des batteries pollue aussi."],
+    vocab: [["le moteur thermique", "combustion engine"], ["la voiture électrique", "electric car"], ["la borne de recharge", "charging point"], ["la batterie", "battery"], ["la pollution", "pollution"], ["le réchauffement climatique", "global warming"], ["l’autonomie (f.)", "range"], ["les transports en commun", "public transport"]],
+    amorce: "Je suis pour les voitures électriques, mais il faudrait que l’on installe beaucoup plus de bornes de recharge.",
+    questions: ["Avez-vous une voiture ? Pourriez-vous passer à l’électrique ?", "Les transports en commun sont-ils une meilleure solution ?", "Qui doit payer cette transition, selon vous ?"] },
+  { id: "fcc", title: "Le FCC (Futur collisionneur circulaire) du CERN", document: "Un article : « Le CERN étudie la construction d’un collisionneur de 91 kilomètres, le FCC ».",
+    pour: ["Il permettrait de mieux comprendre le boson de Higgs et de chercher de nouvelles particules.", "Les technologies développées servent aussi à la médecine et à l’informatique.", "Le projet crée des emplois et renforce la coopération internationale."],
+    contre: ["Il coûterait plusieurs milliards.", "Les travaux auraient un impact sur l’environnement et sur les habitants de la région.", "On n’est pas certain d’y découvrir quelque chose de nouveau."],
+    vocab: [["le collisionneur", "collider"], ["la particule", "particle"], ["le tunnel", "tunnel"], ["le coût", "cost"], ["la recherche fondamentale", "basic research"], ["les retombées (f. pl.)", "spin-offs, benefits"], ["l’impact environnemental", "environmental impact"], ["les riverains", "local residents"]],
+    amorce: "Ce qui me paraît essentiel, c’est la recherche fondamentale, même si je comprends qu’on trouve le coût trop élevé.",
+    questions: ["Pensez-vous que l’argent public doive financer ce type de projet ?", "Comment expliqueriez-vous l’intérêt du FCC à quelqu’un qui n’est pas scientifique ?", "Que pourraient craindre les habitants de la région ?"] },
+  { id: "generations", title: "Les générations au travail", document: "Un article : « Baby-boomers, génération Z : travailler ensemble, est-ce possible ? ».",
+    pour: ["Les jeunes apportent des idées nouvelles et maîtrisent le numérique.", "Les plus âgés transmettent leur expérience.", "Travailler ensemble permet de s’enrichir mutuellement."],
+    contre: ["Les valeurs et les méthodes de travail sont parfois très différentes.", "Les stéréotypes créent des conflits (« les jeunes sont paresseux »).", "Certains collègues ont du mal à s’adapter aux nouvelles technologies."],
+    vocab: [["la génération", "generation"], ["les baby-boomers", "baby boomers"], ["la génération Z", "Gen Z"], ["transmettre", "to pass on"], ["l’expérience (f.)", "experience"], ["le stéréotype", "stereotype"], ["les valeurs (f. pl.)", "values"], ["le conflit", "conflict"]],
+    amorce: "Il me semble que chaque génération a quelque chose à apprendre aux autres, mais ce qui pose problème, c’est le manque de dialogue.",
+    questions: ["À quelle génération appartenez-vous, et êtes-vous d’accord avec les caractéristiques qu’on lui donne ?", "Avez-vous déjà travaillé avec quelqu’un de beaucoup plus jeune ou plus âgé ?", "Que peut-on faire pour mieux se comprendre ?"] },
+  { id: "cohabitation", title: "La cohabitation intergénérationnelle", document: "Un reportage : « Étudiants et seniors sous le même toit » (et le cas de Tanguy, 28 ans, toujours chez ses parents).",
+    pour: ["Le loyer est moins cher pour l’étudiant.", "La personne âgée est moins seule et se sent en sécurité.", "On partage des expériences et on se rend des services."],
+    contre: ["On perd son intimité et son indépendance.", "Les rythmes de vie sont parfois très différents.", "Des conflits sur les règles de la maison peuvent apparaître."],
+    vocab: [["la cohabitation", "living together"], ["le loyer", "rent"], ["la solitude", "loneliness"], ["l’intimité (f.)", "privacy"], ["l’indépendance (f.)", "independence"], ["partager", "to share"], ["quitter le nid", "to leave the nest"], ["rendre service", "to do a favour"]],
+    amorce: "Je trouverais intéressant de vivre avec une personne âgée, parce que ce dont les étudiants ont besoin, c’est d’un logement pas trop cher.",
+    questions: ["Avez-vous déjà vécu avec plusieurs générations sous le même toit ?", "À quel âge faut-il quitter la maison de ses parents, selon vous ?", "Comment est la situation dans votre pays ?"] },
+  { id: "sieste", title: "Les horaires de travail et la sieste", document: "Un article : « La sieste au travail : des entreprises testent les horaires flexibles et les salles de repos ».",
+    pour: ["Une petite sieste de vingt minutes améliore l’attention et la mémoire.", "Des horaires flexibles permettent de travailler quand on est le plus efficace.", "Les employés se sentent respectés et moins stressés."],
+    contre: ["Certains patrons pensent qu’un employé qui dort ne travaille pas.", "Il est difficile d’installer une salle de repos dans une petite entreprise.", "Des horaires différents compliquent les réunions."],
+    vocab: [["la sieste", "nap"], ["les horaires flexibles", "flexible hours"], ["la salle de repos", "break room, quiet room"], ["l’efficacité (f.)", "efficiency"], ["la pause déjeuner", "lunch break"], ["s’endormir", "to fall asleep"], ["être en forme", "to feel fit, to be in good shape"], ["le rythme", "rhythm"]],
+    amorce: "Je trouve normal qu’on puisse se reposer quinze minutes après le déjeuner, mais il faudrait que cela ne gêne pas les collègues.",
+    questions: ["À quelle heure êtes-vous le plus efficace ?", "Avez-vous déjà fait une sieste au travail ?", "Les horaires de votre pays vous conviennent-ils ?"] },
+  { id: "portables", title: "Les téléphones portables à l’école", document: "Un article : « Faut-il interdire le téléphone portable à l’école ? ».",
+    pour: ["Les élèves sont plus attentifs en classe.", "On évite le harcèlement en ligne et les photos non autorisées.", "Les enfants jouent et parlent entre eux à la récréation."],
+    contre: ["Les parents veulent pouvoir joindre leur enfant en cas de problème.", "Le téléphone peut servir d’outil pédagogique (dictionnaire, recherches).", "Une interdiction est difficile à contrôler."],
+    vocab: [["le téléphone portable", "mobile phone"], ["l’écran (m.)", "screen"], ["la récréation", "break (at school)"], ["interdire", "to ban"], ["la dépendance", "addiction"], ["la distraction", "distraction"], ["les réseaux sociaux", "social media"], ["la sécurité", "safety"]],
+    amorce: "Je ne pense pas qu’il faille interdire complètement le portable, mais ce que je souhaiterais, c’est qu’on le range pendant les cours.",
+    questions: ["À quel âge un enfant doit-il avoir un téléphone, selon vous ?", "Êtes-vous souvent sur votre téléphone ?", "Comment fait-on respecter une interdiction ?"] },
+  { id: "ia", title: "L’intelligence artificielle au travail", document: "Un article : « L’intelligence artificielle au travail : un assistant ou une menace ? ».",
+    pour: ["L’IA fait gagner du temps sur les tâches répétitives.", "Elle aide à traduire, à écrire et à chercher des informations.", "Elle aide les chercheurs à analyser beaucoup de données."],
+    contre: ["Certains emplois pourraient disparaître.", "Les réponses de l’IA ne sont pas toujours correctes : il faut vérifier.", "Les données personnelles ne sont pas toujours protégées."],
+    vocab: [["l’intelligence artificielle (f.)", "artificial intelligence"], ["une tâche", "task"], ["un emploi", "job"], ["vérifier", "to check"], ["les données (f. pl.)", "data"], ["se méfier de", "to be wary of"], ["un outil", "tool"], ["fiable", "reliable"]],
+    amorce: "Je trouve que l’IA est un outil très utile, mais ce dont il faut se méfier, c’est de croire tout ce qu’elle dit.",
+    questions: ["Utilisez-vous l’IA dans votre travail ? Pour quoi faire ?", "Pensez-vous que votre métier puisse disparaître ?", "Faut-il apprendre à utiliser l’IA à l’école ?"] }
+];
+
+const writingGuide = {
+  types: [
+    { id: "email", title: "Le courriel à un(e) ami(e)",
+      consigne: "Votre ami Thomas vous écrit : son entreprise lui propose de travailler trois jours par semaine à la maison, et il hésite. Il vous demande ce que vous en pensez. Vous lui répondez en donnant votre opinion, des conseils et des exemples d’expériences (120–150 mots).",
+      plan: [
+        ["Introduction (2 phrases)", `<p>Salue, remercie et réagis à la nouvelle : <b>Merci pour ton message ! C’est une super nouvelle / Je comprends que tu hésites.</b></p>`],
+        ["Développement (5–7 phrases)", `<p>Donne ton opinion (<b>je trouve que…</b>), un exemple vécu (<b>passé composé + imparfait + plus-que-parfait</b>), puis deux ou trois conseils (<b>tu devrais…, il faut que tu…</b>).</p>`],
+        ["Conclusion (1–2 phrases)", `<p>Résume ton avis et encourage : <b>Bref, essaie !</b> Termine par une formule amicale : <b>Grosses bises, à très vite !</b></p>`]
+      ],
+      formules: [
+        ["Commencer", ["Salut Thomas,", "Cher Thomas,", "Merci pour ton message !", "Ça m’a fait plaisir d’avoir de tes nouvelles."]],
+        ["Terminer", ["À très vite !", "Grosses bises,", "Amicalement,", "Dis-moi ce que tu décides !", "Tiens-moi au courant !"]],
+        ["Donner un conseil", ["À ta place, je + conditionnel", "Tu devrais + infinitif", "Il faudrait que tu + subjonctif", "Je te conseille de + infinitif", "Pourquoi tu n’essaies pas de… ?"]],
+        ["Donner son opinion", ["Je trouve que…", "À mon avis,", "Selon moi,", "Je pense que… / Je ne pense pas que + subjonctif", "Ce qui compte, c’est…"]],
+        ["Nuancer", ["Mais attention,", "Par contre,", "Cela dit,", "Même si c’est un peu difficile,", "Ça dépend de…"]]
+      ],
+      modele: `<p>Salut Thomas,</p><p>Merci pour ton message ! Je comprends que tu hésites, mais c’est une bonne nouvelle.</p><p>À ta place, j’<b>accepterais</b>. Je <b>trouve que</b> le télétravail est très pratique. L’année dernière, quand j’<b>ai commencé</b> à travailler deux jours à la maison, je <b>gagnais</b> une heure par jour, parce que je ne <b>prenais</b> plus le train. <b>Ce qui</b> m’a manqué, ce sont mes collègues. Au début, je <b>n’avais</b> pas <b>compris</b> qu’il fallait organiser mes journées. Je te conseille donc de fixer des horaires, et il faut <b>que tu aies</b> un coin tranquille chez toi. Tu <b>devrais</b> aussi aller au bureau un jour par semaine : c’est <b>ce dont</b> on a besoin pour ne pas se sentir seul.</p><p>Bref, essaie pendant trois mois ! Si ça ne te plaît pas, tu pourras toujours <b>en</b> parler à ton chef.</p><p>Grosses bises et à très vite,<br>Julie</p>`
+    },
+    { id: "opinion", title: "Le texte d’opinion structuré",
+      consigne: "Quels commentaires vous inspire le thème des rapports entre les générations ? Qu’est-ce qui peut rapprocher ou éloigner les jeunes et les plus âgés ? Quelle est la situation dans votre pays ? Écrivez un texte structuré (120–150 mots).",
+      plan: [
+        ["Introduction (1–2 phrases)", `<p>Présente le thème et pose la question : <b>De nos jours, … ; on peut se demander si…</b></p>`],
+        ["Développement (6–8 phrases)", `<p>Un paragraphe d’avantages (<b>d’abord, de plus</b>), un paragraphe d’inconvénients (<b>en revanche, cependant</b>), avec un exemple personnel ou de ton pays (<b>par exemple</b>).</p>`],
+        ["Conclusion (2 phrases)", `<p>Donne ton opinion (<b>à mon avis</b>) et une proposition ou une hypothèse (<b>il faudrait que…, si on…, on pourrait…</b>).</p>`]
+      ],
+      formules: [
+        ["Introduire le thème", ["De nos jours,", "Aujourd’hui, de plus en plus de…", "On entend souvent dire que…", "On peut se demander si…"]],
+        ["Organiser les idées", ["D’abord,", "De plus,", "En revanche,", "Par exemple,", "Pour conclure,"]],
+        ["Donner son opinion", ["À mon avis,", "Selon moi,", "Je trouve que…", "Je ne pense pas que + subjonctif", "En ce qui me concerne,"]],
+        ["Nuancer", ["Cependant,", "Même si…", "Cela dépend de…", "Il faut aussi tenir compte de…"]],
+        ["Proposer, faire une hypothèse", ["Il faudrait que + subjonctif", "On pourrait + infinitif", "Si + imparfait, conditionnel", "La meilleure solution serait de…"]]
+      ],
+      modele: `<p>De nos jours, les jeunes et les personnes âgées se parlent moins, et on peut se demander ce qui pourrait les rapprocher.</p><p>D’abord, la cohabitation rapproche les générations. Un étudiant qui <b>habite</b> chez une personne âgée paie moins cher, et celle-ci se sent moins seule. De plus, <b>ce que</b> les jeunes apprennent de leurs grands-parents, ils ne le trouvent pas sur Internet. En revanche, d’autres choses les éloignent : le numérique et le rythme de vie. Dans mon pays, beaucoup de jeunes quittent tôt la maison de leurs parents. Quand j’<b>étais</b> petit, mon grand-père <b>vivait</b> chez nous. Nous <b>nous disputions</b>, parce que personne n’<b>avait expliqué</b> les règles, mais j’<b>ai</b> <b>appris</b> beaucoup de choses.</p><p>À mon avis, <b>il faudrait que</b> les générations <b>se rencontrent</b> plus souvent. Je <b>ne pense pas que</b> la cohabitation <b>convienne</b> à tout le monde, mais <b>ce qui compte</b>, c’est le respect.</p>`
+    }
+  ],
+  checklist: [
+    ["Un subjonctif", `Je ne pense pas que ce <b>soit</b> possible. / Il faut que tu <b>aies</b> du temps.`],
+    ["Un conditionnel", `À ta place, je <b>dirais</b> oui. / Il <b>faudrait</b> que…`],
+    ["Un pronom relatif", `L’ami <b>dont</b> je te parle… / Le quartier <b>où</b> j’habite…`],
+    ["Une mise en relief", `<b>Ce qui</b> me plaît, c’est… / <b>Ce dont</b> j’ai besoin, c’est de…`],
+    ["Un pronom y, en ou un double pronom", `Tu devrais <b>en</b> parler. / Je <b>le lui</b> ai conseillé.`],
+    ["Plusieurs temps du passé", `Quand j’<b>étais</b> étudiant, j’<b>ai travaillé</b> à Lyon. J’<b>avais</b> déjà <b>vécu</b> à Paris.`],
+    ["Des connecteurs", `<b>D’abord</b>, <b>en revanche</b>, <b>par exemple</b>, <b>pour conclure</b>.`],
+    ["Les accords", `Participe passé avec COD avant : la lettre que j’ai <b>écrite</b> ; elle est <b>partie</b>.`],
+    ["Les auxiliaires", `Je <b>suis</b> allé(e), je me <b>suis</b> levé(e) ; mais j’<b>ai</b> pris, j’<b>ai</b> fini.`],
+    ["Nombre de mots et structure", `120–150 mots : introduction, développement, conclusion. Relis une dernière fois : majuscules, accents, ponctuation.`]
+  ],
+  sujets: [
+    { type: "email", consigne: "Une amie française, Claire, vous écrit : elle hésite à quitter son travail à Lyon pour travailler à Genève. Répondez-lui en donnant votre opinion, des conseils et un exemple personnel (120–150 mots)." },
+    { type: "email", consigne: "Votre ami Hugo dort mal et ne se concentre plus l’après-midi au travail. Il vous demande ce que vous pensez de la sieste et des horaires flexibles. Répondez-lui avec des conseils (120–150 mots)." },
+    { type: "email", consigne: "Un ami, Marc, vit encore chez ses parents à 29 ans. Il vous demande s’il doit déménager. Répondez-lui en donnant votre avis et des exemples d’expériences diverses (120–150 mots)." },
+    { type: "email", consigne: "Votre amie Sarah hésite à acheter une voiture électrique. Elle vous demande votre avis. Répondez-lui avec des conseils et un exemple de votre expérience (120–150 mots)." },
+    { type: "opinion", consigne: "Que pensez-vous de la semaine de quatre jours ? Quels avantages et inconvénients voyez-vous ? Écrivez un texte structuré (120–150 mots)." },
+    { type: "opinion", consigne: "Faut-il interdire le téléphone portable à l’école ? Écrivez un texte structuré avec une introduction, des arguments et une conclusion (120–150 mots)." },
+    { type: "opinion", consigne: "Le télétravail et le coworking : quelles sont les conséquences pour les employés et pour les entreprises ? Donnez votre opinion (120–150 mots)." },
+    { type: "opinion", consigne: "Un grand projet scientifique, comme le FCC au CERN, justifie-t-il un coût très élevé ? Écrivez un texte structuré et donnez votre opinion (120–150 mots)." }
+  ]
+};
+
+const extraQuestions = {
+  pronoms: [
+    ["J’appelle mes collègues. Remplace « mes collègues » par un pronom. Commence par : Je", "je les appelle", "Appeler quelqu’un : COD, donc les."],
+    ["Je téléphone à Paul. Remplace « à Paul » par un pronom. Commence par : Je", "je lui téléphone", "Téléphoner à quelqu’un : COI, donc lui."],
+    ["J’ai écrit la lettre. Remplace « la lettre » par un pronom. Commence par : Je", "je l’ai écrite|je l'ai écrite", "Le COD la lettre est avant le participe : écrite, accordé au féminin."],
+    ["Je regarde la télé. Remplace « la télé » par un pronom et mets la phrase à la forme négative. Commence par : Je", "je ne la regarde pas", "Ne + pronom + verbe + pas."],
+    ["Je pense à mon frère. Remplace « à mon frère » par un pronom tonique (personne). Commence par : Je pense", "je pense à lui", "Penser à + personne : à + pronom tonique."],
+    ["Remets dans l’ordre en commençant par « Je » : lui / ai / téléphoné / hier / je", "je lui ai téléphoné hier", "Pronom devant l’auxiliaire ; hier à la fin."]
+  ],
+  yen: [
+    ["Je vais à Genève demain. Remplace « à Genève » par un pronom. Commence par : J’", "j’y vais demain|j'y vais demain", "Aller à + lieu : y."],
+    ["Je bois du café le matin. Remplace « du café » par un pronom. Commence par : J’", "j’en bois le matin|j'en bois le matin", "Du + nom : en."],
+    ["J’ai trois frères. Remplace « frères » par un pronom et garde le chiffre. Commence par : J’", "j’en ai trois|j'en ai trois", "Avec un nombre, on garde le chiffre après en."],
+    ["Réponds par « oui » avec y et en, sans répéter le nom : Il y a des places libres ?", "oui, il y en a|oui il y en a", "Y et en ensemble seulement dans il y en a."],
+    ["Tu as du temps ? Réponds par « non » avec un pronom (n’écris pas « du temps »). Commence par : Non,", "non, je n’en ai pas|non je n’en ai pas|non, je n'en ai pas|non je n'en ai pas", "Négation : je n’en ai pas."],
+    ["Nous avons parlé de ce projet. Remplace « de ce projet » par un pronom. Commence par : Nous", "nous en avons parlé", "Parler de + chose : en, avant l’auxiliaire."]
+  ],
+  doubles: [
+    ["Elle prête sa voiture à son frère. Remplace les deux compléments par des pronoms. Commence par : Elle", "elle la lui prête", "COD (la) avant COI (lui) à la 3e personne."],
+    ["Il offre des fleurs à sa mère. Remplace les deux compléments par des pronoms. Commence par : Il", "il lui en offre", "Des fleurs = en ; à sa mère = lui ; lui avant en."],
+    ["Je t’ai donné les clés. Remplace « les clés » par un pronom. Commence par : Je", "je te les ai données", "Le COD les est avant le participe : données (féminin pluriel)."],
+    ["Vous montrez votre badge au gardien. Remplace les deux compléments par des pronoms. Commence par : Vous", "vous le lui montrez", "Le badge = le ; au gardien = lui."],
+    ["Remets dans l’ordre en commençant par « Je » : en / te / donne / je / deux (avec élision)", "je t’en donne deux|je t'en donne deux", "Te + en devient t’en devant la voyelle."],
+    ["Il ne donne pas son numéro à ses clients. Remplace les deux compléments par des pronoms. Commence par : Il", "il ne le leur donne pas", "Ne + le + leur + verbe + pas."]
+  ],
+  relatifs: [
+    ["Relie avec « qui » : J’ai un collègue. Il travaille à Genève. Commence par : J’ai un collègue", "j’ai un collègue qui travaille à genève|j'ai un collègue qui travaille à genève", "Qui est le sujet de travaille."],
+    ["Relie avec « dont » : Voici le livre. Je t’ai parlé de ce livre. Commence par : Voici le livre", "voici le livre dont je t’ai parlé|voici le livre dont je t'ai parlé", "Parler de : dont."],
+    ["Relie avec « où » : C’est la ville. J’habite dans cette ville. Commence par : C’est la ville", "c’est la ville où j’habite|c'est la ville où j'habite", "Où remplace un lieu."],
+    ["Relie avec « que » : Le film était long. Nous avons vu ce film hier. Commence par : Le film", "le film que nous avons vu hier était long", "Que remplace le COD (ce film)."],
+    ["Relie avec « dont » : Le projet est intéressant. Je m’occupe de ce projet. Commence par : Le projet", "le projet dont je m’occupe est intéressant|le projet dont je m'occupe est intéressant", "S’occuper de : dont."],
+    ["Relie avec « que » : Les photos sont belles. J’ai pris ces photos à Rome. Commence par : Les photos", "les photos que j’ai prises à rome sont belles|les photos que j'ai prises à rome sont belles", "Le COD (que, reprenant photos) est avant le participe : prises."]
+  ],
+  relief: [
+    ["Le calme me plaît ici. Mets en relief « le calme ». Commence par : Ce qui", "ce qui me plaît ici, c’est le calme|ce qui me plaît ici c’est le calme|ce qui me plaît ici, c'est le calme|ce qui me plaît ici c'est le calme", "Ce qui remplace le sujet."],
+    ["J’aime la musique classique. Mets en relief « la musique classique ». Commence par : Ce que", "ce que j’aime, c’est la musique classique|ce que j’aime c’est la musique classique|ce que j'aime, c'est la musique classique|ce que j'aime c'est la musique classique", "Ce que remplace le COD."],
+    ["J’ai besoin de repos. Mets en relief « de repos ». Commence par : Ce dont", "ce dont j’ai besoin, c’est de repos|ce dont j’ai besoin c’est de repos|ce dont j’ai besoin, c’est du repos|ce dont j’ai besoin c’est du repos", "Avoir besoin de : ce dont. On peut garder « de » (c’est de repos) ou dire c’est du repos."],
+    ["Marie a organisé la fête. Mets en relief « Marie ». Commence par : C’est Marie", "c’est marie qui a organisé la fête|c'est marie qui a organisé la fête", "C’est + sujet + qui."],
+    ["Je cherche ce livre. Mets en relief « ce livre ». Commence par : C’est ce livre", "c’est ce livre que je cherche|c'est ce livre que je cherche", "C’est + COD + que."],
+    ["Je pense à mes vacances. Mets en relief « mes vacances ». Commence par : Ce à quoi", "ce à quoi je pense, c’est à mes vacances|ce à quoi je pense c’est à mes vacances|ce à quoi je pense, c’est mes vacances|ce à quoi je pense c’est mes vacances|ce à quoi je pense, ce sont mes vacances|ce à quoi je pense ce sont mes vacances", "Penser à quelque chose : ce à quoi. Comme dans le cours (Ce à quoi elle pense, c’est son avenir), le « à » après c’est est facultatif."]
+  ],
+  opinions: [
+    ["Je crois qu’il vient. Mets à la forme négative. Commence par : Je ne crois pas", "je ne crois pas qu’il vienne|je ne crois pas qu'il vienne", "Je ne crois pas que + subjonctif."],
+    ["Je pense que le télétravail est utile. Mets à la forme négative. Commence par : Je ne pense pas", "je ne pense pas que le télétravail soit utile", "Être au subjonctif : soit."],
+    ["Je trouve que c’est normal. Mets à la forme négative. Commence par : Je ne trouve pas", "je ne trouve pas que ce soit normal", "C’est devient ce soit au subjonctif."],
+    ["Je suis sûr que vous avez raison. Mets à la forme négative. Commence par : Je ne suis pas", "je ne suis pas sûr que vous ayez raison|je ne suis pas sûre que vous ayez raison", "Avoir au subjonctif : vous ayez."],
+    ["Je pense que le projet est utile. Remplace « Je pense que » par une expression sans « que ». Commence par : Selon moi", "selon moi, le projet est utile|selon moi le projet est utile", "Selon moi + indicatif, sans que."],
+    ["Je pense que tous les enfants ont besoin d’un téléphone portable. Mets à la forme négative. Commence par : Je ne pense pas", "je ne pense pas que tous les enfants aient besoin d’un téléphone portable|je ne pense pas que tous les enfants aient besoin d’un portable", "Je ne pense pas que + subjonctif : ils ont → qu’ils aient."]
+  ],
+  subjonctif: [
+    ["Nous partons. Commence par : Il faut que nous", "il faut que nous partions", "Partir : nous partions."],
+    ["Tu viens à la réunion. Commence par : Je veux que tu", "je veux que tu viennes à la réunion", "Venir : que tu viennes."],
+    ["Vous faites vos devoirs. Commence par : Il faut que vous", "il faut que vous fassiez vos devoirs", "Faire : que vous fassiez."],
+    ["Tu es ici. Commence par : Je suis content que tu", "je suis content que tu sois ici|je suis contente que tu sois ici", "Être : que tu sois."],
+    ["Je vais au CERN. Commence par : Il est important que j’", "il est important que j’aille au cern|il est important que j'aille au cern", "Aller : que j’aille."],
+    ["Relie avec « pour que » : J’explique lentement. Tu comprends. Commence par : J’explique", "j’explique lentement pour que tu comprennes|j'explique lentement pour que tu comprennes", "Pour que + subjonctif : que tu comprennes."]
+  ],
+  conditionnel: [
+    ["Fais une pause. Transforme l’ordre en conseil poli. Commence par : Tu devrais", "tu devrais faire une pause", "Devoir au conditionnel + infinitif."],
+    ["Parle plus lentement. Transforme l’ordre en conseil poli. Commence par : Tu pourrais", "tu pourrais parler plus lentement", "Pouvoir au conditionnel + infinitif."],
+    ["Repose-toi. Donne un conseil. Commence par : À ta place, je", "à ta place, je me reposerais|à ta place je me reposerais|à ta place, je me reposerais un peu|à ta place je me reposerais un peu", "Verbe pronominal : avec je, se devient me (je me reposerais)."],
+    ["Je veux un café. Dis-le poliment. Commence par : Je voudrais", "je voudrais un café", "Vouloir au conditionnel : voudrais."],
+    ["Tu ne m’as pas prévenu. Fais un reproche. Commence par : Tu aurais", "tu aurais dû me prévenir|tu aurais pu me prévenir", "Reproche : conditionnel passé de devoir (ou pouvoir) + infinitif."],
+    ["Ouvrez la fenêtre. Demande poliment. Commence par : Pourriez-vous", "pourriez-vous ouvrir la fenêtre|pourriez-vous ouvrir la fenêtre, s’il vous plaît|pourriez-vous ouvrir la fenêtre s’il vous plaît", "Pourriez-vous + infinitif."]
+  ],
+  choisir: [
+    ["Je suis arrivé en retard. J’ai raté le train. Relie les phrases avec « parce que » et le plus-que-parfait. Commence par : Je suis arrivé en retard parce que", "je suis arrivé en retard parce que j’avais raté le train|je suis arrivé en retard parce que j'avais raté le train", "L’action antérieure (rater le train) est au plus-que-parfait."],
+    ["Il était fatigué. Il n’a pas dormi. Relie avec « parce que » et le plus-que-parfait. Commence par : Il était fatigué parce qu’il", "il était fatigué parce qu’il n’avait pas dormi|il était fatigué parce qu'il n'avait pas dormi", "N’avait pas dormi : plus-que-parfait négatif."],
+    ["Il pleut quand je sors. Mets au passé (imparfait et passé composé). Commence par : Il pleuvait quand", "il pleuvait quand je suis sorti|il pleuvait quand je suis sortie", "Le décor est à l’imparfait, l’action ponctuelle au passé composé."],
+    ["Elle est partie du bureau. Elle a fini son travail avant. Relie avec « parce que ». Commence par : Elle est partie du bureau parce qu’elle", "elle est partie du bureau parce qu’elle avait fini son travail|elle est partie du bureau parce qu'elle avait fini son travail", "Avait fini : plus-que-parfait, action antérieure."],
+    ["Quand je suis arrivé à la gare, le train est déjà parti. Mets la phrase au bon temps. Commence par : Quand je suis arrivé à la gare, le train", "quand je suis arrivé à la gare, le train était déjà parti|quand je suis arrivé à la gare le train était déjà parti", "Le train est parti avant mon arrivée : plus-que-parfait."],
+    ["Écris au passé : Quand je suis petit, j’habite à Lyon. Commence par : Quand j’étais", "quand j’étais petit, j’habitais à lyon|quand j’étais petite, j’habitais à lyon|quand j’étais petit j’habitais à lyon|quand j’étais petite j’habitais à lyon", "Habitude ou situation passée : imparfait."]
+  ],
+  pqp: [
+    ["Il a fini avant mon arrivée. Mets au plus-que-parfait. Commence par : Il avait", "il avait fini avant mon arrivée", "Avoir à l’imparfait + participe."],
+    ["Elle est sortie quand j’ai appelé. Exprime l’antériorité avec « déjà ». Commence par : Quand j’ai appelé, elle", "quand j’ai appelé, elle était déjà sortie|quand j’ai appelé elle était déjà sortie", "Être à l’imparfait + sortie, accord avec elle."],
+    ["Nous nous sommes rencontrés à Genève. Mets au plus-que-parfait. Commence par : Nous nous", "nous nous étions rencontrés à genève|nous nous étions rencontrées à genève", "Verbe pronominal : être à l’imparfait + participe."],
+    ["J’ai écrit la lettre. Mets au plus-que-parfait et remplace « la lettre » par un pronom. Commence par : Je", "je l’avais écrite|je l'avais écrite", "Le COD la est avant le participe : écrite."],
+    ["Je n’ai pas réussi l’examen. Je n’ai pas révisé. Relie avec « parce que » et le plus-que-parfait. Commence par : Je n’ai pas réussi l’examen parce que", "je n’ai pas réussi l’examen parce que je n’avais pas révisé|je n'ai pas réussi l'examen parce que je n'avais pas révisé", "Cause antérieure : plus-que-parfait."],
+    ["Avant de venir au CERN, je ne travaille jamais à l’étranger. Mets au plus-que-parfait. Commence par : Avant de venir au CERN, je", "avant de venir au cern, je n’avais jamais travaillé à l’étranger|avant de venir au cern je n’avais jamais travaillé à l’étranger", "N’avais jamais travaillé : plus-que-parfait négatif."]
+  ],
+  adverbes: [
+    ["Il attend avec patience. Remplace « avec patience » par un adverbe en -ment. Commence par : Il attend", "il attend patiemment", "Patient → patiemment."],
+    ["Elle travaille d’une manière rapide. Remplace « d’une manière rapide » par un adverbe en -ment. Commence par : Elle travaille", "elle travaille rapidement", "Rapide + ment."],
+    ["Elle s’habille avec élégance. Remplace « avec élégance » par un adverbe en -ment. Commence par : Elle s’habille", "elle s’habille élégamment|elle s'habille élégamment", "Élégant → élégamment."],
+    ["Le bruit augmente de manière constante. Remplace « de manière constante » par un adverbe en -ment. Commence par : Le bruit augmente", "le bruit augmente constamment", "Constant → constamment."],
+    ["Il vient d’une manière fréquente. Remplace « d’une manière fréquente » par un adverbe en -ment. Commence par : Il vient", "il vient fréquemment", "Fréquent → fréquemment."],
+    ["Elle parle d’une manière claire. Remplace « d’une manière claire » par un adverbe en -ment. Commence par : Elle parle", "elle parle clairement", "Clair + e + ment."]
+  ]
+};

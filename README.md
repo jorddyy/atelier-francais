@@ -14,6 +14,7 @@ Open http://localhost:8000. Serve `dist` as the web root so the app manifest pat
 
 ```sh
 node --check dist/content.js
+node --check dist/exam-content.js
 node --check dist/app.js
 ```
 
@@ -29,6 +30,7 @@ Buildless static revision website. Hosting directory: `dist`.
 ## Extend
 
 - `dist/content.js`: topic modules, source references, lesson tags, questions and verb data.
+- `dist/exam-content.js`: exam preparation: `oralGuide`, `oralTopics`, `writingGuide` and `extraQuestions` (shapes in `AGENTS.md`). Optional at runtime; app.js tests each global with `typeof`.
 - `dist/app.js`: navigation, search, exercises and conjugation rendering.
 - `dist/style.css`: responsive layouts and print styles.
 - Preserve module IDs to keep bookmarks working. Add lesson references to existing topics when extending them.
@@ -69,3 +71,14 @@ At that update, scope was Cours 1–14, based on FrenchB1m_lesson1-14.tar. This 
 21 modules, lessons 1–16, 27 verbs and seven verb forms. New IDs: `relatifs`, `relief`, `demonstratifs`, `adverbes`, `generations`. Existing IDs and the separate `futur` supplement are preserved. Source comparison found 41 files unchanged in place, 14 identical files under renamed lesson folders, one revised DOCX with no substantive exam change, and nine added paths (including two identical copies of homework 7). No existing material moved to another lesson number. The two relative-pronoun handouts are different and both were reviewed, including their embedded images.
 
 `SOURCE_MANIFEST.json` is the current file/lesson map. Do not treat historical counts below/above as current totals. Original documents, lyrics, student lists and listening/video answers are not included in the repository. New exercises are independently authored. The live Google Sheet remains the separate progress record; this website update does not assess the learner or change tracker evidence.
+
+## Exam preparation, 15 November 2026
+
+The exam is half oral, so the notebook now has an "Examen" group (sidebar, and chapter 04 on the home page): Repères pour le test (`#test`), Préparer l’oral (`#oral`, topics at `#oral/<id>`), Préparer la rédaction (`#ecrire`) and Quiz mélangé (`#quiz`).
+
+- Oral: monologue skeleton, connector bank, the marking grid as a self-check list with points, preparation tips, a random topic whose arguments, vocabulary, opening sentence and examiner questions open on demand, and 7:00 / 3:00 timers.
+- Writing: the two task types as tabs (consigne, plan, formulas, model answer in a closed `<details>`), a proofreading checklist, a random subject, a draft area with a 120–150 word counter. Drafts are neither saved nor graded.
+- Fiches with `extraQuestions` show a "Transforme" block after "À toi !".
+- The quiz draws 20 questions from all fiches (optionally by group or lesson range), one at a time, with the source fiche linked; it ends with the score and the fiches to revisit.
+
+Still no saved state and no listening exercises. QA for this update: syntax checks; headless Chromium at 360, 390 and 1280 px for the home, oral (topic drawn, aids open, timer finished), writing, quiz (mid-quiz and result), a fiche with Transforme, `#test`, the mobile menu, search, lesson filter and print media; no horizontal overflow found. Not tested on a physical phone.
