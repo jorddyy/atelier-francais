@@ -67,3 +67,304 @@ modules.find(m=>m.id==='expressions').source+=' ; Cours 8 : MICHELIN.docx p. 1 (
 
 modules.push({"id": "futur", "n": "16", "title": "Parler du futur", "subtitle": "Futur proche et futur simple", "lessons": [], "tag": "Complément de révision", "color": "blue", "intro": "Exprimer un projet, une prévision ou une promesse. Un rappel utile avant le conditionnel, distinct des leçons fournies.", "sections": [["Le futur proche", "<div class=\"formula\">aller au présent <span>+</span> infinitif</div><div class=\"example\">Je <b>vais préparer</b> la réunion.<br>Nous <b>allons partir</b> demain.<br>Elle <b>va se lever</b> tôt.<br>Je <b>ne vais pas lui écrire</b> ce soir.</div><p>Aller : vais, vas, va, allons, allez, vont. Le second verbe reste à l’infinitif. Un pronom complément se place devant cet infinitif : <b>je vais le lui envoyer</b>.</p>"], ["Le futur simple", "<div class=\"formula\">radical du futur <span>+</span> ai · as · a · ons · ez · ont</div><p>Pour beaucoup de verbes, le radical est l’infinitif. Pour les verbes en -re, enlève le e final.</p><table><tr><th>Verbe</th><th>Je / j’</th><th>Nous</th></tr><tr><td>parler</td><td>parlerai</td><td>parlerons</td></tr><tr><td>finir</td><td>finirai</td><td>finirons</td></tr><tr><td>prendre</td><td>prendrai</td><td>prendrons</td></tr></table><p>Exemple complet : je parlerai, tu parleras, il parlera, nous parlerons, vous parlerez, elles parleront.</p>"], ["Les bases irrégulières", "<p><b>être → ser- ; avoir → aur- ; aller → ir- ; faire → fer- ; pouvoir → pourr- ; vouloir → voudr- ; devoir → devr- ; savoir → saur- ; venir → viendr- ; voir → verr- ; recevoir → recevr- ; courir → courr-.</b></p><div class=\"example\">Je <b>serai</b> au bureau. Tu <b>auras</b> le temps.<br>Nous <b>pourrons</b> en discuter. Ils <b>viendront</b> demain.</div><p>Orthographe : <b>j’appellerai</b>, avec deux l ; pour le verbe pronominal : <b>je m’appellerai</b>. Consulte les 27 tableaux du <a href=\"#verbes\">répertoire</a>.</p>"], ["Choisir sans règle artificielle", "<p>Le futur proche présente souvent une intention ou une évolution liée à la situation actuelle : <b>regarde ces nuages, il va pleuvoir</b>. Le futur simple sert notamment à annoncer, prévoir ou promettre : <b>je te répondrai demain</b>.</p><p>Ce n’est pas une opposition stricte entre bientôt et longtemps après. <b>Je vais déménager l’année prochaine</b> est naturel, tout comme <b>je t’appellerai dans cinq minutes</b>. Les deux formes sont parfois possibles, selon le point de vue.</p>"], ["Futur ou conditionnel ?", "<table><tr><th>Futur simple</th><th>Conditionnel présent</th></tr><tr><td>je pourrai</td><td>je pourrais</td></tr><tr><td>nous serons</td><td>nous serions</td></tr><tr><td>vous viendrez</td><td>vous viendriez</td></tr></table><p>Même base, terminaisons différentes. <b>Je viendrai demain</b> annonce ma venue ; <b>je viendrais si j’avais le temps</b> pose une condition.</p><div class=\"example\"><b>Si j’ai le temps, je viendrai.</b><br><b>Quand tu arriveras, nous commencerons.</b></div><p>Pour une condition réalisable : si + présent, puis futur dans la principale. Dans ce schéma, pas de futur après si. Quand peut prendre le futur pour un événement à venir.</p>"], ["Réutiliser sans modèle", "<p>Décris trois projets pour la semaine prochaine. Fais ensuite une promesse et explique ce que tu feras si une réunion est annulée. Ces productions libres demandent un retour en séance.</p><p>Le <b>futur antérieur</b> (j’aurai terminé) est un autre temps, annoncé dans le programme mais sans unité dédiée dans les cours fournis. Il n’est pas développé dans ce rappel.</p>"]], "en": "The near future is aller in the present plus an infinitive. The simple future shares its stem with the conditional but has different endings. Near versus distant time is not a strict selection rule. This is supplementary revision, not evidence of a taught lesson or of your proficiency.", "source": "Complément ajouté le 3 novembre 2026. Cours 12 : LE CONDITIONNEL 1 (1).pdf p. 1 montre le futur d’aimer et utilise sa base ; aucune unité autonome sur le futur n’est fournie. <a href=\"https://apprendre.tv5monde.com/fr/aides/grammaire-le-futur-simple\" target=\"_blank\" rel=\"noopener\">TV5MONDE : futur simple, niveau A2</a>. Exercices nouveaux.", "q": [["Au futur simple : demain, nous ___ (être) au CERN.", "serons", "Être : ser- + ons."], ["Au futur simple : vous ___ (recevoir) une réponse.", "recevrez", "Recevoir : recevr- + ez."], ["Au futur simple : je ___ (pouvoir) venir demain.", "pourrai", "Futur : pourrai ; conditionnel : pourrais."], ["Au futur proche : elle ___ (se lever) tôt.", "va se lever", "Aller au présent + infinitif pronominal."], ["Au futur simple : si tu as le temps, tu ___ (venir) avec nous.", "viendras", "Si + présent ; futur dans la proposition principale."], ["Quand vous ___ (arriver, futur simple), nous commencerons.", "arriverez", "Un futur est possible après quand."]]});
 modules.find(m=>m.id==='conditionnel').sections.push(['Revoir la base du futur', '<p>Besoin du rappel ? Consulte <a href="#futur">Parler du futur</a> : futur proche, futur simple et différence entre je pourrai et je pourrais.</p>']);
+
+// Lessons 15–16, verified against the 15 November 2026 archive.
+modules.push(...[
+  {
+    "id": "relatifs",
+    "n": "17",
+    "title": "Les pronoms relatifs",
+    "subtitle": "Qui, que, dont, où",
+    "lessons": [
+      15
+    ],
+    "tag": "Grammaire",
+    "color": "teal",
+    "intro": "Relier deux idées et préciser de qui ou de quoi on parle.",
+    "sections": [
+      [
+        "Choisir selon le rôle dans la relative",
+        "<table><tr><th>Rôle</th><th>Pronom</th><th>Exemple</th></tr><tr><td>Sujet du verbe</td><td>qui</td><td>Le tram qui arrive va à la gare.</td></tr><tr><td>Complément direct</td><td>que / qu’</td><td>Le tram que je prends est plein.</td></tr><tr><td>Complément construit avec de</td><td>dont</td><td>Le projet dont je parle commence lundi.</td></tr><tr><td>Lieu ou temps</td><td>où</td><td>Le quartier où je vis ; le jour où je suis arrivé.</td></tr></table><p><b>Qui et que</b> peuvent reprendre une personne ou une chose. Choisis selon leur fonction, pas selon « personne ou objet ». Dans <b>le collègue que Léa connaît</b>, Léa est le sujet de connaît ; que remplace le collègue, son COD.</p>"
+      ],
+      [
+        "Retrouver la construction de départ",
+        "<div class=\"example\">J’ai besoin de ce document → le document <b>dont</b> j’ai besoin.<br>Je suis satisfait de ce résultat → le résultat <b>dont</b> je suis satisfait.<br>J’apprécie le calme de ce quartier → le quartier <b>dont</b> j’apprécie le calme.</div><p>Dont peut reprendre un complément de verbe, d’adjectif ou de nom. Évite de reprendre <b>le même complément</b> une seconde fois avec en ou un possessif : <b>le projet dont je parle</b>, pas « dont j’en parle » ; <b>le quartier dont j’apprécie le calme</b>, pas « dont j’apprécie son calme ».</p><p>Autre emploi rencontré dans la fiche : <b>trois collègues, dont deux francophones</b> signifie que deux font partie de ce groupe.</p>"
+      ],
+      [
+        "Élision, préposition et accord",
+        "<p><b>Que</b> devient <b>qu’</b> devant une voyelle ou un h muet : le livre qu’elle lit. Le <b>qui relatif</b> ne s’élide pas : le livre qui est ici.</p><p>Avec une préposition et une personne : <b>la collègue avec qui je travaille</b>. La préposition reste celle de la construction d’origine. Cette distinction est reprise dans le devoir 7.</p><p>Rappel d’accord : <b>les lettres que j’ai écrites</b>. Que reprend un COD féminin pluriel placé avant avoir. Compare avec <a href=\"#doubles\">les doubles pronoms</a>.</p>"
+      ],
+      [
+        "Définir sans traduire",
+        "<p>Décris un objet de ton bureau, un lieu à Genève ou une personne sans donner son nom. Utilise deux relatives : <b>c’est un objet qui… et que…</b>, <b>c’est un lieu où…</b>, <b>c’est une chose dont…</b>. Fais deviner ce que tu décris. Activité nouvelle, sans correction automatique.</p>"
+      ]
+    ],
+    "en": "Choose by grammatical function inside the relative clause. Dont replaces a de complement, so do not repeat that same complement with en or a possessive. This does not ban every possessive anywhere in a clause containing dont.",
+    "source": "Cours 15 : PRONOMS RELATIFS (1).docx, pp. 1–3 ; PRONOMS RELATIFS.docx, p. 2 ; B1- DEVOIR 7.docx, construction avec préposition. Pagination des DOCX rendus pour cette vérification. Exemples et exercices nouveaux.",
+    "q": [
+      [
+        "Le collègue ___ travaille avec moi habite à Meyrin.",
+        "qui",
+        "Qui est le sujet de travaille."
+      ],
+      [
+        "Voici le livre ___ tu cherches.",
+        "que",
+        "Tu cherches le livre : COD."
+      ],
+      [
+        "C’est le document ___ nous avons besoin.",
+        "dont",
+        "Avoir besoin de ce document."
+      ],
+      [
+        "Je me souviens du jour ___ nous avons emménagé.",
+        "où",
+        "Où reprend un moment."
+      ],
+      [
+        "C’est la collègue avec ___ je prépare la réunion.",
+        "qui",
+        "Avec qui reprend une personne ; on garde avec."
+      ],
+      [
+        "Les lettres que j’ai ___ sont sur la table. (écrire, participe passé)",
+        "écrites",
+        "Que reprend lettres, COD féminin pluriel placé avant avoir."
+      ]
+    ]
+  },
+  {
+    "id": "relief",
+    "n": "18",
+    "title": "La mise en relief",
+    "subtitle": "C’est… qui / que ; ce qui, ce que, ce dont",
+    "lessons": [
+      15
+    ],
+    "tag": "Grammaire",
+    "color": "teal",
+    "intro": "Mettre une personne, une chose ou une idée au premier plan.",
+    "sections": [
+      [
+        "C’est… qui ou c’est… que",
+        "<div class=\"example\">Léa organise la réunion → <b>c’est Léa qui</b> organise la réunion.<br>Je préfère le train → <b>c’est le train que</b> je préfère.</div><p>Qui reprend le sujet ; que reprend le complément direct. La fonction reste la même que dans la phrase de départ.</p><p>Avec un complément introduit par une préposition, on peut garder celle-ci : <b>c’est à ce projet que je pense</b>. Compare avec « ce à quoi » ci-dessous. Ce modèle avec préposition est un complément explicatif.</p>"
+      ],
+      [
+        "Ce qui, ce que, ce dont, ce à quoi",
+        "<table><tr><th>Construction de départ</th><th>Mise en relief</th></tr><tr><td>Ce travail me plaît.</td><td>Ce qui me plaît, c’est ce travail.</td></tr><tr><td>Je cherche une solution.</td><td>Ce que je cherche, c’est une solution.</td></tr><tr><td>J’ai besoin de repos.</td><td>Ce dont j’ai besoin, c’est du repos.</td></tr><tr><td>Je pense à mon départ.</td><td>Ce à quoi je pense, c’est mon départ.</td></tr></table><p>Ces formes reprennent une idée sans nom exprimé juste avant. Pour choisir, reconstruis le verbe : <b>plaire à quelqu’un</b>, <b>chercher quelque chose</b>, <b>avoir besoin de</b>, <b>penser à</b>.</p>"
+      ],
+      [
+        "Changer l’ordre sans changer le sens",
+        "<div class=\"example\"><b>Ce qui me motive, c’est</b> la recherche.<br>La recherche, <b>c’est ce qui</b> me motive.<br><b>Ce que je préfère, c’est</b> travailler en équipe.</div><p>Emploie ces structures pour préciser ton opinion ou une priorité. Inutile de les mettre dans chaque phrase. Activité nouvelle : dis ce qui te plaît dans ton travail, ce que tu voudrais améliorer et ce dont tu as besoin pour progresser.</p>"
+      ]
+    ],
+    "en": "The choice follows the verb construction: ce qui is the subject, ce que the direct object, ce dont a de complement, and ce à quoi an à complement referring to an idea or thing. Keep the original meaning when adding emphasis.",
+    "source": "Cours 15 : PRONOMS RELATIFS.docx, p. 1, tableau de mise en relief et questions orales. Exemples et exercices nouveaux ; le modèle c’est à… que est un complément explicatif.",
+    "q": [
+      [
+        "C’est Amélie ___ prépare le dossier.",
+        "qui",
+        "Amélie est le sujet de prépare."
+      ],
+      [
+        "C’est ce quartier ___ je préfère.",
+        "que",
+        "Je préfère ce quartier : COD."
+      ],
+      [
+        "Ce ___ me plaît ici, c’est le calme.",
+        "qui",
+        "Ce qui est le sujet de plaît."
+      ],
+      [
+        "Ce ___ je cherche, c’est un logement.",
+        "que",
+        "Chercher quelque chose : COD."
+      ],
+      [
+        "Ce ___ j’ai besoin, c’est d’un peu de temps.",
+        "dont",
+        "Avoir besoin de."
+      ],
+      [
+        "Ce ___ je pense, c’est mon prochain voyage.",
+        "à quoi",
+        "Penser à quelque chose."
+      ]
+    ]
+  },
+  {
+    "id": "demonstratifs",
+    "n": "19",
+    "title": "Les pronoms démonstratifs",
+    "subtitle": "Celui, celle, ceux, celles",
+    "lessons": [
+      15
+    ],
+    "tag": "Grammaire",
+    "color": "teal",
+    "intro": "Désigner sans répéter le nom.",
+    "sections": [
+      [
+        "Garder le genre et le nombre",
+        "<table><tr><th></th><th>Masculin</th><th>Féminin</th></tr><tr><td>Singulier</td><td>celui</td><td>celle</td></tr><tr><td>Pluriel</td><td>ceux</td><td>celles</td></tr></table><div class=\"example\">Je compare deux appartements. <b>Celui qui</b> est près du tram me plaît.<br>Ces chaussures sont confortables, mais <b>celles que</b> j’ai essayées hier étaient trop petites.</div><p>Le pronom reprend le genre et le nombre du <b>nom remplacé</b>. Une relative permet de préciser lequel ou lesquels.</p>"
+      ],
+      [
+        "Distinguer deux possibilités",
+        "<div class=\"example\">Quel sac préfères-tu ? <b>Celui-ci ou celui-là ?</b><br>Quelle veste choisis-tu ? <b>Celle-ci</b> est plus légère.</div><p>Les formes en <b>-ci / -là</b> servent à distinguer des personnes ou des choses selon le contexte. Elles s’écrivent avec un trait d’union.</p><p>Complément utile : <b>celui de Léa</b>, <b>celle de mon collègue</b>. Les formes simples celui, celle, ceux, celles sont normalement accompagnées d’une précision : une relative ou un complément en de.</p>"
+      ],
+      [
+        "Ne pas confondre déterminant et pronom",
+        "<div class=\"example\"><b>Ce livre</b> est intéressant. → Je préfère <b>celui-ci</b>.<br><b>Cette idée</b> me plaît. → Je préfère <b>celle que</b> tu as proposée.</div><p>Ce, cet, cette, ces accompagnent un nom. Celui, celle, ceux, celles le remplacent. Ce contraste est un rappel complémentaire.</p>"
+      ]
+    ],
+    "en": "Match the noun being replaced, not the owner or speaker. The homework contains a song-listening task, but this page only covers its demonstrative-pronoun teaching and uses new examples, without giving song answers.",
+    "source": "Cours 15 et dossier B1- DEVOIRS : B1- DEVOIR 7.docx, section « Les pronoms démonstratifs ». Les deux copies sont identiques. Exemples et exercices nouveaux ; de + nom et le contraste déterminant/pronom sont des compléments.",
+    "q": [
+      [
+        "Parmi ces deux livres, je prends ___ qui parle de Genève.",
+        "celui",
+        "Livre : masculin singulier."
+      ],
+      [
+        "De toutes ces vestes, je préfère ___ que tu portes.",
+        "celle",
+        "Veste : féminin singulier."
+      ],
+      [
+        "Les dossiers urgents sont ___ qui sont sur mon bureau.",
+        "ceux",
+        "Dossiers : masculin pluriel."
+      ],
+      [
+        "Ces clés sont les miennes ; ___ qui sont près de la porte sont à Léa.",
+        "celles",
+        "Clés : féminin pluriel."
+      ],
+      [
+        "Tu préfères cette lampe-ci ou cette lampe-là ? → Tu préfères ___ ou celle-là ?",
+        "celle-ci",
+        "Lampe : féminin singulier ; trait d’union avec -ci."
+      ]
+    ]
+  },
+  {
+    "id": "adverbes",
+    "n": "20",
+    "title": "Les adverbes",
+    "subtitle": "Formation en -ment et emploi",
+    "lessons": [
+      16
+    ],
+    "tag": "Grammaire",
+    "color": "teal",
+    "intro": "Préciser comment, à quelle fréquence ou avec quelle intensité on agit.",
+    "sections": [
+      [
+        "Former les adverbes en -ment",
+        "<table><tr><th>Cas fréquent</th><th>Formation</th><th>Exemples</th></tr><tr><td>Adjectif ordinaire</td><td>féminin + ment</td><td>lent → lente → lentement ; doux → douce → doucement ; heureux → heureusement ; sec → sèchement</td></tr><tr><td>Masculin terminé par une voyelle prononcée</td><td>masculin + ment</td><td>poli → poliment ; absolu → absolument ; modéré → modérément ; vrai → vraiment</td></tr><tr><td>-ant</td><td>-amment</td><td>suffisant → suffisamment ; constant → constamment</td></tr><tr><td>-ent</td><td>souvent -emment</td><td>récent → récemment ; fréquent → fréquemment ; prudent → prudemment</td></tr></table><p>Les terminaisons <b>-amment</b> et <b>-emment</b> se prononcent de la même façon. Ces règles ont des exceptions ; ce ne sont pas des recettes universelles.</p>"
+      ],
+      [
+        "Les formes à retenir",
+        "<p><b>Gentil → gentiment ; gai → gaiement ; précis → précisément ; profond → profondément ; énorme → énormément ; intense → intensément.</b></p><div class=\"example\">Peux-tu expliquer cela <b>précisément</b> ?<br>Elle m’a répondu <b>gentiment</b>.<br>Il a <b>énormément</b> travaillé.</div><p>Compléments utiles : <b>bon → bien</b>, <b>mauvais → mal</b>, <b>lent → lentement</b> mais <b>rapide → rapidement</b> ou <b>vite</b>. Certains adjectifs en -ent suivent une autre formation, par exemple <b>lent → lentement</b>.</p>"
+      ],
+      [
+        "Adjectif ou adverbe ?",
+        "<div class=\"example\">Cette explication est <b>claire</b>. → Elle explique <b>clairement</b>.<br>Ces réponses sont <b>précises</b>. → Ils répondent <b>précisément</b>.</div><p>Un adjectif décrit le nom et s’accorde avec lui. Les adverbes de manière présentés ici sont invariables. Tous les adverbes ne se terminent pas par -ment : <b>souvent, rarement, bien, vite</b>.</p><p>Repère de placement, en complément de la fiche : <b>je comprends bien ; j’ai bien compris ; elle parle très clairement</b>. La place dépend de l’adverbe et de ce qu’il modifie : évite une règle unique pour tous les cas.</p>"
+      ],
+      [
+        "Réutiliser les nuances",
+        "<p>Décris tes habitudes de travail avec un adverbe de fréquence, puis explique comment tu prépares une présentation. Utilise par exemple <b>souvent, rarement, régulièrement, soigneusement</b>. Activité nouvelle, sans correction automatique.</p>"
+      ]
+    ],
+    "en": "The handout gives common formation patterns. We avoid treating -ent → -emment as universal (lentement is an obvious exception). The adjective/adverb contrast, placement guidance and extra examples are supporting explanations, not additional teacher worksheets.",
+    "source": "Cours 16 : LES ADVERBES (1).pdf, p. 1 (règles dans une image) et p. 2 (application). Exemples et exercices nouveaux, distincts des sept phrases de la fiche.",
+    "q": [
+      [
+        "Elle répond ___ aux visiteurs. (poli → adverbe)",
+        "poliment",
+        "Poli se termine par une voyelle prononcée : poliment."
+      ],
+      [
+        "Peux-tu parler plus ___ ? (lent → adverbe)",
+        "lentement",
+        "Lente + ment."
+      ],
+      [
+        "Nous avons ___ changé de bureau. (récent → adverbe)",
+        "récemment",
+        "Récent → récemment, avec deux m."
+      ],
+      [
+        "J’ai ___ de temps pour finir. (suffisant → adverbe)",
+        "suffisamment",
+        "Suffisant → suffisamment, avec deux m."
+      ],
+      [
+        "Il a décrit le problème ___. (précis → adverbe)",
+        "précisément",
+        "Forme à retenir : précisément."
+      ],
+      [
+        "Ils nous ont accueillis ___. (gentil → adverbe)",
+        "gentiment",
+        "Forme particulière : gentiment."
+      ]
+    ]
+  },
+  {
+    "id": "generations",
+    "n": "21",
+    "title": "Les générations et la cohabitation",
+    "subtitle": "Décrire, comparer et nuancer",
+    "lessons": [
+      16
+    ],
+    "tag": "Communication",
+    "color": "teal",
+    "intro": "Discuter des rapports entre générations sans réduire les personnes à des étiquettes.",
+    "sections": [
+      [
+        "Le vocabulaire pour en parler",
+        "<table><tr><th>Mot ou construction</th><th>Exemple nouveau</th></tr><tr><td>une génération ; les rapports familiaux</td><td>Les habitudes varient entre les générations.</td></tr><tr><td>la cohabitation ; cohabiter avec quelqu’un</td><td>Elle cohabite avec une personne plus âgée.</td></tr><tr><td>vivre chez ses parents ; quitter le foyer familial</td><td>Il souhaite quitter le foyer familial.</td></tr><tr><td>s’assumer ; être autonome</td><td>Avec son salaire, elle peut s’assumer financièrement.</td></tr><tr><td>rapprocher / éloigner des personnes</td><td>Une activité commune peut rapprocher les générations.</td></tr></table><p>Vocabulaire complémentaire pour argumenter : <b>l’entraide, la solitude, le partage des tâches, respecter l’intimité de quelqu’un, avoir des habitudes différentes</b>.</p>"
+      ],
+      [
+        "Comparer sans généraliser",
+        "<p>La fiche propose une classification : <b>baby-boomers (1946–1964), génération X (1965–1979), Y (1980–1994), Z (1995–2009), Alpha (2010–2024)</b>. Ce sont les bornes retenues dans le document, pas une classification universelle. Les caractéristiques associées sont des pistes à discuter, pas des vérités sur chaque personne.</p><div class=\"example\"><b>Selon la fiche</b>, cette génération…<br><b>Cela dépend aussi</b> du milieu social et de l’expérience personnelle.<br><b>On ne peut pas dire que tous</b> les jeunes ont les mêmes habitudes.</div>"
+      ],
+      [
+        "Construire un avis",
+        "<p>Présente la situation, puis un avantage, une difficulté et une condition pour que cela fonctionne. Termine par ton opinion ou une proposition.</p><div class=\"example\">La cohabitation peut réduire la solitude. <b>Cependant</b>, les habitudes sont parfois différentes. <b>Pour que</b> chacun se sente bien, il faut parler des règles de vie.</div><p>Réutilise <a href=\"#opinions\">les expressions d’opinion</a>, <a href=\"#relief\">la mise en relief</a> et les relatives : <b>ce qui me paraît important… ; les personnes qui… ; un logement où…</b>.</p>"
+      ],
+      [
+        "Écriture et discussion",
+        "<p><b>Devoir 8 :</b> choisir un sujet et écrire <b>120–150 mots</b>, avec une introduction, un développement et une conclusion donnant une proposition, une opinion ou une hypothèse. Les sujets portent sur un courriel à propos du reportage ou une réflexion sur les rapports intergénérationnels, notamment dans son pays.</p><p><b>Entraînement nouveau :</b> deux adultes d’âges différents envisagent de partager un logement. Écris à un ami pour discuter de deux avantages, d’une difficulté et d’une règle de vie commune. Vise 120–150 mots. Cette longueur est un repère de devoir, pas une consigne confirmée du test final.</p><p>Les vidéos du cours et du devoir ne sont pas reproduites ni évaluées ici. Les détails du reportage ne sont pas déduits de ses questions.</p>"
+      ]
+    ],
+    "en": "The generational dates are attributed to this handout rather than presented as universal facts. The new writing task stands alone: it does not require watching or guessing the linked videos. The 120–150-word length belongs to homework 8.",
+    "source": "Cours 16 : Les générations.docx, texte et tableau ; B1- DEVOIR 8.docx, p. 1, deux consignes en images. Vidéos non vérifiées, exercices d’écoute exclus. Lexique complémentaire signalé ; entraînement nouveau.",
+    "q": [
+      [
+        "Elle vit encore ___ ses parents.",
+        "chez",
+        "Vivre chez quelqu’un."
+      ],
+      [
+        "Il cohabite ___ une personne plus âgée.",
+        "avec",
+        "Cohabiter avec quelqu’un."
+      ],
+      [
+        "On peut réduire la ___ en partageant un logement. Choisis : solitude / génération.",
+        "solitude",
+        "La solitude : le fait de se sentir ou d’être seul."
+      ],
+      [
+        "Pour que chacun ___ à l’aise, il faut discuter des règles. (être)",
+        "soit",
+        "Pour que + subjonctif."
+      ]
+    ]
+  }
+]);

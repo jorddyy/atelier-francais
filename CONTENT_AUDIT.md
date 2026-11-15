@@ -63,3 +63,29 @@ Validation: syntax checks passed for both JavaScript files; irregular subjunctiv
 ## Future-tense supplement, 3 November 2026
 
 16 modules, 27 verbs and seven verb forms. Module `futur` has no lesson number and appears under Compléments. Cours 12 includes the future of aimer as a comparison for conditional formation, but no standalone future unit was supplied. The supplement covers futur proche/simple and does not expand futur antérieur. Verified persisted course update: 56 files, 14 lessons, 40 existing tracker topics and 13 evidence rows; new supplementary topic 41 is unassessed.
+
+
+## Source update, 15 November 2026
+
+Compared every file in FrenchB1m_lesson1-16.zip with the retained 56-file lesson-1–14 source tree using SHA-256, not just filenames. The new archive has 65 files: 41 unchanged at the same path, 14 byte-identical files under renamed folders, one revised DOCX, and nine added paths. No old file was removed or moved to another lesson number. The changed folder names belong to lessons 10–14; lesson 14 now explicitly mentions opinions/audio. SOURCE_MANIFEST.json records exact paths, lesson numbers, hashes and previous matching paths.
+
+The two homework-7 copies (Cours 15 and B1- DEVOIRS) are byte-identical and counted as one teaching source. PRONOMS RELATIFS.docx and PRONOMS RELATIFS (1).docx are different complementary handouts, not duplicates. Both were read, including the embedded PNGs and the EMF exercise page after rendering. Rendered DOCX pagination is used for page citations and may vary in Word.
+
+| New or revised source | Coverage and decision |
+| --- | --- |
+| Cours 15: PRONOMS RELATIFS (1).docx, pp. 1–3 | qui/que/dont/où, grammatical function, people/things, definitions, housing examples; new `relatifs` module |
+| Cours 15: PRONOMS RELATIFS.docx, pp. 1–3 | Embedded emphasis table, relative-pronoun rules and object-definition tasks; new `relief` module plus expanded relative reference |
+| Homework 7, demonstrative-pronoun section | New `demonstratifs` module; agreement and -ci/-là; preposition + qui explained without reproducing lyrics or solving the listening task |
+| Cours 16: LES ADVERBES (1).pdf, pp. 1–2 | Visually checked image-based rules and application sheet; new `adverbes` module, exceptions, pronunciation note and independently authored exercises |
+| Cours 16: Les générations.docx | New `generations` module: family/cohabitation vocabulary, argument structure, critical use of the handout's generational labels |
+| Homework 8, p. 1 | Read both embedded prompt images: choose a topic, 120–150 words, introduction/development/conclusion; attributed to homework, not the exam |
+| Cours 14: OPINION -CO 23.docx and 23 Piste 23.mp3 | Worksheet image inspected and audio indexed; no audio contents or answers inferred; listening remains excluded |
+| B1- EXAMEN.docx | Text comparison found only removed trailing empty paragraphs; both embedded schedule PNGs have identical hashes to the prior version. Substantive format and timetables unchanged |
+
+21 modules now cover lessons 1–16 plus the clearly separate futur supplement; all prior IDs and seven-form tables for the same 27 verbs are preserved. Added 27 constrained practice questions and open production tasks. No original worksheet answers, lyrics, full student schedules or source scans were added to the repo.
+
+Teaching decisions: identify relative pronouns by function, not person/object; prohibit only redundant repetition of the same dont complement, not all possessives in a clause; present adverb formation as common patterns with exceptions (including lentement); attribute generational birth ranges to the handout without endorsing cohort stereotypes. Supplemental examples and explanations are labelled.
+
+Exam page now includes Forms/login and punctuality instructions already present in the source, plus the learner's own oral date, time and room from the B1 schedule. Removed the previously displayed calendar end times, which were appointment windows rather than verified test end times. Written start remains explicitly attributed to the previous progress-record reading; this update did not re-read or alter the Sheet. The generic written duration remains 1 h 45, oral appointment 15 minutes, preparation 7 minutes and performance 5–6 minutes. The source's 10/11-section inconsistency and oral /20 versus /50 scoring ambiguity remain unresolved.
+
+Verification: JavaScript syntax and diff-whitespace checks passed. Module IDs are unique; all 16 lesson filters have content, and futur remains a supplement. Browser checks confirmed lessons 15/16 filtering and exercise acceptance. All five new modules had no page-level horizontal overflow in 360/390-pixel iframe previews; desktop and narrow layouts were visually inspected. This is not physical-device testing. The JavaScript for conjugation generation was not changed. Six supplied MP3s and the linked videos remain unverified; their content is outside this update. No learner assessment or progress-record mutation was performed.
