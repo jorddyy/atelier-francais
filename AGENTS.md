@@ -60,3 +60,8 @@ Data shapes in `dist/exam-content.js`:
 - `extraQuestions = {moduleId:[[prompt, 'answer|alternative', explanation]]}`: whole-sentence transformations shown under "Transforme" on the fiche and drawn by the quiz. "Voir la réponse" shows the first answer only, so put the most natural answer first. Checking ignores case, a final full stop and spaces before ? ! ; :, but not accents or other punctuation.
 
 All question checking goes through `bindQuestions` in app.js. Nothing is saved: no localStorage, timers, checklists, drafts and quiz scores live only in the page (the quiz resumes within a session). Timers are cleared on every route change. Listening stays excluded.
+
+
+## Generations fiche folded into exam pages, 15 November 2026
+
+The `generations` module (former fiche 21) was the only theme-based fiche. Its vocabulary and the handout's generation dates now live in the `generations` and `cohabitation` oral topics, its writing tasks in the writing subjects, and its subjunctive question in `subjonctif`. `#generations` redirects to `#oral/generations`. The notebook has 20 modules; cours 16 is still covered by `adverbes`.

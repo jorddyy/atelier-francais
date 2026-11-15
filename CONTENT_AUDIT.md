@@ -94,3 +94,8 @@ Verification: JavaScript syntax and diff-whitespace checks passed. Module IDs ar
 ## Exam-preparation content, 15 November 2026
 
 `dist/exam-content.js` (oral guide and ten oral topics, writing guide with two task types and subjects, and whole-sentence transformation questions for eleven fiches) is newly authored for this notebook. It is based on the exam format in B1- EXAMEN.docx (7 minutes of preparation, 5–6 minutes of monologue and interaction, document presentation, strong and weak points with examples, opinion, questions; oral on 50 of 100 points) and on themes and structures from the course (work, generations and cohabitation, opinions, subjunctive, conditional, relatives). It is not copied from the handouts: no original documents, worksheet answers or exam topics are reproduced, and the topics are practice material, not predictions of the exam. The grid totals 20 points like the exam document's grid; the /20 versus /50 relationship remains unresolved. The 120–150 word target comes from homework 6 and 8 and is not a confirmed exam instruction. The writing tasks previously listed on the `#test` page are replaced by links to the new pages.
+
+
+## Generations fiche folded into exam pages, 15 November 2026
+
+The `generations` module (former fiche 21) was the only theme-based fiche. Its vocabulary and the handout's generation dates now live in the `generations` and `cohabitation` oral topics, its writing tasks in the writing subjects, and its subjunctive question in `subjonctif`. `#generations` redirects to `#oral/generations`. The notebook has 20 modules; cours 16 is still covered by `adverbes`.
