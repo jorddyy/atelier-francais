@@ -1,7 +1,7 @@
 {
-  "archive": "FrenchB1m_lesson1-16.zip",
-  "reviewed": "2026-11-15",
-  "previous_archive": "FrenchB1m_lesson1-14.tar",
+  "archive": "FrenchB1m_lesson1-19",
+  "reviewed": "2026-11-17",
+  "previous_archive": "FrenchB1m_lesson1-16.zip",
   "files": [
     {
       "path": "B1- COURS 1 : administration, programme, verbes au présent, PC./Administrative+Information.docx",
@@ -44,173 +44,257 @@
       "lesson": 10,
       "sha256": "adbf3325f14b82d2c83a3bc311b3859b88d3ed5e4712d197c37046512eae6c1f",
       "previous_paths": [
-        "B1- COURS 10 : expression de l'opinion, subjonctif./LE SUBJONCTIF 2.docx"
+        "B1- COURS 10 : l'expression de l'opinion, subjonctif./LE SUBJONCTIF 2.docx"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 10 : l'expression de l'opinion, subjonctif./LES EXPRESSIONS DE L.docx",
       "lesson": 10,
       "sha256": "b12d7f0885c9abfb8a421e8244b78d54a7bc68adef7611fb3b803758f63b9c79",
       "previous_paths": [
-        "B1- COURS 10 : expression de l'opinion, subjonctif./LES EXPRESSIONS DE L.docx"
+        "B1- COURS 10 : l'expression de l'opinion, subjonctif./LES EXPRESSIONS DE L.docx"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 11 : le subjonctif audio, conditionnel (intro)./MYLENE - SUBJ- CO15.docx",
       "lesson": 11,
       "sha256": "94eea4d7af5a143a28e03915772005d6c56e218734a34f2adaef50d1bc88fea8",
       "previous_paths": [
-        "B1- COURS 11 : subjonctif audio, conditionnel (intro)./MYLENE - SUBJ- CO15.docx"
+        "B1- COURS 11 : le subjonctif audio, conditionnel (intro)./MYLENE - SUBJ- CO15.docx"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 11 : le subjonctif audio, conditionnel (intro)./Track15.mp3",
       "lesson": 11,
       "sha256": "ea6a380463230cf635015f21f024f8abfb84c7ab200d844c67faa3c0e47eee99",
       "previous_paths": [
-        "B1- COURS 11 : subjonctif audio, conditionnel (intro)./Track15.mp3"
+        "B1- COURS 11 : le subjonctif audio, conditionnel (intro)./Track15.mp3"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 11 : le subjonctif audio, conditionnel (intro)./remplacement.pdf",
       "lesson": 11,
       "sha256": "bb13a70a8299d4baa54f071b8d7d09b98ee3146967628e225c7e6709e038a0f8",
       "previous_paths": [
-        "B1- COURS 11 : subjonctif audio, conditionnel (intro)./remplacement.pdf"
+        "B1- COURS 11 : le subjonctif audio, conditionnel (intro)./remplacement.pdf"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 12 : le conditionnel, conseils, reproches./LE CONDITIONNEL 1 (1).pdf",
       "lesson": 12,
       "sha256": "2946a072c9a2550101c3d34360c25fb25bcd0b5f4a81e32b8b77937923053f2e",
       "previous_paths": [
-        "B1- COURS 12 : conditionnel, conseils, reproches./LE CONDITIONNEL 1 (1).pdf"
+        "B1- COURS 12 : le conditionnel, conseils, reproches./LE CONDITIONNEL 1 (1).pdf"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 12 : le conditionnel, conseils, reproches./LE CONDITIONNEL.pdf",
       "lesson": 12,
       "sha256": "5a1aa6f7b57b421aed97fb99fecb866fb474fdcf1f20ffbea441f244ad9bb00f",
       "previous_paths": [
-        "B1- COURS 12 : conditionnel, conseils, reproches./LE CONDITIONNEL.pdf"
+        "B1- COURS 12 : le conditionnel, conseils, reproches./LE CONDITIONNEL.pdf"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 12 : le conditionnel, conseils, reproches./QUELQUE CHOSE NE VA PAS.docx",
       "lesson": 12,
       "sha256": "49f38ca7a13e8c6242a9a7f6a25a43d51cfe1c25771ebc16e517ced1ba4b9ca2",
       "previous_paths": [
-        "B1- COURS 12 : conditionnel, conseils, reproches./QUELQUE CHOSE NE VA PAS.docx"
+        "B1- COURS 12 : le conditionnel, conseils, reproches./QUELQUE CHOSE NE VA PAS.docx"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 12 : le conditionnel, conseils, reproches./edito_pro_b1_piste_42.mp3",
       "lesson": 12,
       "sha256": "af7990ace5df7374d65047afe4af3d1c6e8785d347c387b59847e59c2a7bf87e",
       "previous_paths": [
-        "B1- COURS 12 : conditionnel, conseils, reproches./edito_pro_b1_piste_42.mp3"
+        "B1- COURS 12 : le conditionnel, conseils, reproches./edito_pro_b1_piste_42.mp3"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 13 : les reproches (script), pronoms./Les pronoms récapitulatif.pdf",
       "lesson": 13,
       "sha256": "245625d68eb12a11ecc3a4c4fa8a7366212664980c45be9070fe09e629e8f6e5",
       "previous_paths": [
-        "B1- COURS 13 : reproches (script), pronoms./Les pronoms récapitulatif.pdf"
+        "B1- COURS 13 : les reproches (script), pronoms./Les pronoms récapitulatif.pdf"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 13 : les reproches (script), pronoms./OPINIONS.docx",
       "lesson": 13,
       "sha256": "4d2f6aa0b2ead60491831e069c85ac84650dc519ccbdb450bd3a3d1a056f1fce",
       "previous_paths": [
-        "B1- COURS 13 : reproches (script), pronoms./OPINIONS.docx"
+        "B1- COURS 13 : les reproches (script), pronoms./OPINIONS.docx"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 13 : les reproches (script), pronoms./Pronoms révision.docx",
       "lesson": 13,
       "sha256": "54b05730fa9e5adf58f1a0d0d875bdc40992e1b0e35b61ff50a743d00e268743",
       "previous_paths": [
-        "B1- COURS 13 : reproches (script), pronoms./Pronoms révision.docx"
+        "B1- COURS 13 : les reproches (script), pronoms./Pronoms révision.docx"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 13 : les reproches (script), pronoms./reproches transcription.pdf",
       "lesson": 13,
       "sha256": "369ccb9d80e4e4045f09f719afbf4cfa66c1661eee5b089927ac5dbee65b5586",
       "previous_paths": [
-        "B1- COURS 13 : reproches (script), pronoms./reproches transcription.pdf"
+        "B1- COURS 13 : les reproches (script), pronoms./reproches transcription.pdf"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 14 : les doubles pronoms, opinions (audio)./23 Piste 23.mp3",
       "lesson": 14,
       "sha256": "2f3f9b16b33ed602324c08d8bff00d14d0ad213aa451d4d7ce5c4d8196ecf241",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- COURS 14 : les doubles pronoms, opinions (audio)./23 Piste 23.mp3"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 14 : les doubles pronoms, opinions (audio)./B1 - LES DOUBLES PRONOMS.pdf",
       "lesson": 14,
       "sha256": "641d6a169f0c38c42fc005356eb9d402479e87080a150cd7237529ee0a6d4c0a",
       "previous_paths": [
-        "B1- COURS 14 : les doubles pronoms,/B1 - LES DOUBLES PRONOMS.pdf"
+        "B1- COURS 14 : les doubles pronoms, opinions (audio)./B1 - LES DOUBLES PRONOMS.pdf"
       ],
-      "status": "renamed_folder"
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 14 : les doubles pronoms, opinions (audio)./OPINION -CO 23.docx",
       "lesson": 14,
       "sha256": "fa2f418c7c96f77c1891145514851cc0c239675dd5a3e9c94a488149eacf03d6",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- COURS 14 : les doubles pronoms, opinions (audio)./OPINION -CO 23.docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 15 : les pronoms relatifs et la mise en relief./B1- DEVOIR 7.docx",
       "lesson": 15,
       "sha256": "ba03c72a5224300801290b10c3e2fa6952fef6871a65a9d45812be017d604f76",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- COURS 15 : les pronoms relatifs et la mise en relief./B1- DEVOIR 7.docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 15 : les pronoms relatifs et la mise en relief./PRONOMS RELATIFS (1).docx",
       "lesson": 15,
       "sha256": "dfa3168f19445c731cd537e0f0f50f25b4060a9baffa115fce963e4ce9dd4f62",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- COURS 15 : les pronoms relatifs et la mise en relief./PRONOMS RELATIFS (1).docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 15 : les pronoms relatifs et la mise en relief./PRONOMS RELATIFS.docx",
       "lesson": 15,
       "sha256": "bc2759b026ec215c6227b29186e86a201cecfd27f21a1bfd0f5eb580d6122927",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- COURS 15 : les pronoms relatifs et la mise en relief./PRONOMS RELATIFS.docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 16 : les adverbes, les générations./LES ADVERBES (1).pdf",
       "lesson": 16,
       "sha256": "d7cbfd0a2bb1f2c2d94631f727666f7419d18165771cdb99ceeef661a4e722b7",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- COURS 16 : les adverbes, les générations./LES ADVERBES (1).pdf"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- COURS 16 : les adverbes, les générations./Les générations.docx",
       "lesson": 16,
       "sha256": "f8108814cf7aff5da5c4d2f46918fdaee79f274783ba9f4c75ec03cd467e73aa",
+      "previous_paths": [
+        "B1- COURS 16 : les adverbes, les générations./Les générations.docx"
+      ],
+      "status": "unchanged"
+    },
+    {
+      "path": "B1- COURS 17 : cause, conséquence, but./CAUSE  ET CONSÉQUENCE.docx",
+      "lesson": 17,
+      "sha256": "bb2e1cd24d7f1eb96a6dc776427fde253d25f8b3746e2bc6eff8cd7bb5a8b252",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 17 : cause, conséquence, but./CAUSE ET BUT.docx",
+      "lesson": 17,
+      "sha256": "90638b288c5ad2394082c07c8121e3a671b9243014282c73d59a0718aeec264a",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 17 : cause, conséquence, but./Connecteurs.docx",
+      "lesson": 17,
+      "sha256": "171e7ffa913f32fdb5d0f553703c5780acd74f1bbb307ea92ed052ab658ff263",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 18 : le futur antérieur, présenter un sujet B1./B1 DONNER SON OPINION.docx",
+      "lesson": 18,
+      "sha256": "f92c9d48a653413570973676ea632fc002e5565d62690e6a8d711e7ae3b40741",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 18 : le futur antérieur, présenter un sujet B1./LE FUTUR ANTÉRIEUR.docx",
+      "lesson": 18,
+      "sha256": "536c982663346db7e9d0c919c1dde0d59ed326ea862a0d097e5f04663a1789dc",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 18 : le futur antérieur, présenter un sujet B1./Présenter un sujet B1.docx",
+      "lesson": 18,
+      "sha256": "e180ed1606e17c8ad06689eb7cfdc9f0a02125716466395467f510c8eed9affe",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 19 : révisions./B1 - BILAN.pdf",
+      "lesson": 19,
+      "sha256": "3495be800fba48edfb241e35dcf77be6d51fd35fc9ee18506b84a67e5b98030c",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 19 : révisions./Révisions PC-IMP.docx",
+      "lesson": 19,
+      "sha256": "d9bd8f754547c9de272d99b489bcd98b4e1fe3cc215ec988721a7cae3bc053c5",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 19 : révisions./Révisions temps du passé.docx",
+      "lesson": 19,
+      "sha256": "3f7784669d6f67474b10467f79f96f78c519aa033db1f22a743ed9e370e16c98",
+      "previous_paths": [],
+      "status": "added"
+    },
+    {
+      "path": "B1- COURS 19 : révisions./TABLEAU RECAP.docx",
+      "lesson": 19,
+      "sha256": "1c428cee2fefb24df2b55b97acdf5bd67281b1d3d4f1e8f291e3854634567c05",
       "previous_paths": [],
       "status": "added"
     },
@@ -515,22 +599,28 @@
       "path": "B1- DEVOIRS/B1- DEVOIR 7.docx",
       "lesson": null,
       "sha256": "ba03c72a5224300801290b10c3e2fa6952fef6871a65a9d45812be017d604f76",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- DEVOIRS/B1- DEVOIR 7.docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- DEVOIRS/B1- DEVOIR 8.docx",
       "lesson": null,
       "sha256": "3411779e104b02d4e1970e2ad58dfd8716c7ced85a34d23419eb9d4e1ae2303a",
-      "previous_paths": [],
-      "status": "added"
+      "previous_paths": [
+        "B1- DEVOIRS/B1- DEVOIR 8.docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- EXAMEN.docx",
       "lesson": null,
       "sha256": "f3a3a7cfbcd0388879c0613cb0e311ce04ba2a9bfe526bedfedeaf56825fb1c9",
-      "previous_paths": [],
-      "status": "revised"
+      "previous_paths": [
+        "B1- EXAMEN.docx"
+      ],
+      "status": "unchanged"
     },
     {
       "path": "B1- cours 5 : Y et EN./LE PRONOM Y (1).docx",

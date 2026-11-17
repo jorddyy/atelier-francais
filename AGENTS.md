@@ -26,7 +26,7 @@ node --check dist/app.js
 For relevant changes, check the affected page in a browser at phone and laptop widths. For conjugation changes, verify irregular stems, auxiliaries, reflexive forms and agreements. For exercise changes, check that prompts have unambiguous accepted answers. No test framework is installed.
 
 ## Extending content
-Preserve module IDs and links. Module fields and question format are documented in README.md. Add source references and lesson tags, and update the lesson filter and coverage labels when extending beyond lessons 1–16. Original lesson documents are not in this repository; the audit is not a substitute for them.
+Preserve module IDs and links. Module fields and question format are documented in README.md. Add source references and lesson tags, and update the lesson filter and coverage labels when extending beyond lessons 1–19. Original lesson documents are not in this repository; the audit is not a substitute for them.
 
 ## Product context
 Grammar and conjugations are primary, with compact supporting vocabulary. Listening exercises are excluded. Keep phone/laptop usability and the warm notebook design, rooster and flag branding. Exercise attempts are not saved; the linked Google Sheet is the separate assessed progress record. The manifest supports installation from the browser menu, but no offline cache is implemented.
@@ -43,7 +43,7 @@ At that update, scope was Cours 1–14, based on FrenchB1m_lesson1-14.tar. This 
 
 16 modules, 27 verbs and seven verb forms. Module `futur` has no lesson number and appears under Compléments. Cours 12 includes the future of aimer as a comparison for conditional formation, but no standalone future unit was supplied. The supplement covers futur proche/simple and does not expand futur antérieur. Verified persisted course update: 56 files, 14 lessons, 40 existing tracker topics and 13 evidence rows; new supplementary topic 41 is unassessed.
 
-## Current curriculum, 15 November 2026
+## Curriculum update, 15 November 2026 (current totals: see Cours 17–19 below)
 
 20 modules, lessons 1–16, 27 verbs and seven verb forms. New IDs: `relatifs`, `relief`, `demonstratifs`, `adverbes` (`generations` was added then folded into the exam pages, see below). Existing IDs and the separate `futur` supplement are preserved. Source comparison found 41 files unchanged in place, 14 identical files under renamed lesson folders, one revised DOCX with no substantive exam change, and nine added paths (including two identical copies of homework 7). No existing material moved to another lesson number. The two relative-pronoun handouts are different and both were reviewed, including their embedded images.
 
@@ -77,3 +77,13 @@ The `generations` module (former fiche 21) was the only theme-based fiche. Its v
 - `lectures = [{id, title, type:'article'|'courriel'|'annonce'|'témoignage', texte:'<p>…</p>', lexique:[[fr,en]], questions:[[prompt, answer, explanation, [3 options]]]}]` in `dist/exam-content.js` (optional, checked with `typeof`). Ids are deep links. The answer must be one of the options, spelled identically.
 - Questions use `questionHTML`/`bindQuestions`; the first choice locks the question, marks the right option and shows the explanation; the score (x / 5) appears when all are answered. Nothing saved. Laptop (≥1200 px): text in a sticky column beside the questions; narrower: text above, "Revoir le texte ↑" link.
 - Quiz on phones: during a run the header and tools shrink, the récit shows only its last sentence (intro and earlier sentences in a `<details>`), and each new question scrolls the card into view without focusing the input.
+
+## Cours 17–19, 17 November 2026
+
+Current totals: 23 modules (`n` "01"–"23"), lessons 1–19, 27 verbs, eight verb forms, 14 oral topics, five récits, six reading texts. Source: `FrenchB1m_lesson1-19` (75 files; the 65 files of the 1–16 archive are byte-identical at the same paths; 10 added for cours 17–19), see `SOURCE_MANIFEST.json`.
+
+- New modules: `cause` (21, lessons [17]), `connecteurs` (22, [17, 19]), `futurant` (23, [18]). Groups in app.js: `futurant` after `futur` in 01; `cause`, `connecteurs` after `opinions` in 03. Each has `extraQuestions`.
+- Lesson 18 added to `opinions`; lesson 19 to `pc`, `choisir`, `reperes`, `relatifs`, `demonstratifs`. These additions live in the "Lessons 17–19" block at the end of `dist/content.js` as `modules.find(...).lessons.push / sections.push / q.push / source +=` statements (same pattern as the 3 November patch lines). Do not fold them into the original literals without re-running the data check; appended questions keep existing indices stable.
+- Conventions: material that appears only in the cours 19 bilan (QCM) and not in a teaching handout is labelled "à reconnaître" and kept inside collapsed `<details>`. Oral topic documents start with a citable source and date (« Un article paru sur le site du … le … 2026 : « … » ») and must name fictional outlets, never real newspapers or sites. New `participleGroups` entries from cours 19 use the third item `1`.
+- Conjugation: tense key `futurant` in `conjugated()` reuses `conditional([aux], true)` for the auxiliary and the plus-que-parfait agreement rows. Quiz filter `l17-19` (keys `lA-B` are parsed as inclusive lesson ranges).
+- Oral timing: B1- EXAMEN.docx says 7 min preparation and a 5–6 min turn (monologue + interaction) inside a 15 min appointment; the cours 18 handout says 6–7 min preparation and a monologue of about 3 min. The pages show both; the timer stays at 7:00.

@@ -66,7 +66,7 @@ modules.find(m=>m.id==='place').lessons=[4,5,7,13,14];
 modules.find(m=>m.id==='place').sections.push(['Cours 14 : approfondir', '<p>La double pronominalisation est désormais traitée dans le cours 14 : voir <a href="#doubles">Les doubles pronoms</a>.</p>']);
 modules.find(m=>m.id==='expressions').source+=' ; Cours 8 : MICHELIN.docx p. 1 (plus-que-parfait).';
 
-modules.push({"id": "futur", "n": "16", "title": "Parler du futur", "subtitle": "Futur proche et futur simple", "lessons": [], "tag": "Complément de révision", "color": "blue", "intro": "Exprimer un projet, une prévision ou une promesse. Un rappel utile avant le conditionnel, distinct des leçons fournies.", "sections": [["Le futur proche", "<div class=\"formula\">aller au présent <span>+</span> infinitif</div><div class=\"example\">Je <b>vais préparer</b> la réunion.<br>Nous <b>allons partir</b> demain.<br>Elle <b>va se lever</b> tôt.<br>Je <b>ne vais pas lui écrire</b> ce soir.</div><p>Aller : vais, vas, va, allons, allez, vont. Le second verbe reste à l’infinitif. Un pronom complément se place devant cet infinitif : <b>je vais le lui envoyer</b>.</p>"], ["Le futur simple", "<div class=\"formula\">radical du futur <span>+</span> ai · as · a · ons · ez · ont</div><p>Pour beaucoup de verbes, le radical est l’infinitif. Pour les verbes en -re, enlève le e final.</p><table><tr><th>Verbe</th><th>Je / j’</th><th>Nous</th></tr><tr><td>parler</td><td>parlerai</td><td>parlerons</td></tr><tr><td>finir</td><td>finirai</td><td>finirons</td></tr><tr><td>prendre</td><td>prendrai</td><td>prendrons</td></tr></table><p>Exemple complet : je parlerai, tu parleras, il parlera, nous parlerons, vous parlerez, elles parleront.</p>"], ["Les bases irrégulières", "<p><b>être → ser- ; avoir → aur- ; aller → ir- ; faire → fer- ; pouvoir → pourr- ; vouloir → voudr- ; devoir → devr- ; savoir → saur- ; venir → viendr- ; voir → verr- ; recevoir → recevr- ; courir → courr-.</b></p><div class=\"example\">Je <b>serai</b> au bureau. Tu <b>auras</b> le temps.<br>Nous <b>pourrons</b> en discuter. Ils <b>viendront</b> demain.</div><p>Orthographe : <b>j’appellerai</b>, avec deux l ; pour le verbe pronominal : <b>je m’appellerai</b>. Consulte les 27 tableaux du <a href=\"#verbes\">répertoire</a>.</p>"], ["Choisir sans règle artificielle", "<p>Le futur proche présente souvent une intention ou une évolution liée à la situation actuelle : <b>regarde ces nuages, il va pleuvoir</b>. Le futur simple sert notamment à annoncer, prévoir ou promettre : <b>je te répondrai demain</b>.</p><p>Ce n’est pas une opposition stricte entre bientôt et longtemps après. <b>Je vais déménager l’année prochaine</b> est naturel, tout comme <b>je t’appellerai dans cinq minutes</b>. Les deux formes sont parfois possibles, selon le point de vue.</p>"], ["Futur ou conditionnel ?", "<table><tr><th>Futur simple</th><th>Conditionnel présent</th></tr><tr><td>je pourrai</td><td>je pourrais</td></tr><tr><td>nous serons</td><td>nous serions</td></tr><tr><td>vous viendrez</td><td>vous viendriez</td></tr></table><p>Même base, terminaisons différentes. <b>Je viendrai demain</b> annonce ma venue ; <b>je viendrais si j’avais le temps</b> pose une condition.</p><div class=\"example\"><b>Si j’ai le temps, je viendrai.</b><br><b>Quand tu arriveras, nous commencerons.</b></div><p>Pour une condition réalisable : si + présent, puis futur dans la principale. Dans ce schéma, pas de futur après si. Quand peut prendre le futur pour un événement à venir.</p>"], ["Réutiliser sans modèle", "<p>Décris trois projets pour la semaine prochaine. Fais ensuite une promesse et explique ce que tu feras si une réunion est annulée. </p><p>Le <b>futur antérieur</b> (j’aurai terminé) est un autre temps ; il n’est pas développé ici.</p>"]], "en": "The near future is <span class=\"fr\" lang=\"fr\">aller</span> in the present plus an infinitive. The simple future shares its stem with the conditional but has different endings. Near versus distant time is not a strict selection rule. This is supplementary revision.", "source": "Complément ajouté le 3 novembre 2026. Cours 12 : LE CONDITIONNEL 1 (1).pdf p. 1 montre le futur d’aimer et utilise sa base ; aucune unité autonome sur le futur n’est fournie ; futur antérieur annoncé au programme, sans unité dédiée. <a href=\"https://apprendre.tv5monde.com/fr/aides/grammaire-le-futur-simple\" target=\"_blank\" rel=\"noopener\">TV5MONDE : futur simple, niveau A2</a>. Exercices nouveaux.", "q": [["Au futur simple : demain, nous ___ (être) au CERN.", "serons", "Être : ser- + ons."], ["Au futur simple : vous ___ (recevoir) une réponse.", "recevrez", "Recevoir : recevr- + ez."], ["Au futur simple : je ___ (pouvoir) venir demain.", "pourrai", "Futur : pourrai ; conditionnel : pourrais."], ["Au futur proche : elle ___ (se lever) tôt.", "va se lever", "Aller au présent + infinitif pronominal."], ["Au futur simple : si tu as le temps, tu ___ (venir) avec nous.", "viendras", "Si + présent ; futur dans la proposition principale."], ["Quand vous ___ (arriver, futur simple), nous commencerons.", "arriverez", "Un futur est possible après quand."]]});
+modules.push({"id": "futur", "n": "16", "title": "Parler du futur", "subtitle": "Futur proche et futur simple", "lessons": [], "tag": "Complément de révision", "color": "blue", "intro": "Exprimer un projet, une prévision ou une promesse. Un rappel utile avant le conditionnel, distinct des leçons fournies.", "sections": [["Le futur proche", "<div class=\"formula\">aller au présent <span>+</span> infinitif</div><div class=\"example\">Je <b>vais préparer</b> la réunion.<br>Nous <b>allons partir</b> demain.<br>Elle <b>va se lever</b> tôt.<br>Je <b>ne vais pas lui écrire</b> ce soir.</div><p>Aller : vais, vas, va, allons, allez, vont. Le second verbe reste à l’infinitif. Un pronom complément se place devant cet infinitif : <b>je vais le lui envoyer</b>.</p>"], ["Le futur simple", "<div class=\"formula\">radical du futur <span>+</span> ai · as · a · ons · ez · ont</div><p>Pour beaucoup de verbes, le radical est l’infinitif. Pour les verbes en -re, enlève le e final.</p><table><tr><th>Verbe</th><th>Je / j’</th><th>Nous</th></tr><tr><td>parler</td><td>parlerai</td><td>parlerons</td></tr><tr><td>finir</td><td>finirai</td><td>finirons</td></tr><tr><td>prendre</td><td>prendrai</td><td>prendrons</td></tr></table><p>Exemple complet : je parlerai, tu parleras, il parlera, nous parlerons, vous parlerez, elles parleront.</p>"], ["Les bases irrégulières", "<p><b>être → ser- ; avoir → aur- ; aller → ir- ; faire → fer- ; pouvoir → pourr- ; vouloir → voudr- ; devoir → devr- ; savoir → saur- ; venir → viendr- ; voir → verr- ; recevoir → recevr- ; courir → courr-.</b></p><div class=\"example\">Je <b>serai</b> au bureau. Tu <b>auras</b> le temps.<br>Nous <b>pourrons</b> en discuter. Ils <b>viendront</b> demain.</div><p>Orthographe : <b>j’appellerai</b>, avec deux l ; pour le verbe pronominal : <b>je m’appellerai</b>. Consulte les 27 tableaux du <a href=\"#verbes\">répertoire</a>.</p>"], ["Choisir sans règle artificielle", "<p>Le futur proche présente souvent une intention ou une évolution liée à la situation actuelle : <b>regarde ces nuages, il va pleuvoir</b>. Le futur simple sert notamment à annoncer, prévoir ou promettre : <b>je te répondrai demain</b>.</p><p>Ce n’est pas une opposition stricte entre bientôt et longtemps après. <b>Je vais déménager l’année prochaine</b> est naturel, tout comme <b>je t’appellerai dans cinq minutes</b>. Les deux formes sont parfois possibles, selon le point de vue.</p>"], ["Futur ou conditionnel ?", "<table><tr><th>Futur simple</th><th>Conditionnel présent</th></tr><tr><td>je pourrai</td><td>je pourrais</td></tr><tr><td>nous serons</td><td>nous serions</td></tr><tr><td>vous viendrez</td><td>vous viendriez</td></tr></table><p>Même base, terminaisons différentes. <b>Je viendrai demain</b> annonce ma venue ; <b>je viendrais si j’avais le temps</b> pose une condition.</p><div class=\"example\"><b>Si j’ai le temps, je viendrai.</b><br><b>Quand tu arriveras, nous commencerons.</b></div><p>Pour une condition réalisable : si + présent, puis futur dans la principale. Dans ce schéma, pas de futur après si. Quand peut prendre le futur pour un événement à venir.</p>"], ["Réutiliser sans modèle", "<p>Décris trois projets pour la semaine prochaine. Fais ensuite une promesse et explique ce que tu feras si une réunion est annulée. </p><p>Le <b>futur antérieur</b> (j’aurai terminé) est un autre temps, vu au cours 18 : voir <a href=\"#futurant\">Le futur antérieur</a>.</p>"]], "en": "The near future is <span class=\"fr\" lang=\"fr\">aller</span> in the present plus an infinitive. The simple future shares its stem with the conditional but has different endings. Near versus distant time is not a strict selection rule. This is supplementary revision.", "source": "Complément ajouté le 3 novembre 2026. Cours 12 : LE CONDITIONNEL 1 (1).pdf p. 1 montre le futur d’aimer et utilise sa base ; aucune unité autonome sur le futur n’est fournie ; futur antérieur traité depuis le cours 18 dans la fiche <a href=\"#futurant\">Le futur antérieur</a>. <a href=\"https://apprendre.tv5monde.com/fr/aides/grammaire-le-futur-simple\" target=\"_blank\" rel=\"noopener\">TV5MONDE : futur simple, niveau A2</a>. Exercices nouveaux.", "q": [["Au futur simple : demain, nous ___ (être) au CERN.", "serons", "Être : ser- + ons."], ["Au futur simple : vous ___ (recevoir) une réponse.", "recevrez", "Recevoir : recevr- + ez."], ["Au futur simple : je ___ (pouvoir) venir demain.", "pourrai", "Futur : pourrai ; conditionnel : pourrais."], ["Au futur proche : elle ___ (se lever) tôt.", "va se lever", "Aller au présent + infinitif pronominal."], ["Au futur simple : si tu as le temps, tu ___ (venir) avec nous.", "viendras", "Si + présent ; futur dans la proposition principale."], ["Quand vous ___ (arriver, futur simple), nous commencerons.", "arriverez", "Un futur est possible après quand."]]});
 modules.find(m=>m.id==='conditionnel').sections.push(['Revoir la base du futur', '<p>Besoin du rappel ? Consulte <a href="#futur">Parler du futur</a> : futur proche, futur simple et différence entre je pourrai et je pourrais.</p>']);
 
 // Lessons 15–16, verified against the 15 November 2026 archive.
@@ -315,3 +315,349 @@ modules.push(...[
     ]
   }
 ]);
+
+// Lessons 17–19, verified against the 17 November 2026 archive (FrenchB1m_lesson1-19).
+modules.push(...[
+  {
+    "id": "cause",
+    "n": "21",
+    "title": "Cause, conséquence et but",
+    "subtitle": "Parce que, donc, pour que",
+    "lessons": [
+      17
+    ],
+    "tag": "Grammaire",
+    "color": "terra",
+    "intro": "Expliquer pourquoi quelque chose arrive, ce qui en résulte et dans quel but on agit.",
+    "sections": [
+      [
+        "La cause : une phrase ou un nom ?",
+        "<table><tr><th>Après…</th><th>On utilise</th><th>Exemple</th></tr><tr><td><b>comme · parce que · car · puisque · étant donné que</b></td><td>une phrase avec un verbe conjugué</td><td>Comme le tram est en retard, je prends le bus.</td></tr><tr><td><b>en raison de · étant donné · à cause de · grâce à</b></td><td>un nom</td><td>En raison des travaux, la rue est fermée.</td></tr></table><div class=\"example\">Je reste à la maison <b>parce que</b> je suis malade.<br><b>Étant donné</b> le prix, je n’achète pas ce vélo.<br>Le vol a du retard <b>à cause du</b> brouillard.<br>J’ai trouvé ce poste <b>grâce à</b> une amie.</div><p>Attention aux contractions : à cause <b>du</b> / <b>de la</b> / <b>des</b> ; grâce <b>au</b> / <b>à la</b> / <b>aux</b> ; en raison <b>du</b> / <b>des</b>.</p>"
+      ],
+      [
+        "Les remarques du cours",
+        "<ul><li><b>À cause de</b> = cause négative ; <b>grâce à</b> = cause positive.</li><li><b>Comme</b> se place toujours en début de phrase : <b>Comme il pleut</b>, je reste. Au milieu de la phrase, on dit <b>parce que</b> : je reste <b>parce qu’</b>il pleut.</li><li><b>Puisque</b> = cause évidente ou connue de l’interlocuteur : <b>Puisque tu es là</b>, aide-moi.</li><li><b>Car</b> est plus soutenu que <b>parce que</b> : il est absent, <b>car</b> il est malade.</li><li><b>Étant donné</b> est invariable : étant donné la situation, étant donné les prix.</li></ul>"
+      ],
+      [
+        "La conséquence",
+        "<table><tr><th>Connecteur</th><th>Exemple</th></tr><tr><td><b>donc · du coup · alors · par conséquent · en conséquence</b></td><td>Le serveur est en panne, <b>donc</b> je ne peux pas me connecter.</td></tr><tr><td><b>de sorte que</b> + indicatif</td><td>Il a bien expliqué, <b>de sorte que</b> nous avons tous compris.</td></tr><tr><td><b>tellement… que</b> + indicatif</td><td>Elle est <b>tellement</b> fatiguée <b>qu’</b>elle s’endort au bureau.<br>Il y avait <b>tellement de</b> monde <b>que</b> nous sommes partis.</td></tr><tr><td><b>ce qui fait que</b> + indicatif</td><td>Elle parle fort, <b>ce qui fait que</b> tout le monde l’entend.</td></tr><tr><td><b>c’est pour ça que</b> + indicatif</td><td>Mon vélo est cassé, <b>c’est pour ça que</b> je suis en retard.</td></tr></table><p><b>Du coup, alors, ce qui fait que, c’est pour ça que</b> s’utilisent surtout à l’oral. À l’écrit, préfère <b>donc, par conséquent, en conséquence</b>.</p><div class=\"example\">Cause : je suis en retard <b>parce que</b> le bus est tombé en panne.<br>Conséquence : le bus est tombé en panne, <b>donc</b> je suis en retard.</div>"
+      ],
+      [
+        "Le but : pour que + subjonctif",
+        "<div class=\"formula\">pour que · de façon que · de manière que <span>+</span> subjonctif</div><div class=\"example\">J’ai laissé la clé à Léa <b>pour qu’</b>elle <b>puisse</b> entrer.<br>Il parle lentement <b>de manière que</b> tout le monde <b>comprenne</b>.<br>Elle a écrit un résumé <b>de façon que</b> les autres <b>soient</b> informés.</div><p>Quand le sujet est <b>le même</b>, on utilise <b>pour</b> ou <b>afin de</b> + infinitif : je prends des notes <b>pour</b> ne rien oublier ; elle étudie <b>afin de</b> réussir. Sujets différents : je répète <b>pour que tu comprennes</b> ; même sujet : je répète <b>pour comprendre</b>.</p><p>But ou cause ? Je ferme la fenêtre <b>parce qu’</b>il y a du bruit (cause) ; je la ferme <b>pour qu’</b>il n’y ait plus de bruit (but). Rappel des formes : <a href=\"#subjonctif\">Le subjonctif présent</a>.</p>"
+      ]
+    ],
+    "en": "Use a clause after <span class=\"fr\" lang=\"fr\">comme, parce que, car, puisque, étant donné que</span> and a noun after <span class=\"fr\" lang=\"fr\">en raison de, étant donné, à cause de, grâce à</span>. <span class=\"fr\" lang=\"fr\">Donc</span> introduces the result, <span class=\"fr\" lang=\"fr\">parce que</span> the reason. Purpose: <span class=\"fr\" lang=\"fr\">pour que</span> + subjunctive when the subjects differ, <span class=\"fr\" lang=\"fr\">pour / afin de</span> + infinitive when the subject is the same (the infinitive rule is a reference addition).",
+    "source": "Cours 17 : CAUSE ET CONSÉQUENCE.docx (tableau en image et remarques) ; CAUSE ET BUT.docx (rappels sur comme, puisque, parce que, à cause de / grâce à ; but avec pour que, de façon que, de manière que) ; Connecteurs.docx (afin de). Pour / afin de + infinitif, si… que et le contraste but / cause sont des compléments de référence. Exemples et exercices nouveaux.",
+    "q": [
+      [
+        "Le vol a été retardé ___ la neige. (cause négative)",
+        "à cause de",
+        "Une cause négative suivie d’un nom : à cause de.",
+        [
+          "à cause de",
+          "grâce à",
+          "pour que"
+        ]
+      ],
+      [
+        "Nous avons réussi ___ ton aide. (cause positive)",
+        "grâce à",
+        "Une cause positive suivie d’un nom : grâce à."
+      ],
+      [
+        "___ il pleut, le match est annulé.",
+        "Comme",
+        "Comme, en début de phrase, + verbe conjugué. Car ne commence pas une phrase ; grâce à demande un nom.",
+        [
+          "Comme",
+          "Car",
+          "Grâce à"
+        ]
+      ],
+      [
+        "___ la situation, nous reportons la réunion.",
+        "Étant donné",
+        "Étant donné + nom ; étant donné que et parce que demandent un verbe conjugué.",
+        [
+          "Étant donné",
+          "Étant donné que",
+          "Parce que"
+        ]
+      ],
+      [
+        "___ tu connais déjà Marc, je ne te le présente pas. (cause connue de l’interlocuteur)",
+        "puisque|comme|étant donné que",
+        "Puisque : une cause que l’autre connaît déjà. Comme ou étant donné que sont aussi possibles en début de phrase."
+      ],
+      [
+        "Il parle ___ vite que je ne comprends rien.",
+        "tellement|si",
+        "Tellement… que + indicatif exprime la conséquence (si… que aussi)."
+      ],
+      [
+        "Il y a une grève, ___ je vais au travail à vélo.",
+        "donc",
+        "Le résultat de la grève : donc.",
+        [
+          "donc",
+          "car",
+          "grâce à"
+        ]
+      ],
+      [
+        "J’explique encore une fois pour que tout le monde ___ (comprendre).",
+        "comprenne",
+        "Pour que + subjonctif : que tout le monde comprenne."
+      ],
+      [
+        "Elle a écrit clairement de manière que le texte ___ (être) facile à lire.",
+        "soit",
+        "De manière que + subjonctif : que le texte soit."
+      ],
+      [
+        "Je me lève tôt ___ ne pas rater le train.",
+        "pour|afin de|de manière à|de façon à",
+        "Même sujet (je… je) : pour ou afin de + infinitif."
+      ]
+    ]
+  },
+  {
+    "id": "connecteurs",
+    "n": "22",
+    "title": "Les connecteurs logiques",
+    "subtitle": "Relier ses idées",
+    "lessons": [
+      17,
+      19
+    ],
+    "tag": "Communication",
+    "color": "blue",
+    "intro": "Choisir le mot qui montre le lien entre deux idées : ajout, opposition, cause, conséquence, ordre, exemple, conclusion.",
+    "sections": [
+      [
+        "Le tableau par fonction",
+        "<table><tr><th>Fonction</th><th>Connecteurs</th><th>Exemple</th></tr><tr><td>Ajouter</td><td><b>et · de plus · en outre</b></td><td>Le loyer est cher ; <b>en outre</b>, il n’y a pas de balcon.</td></tr><tr><td>Choisir</td><td><b>ou</b></td><td>Tu prends le train <b>ou</b> la voiture ?</td></tr><tr><td>Opposer</td><td><b>mais · cependant · pourtant · néanmoins · toutefois · en revanche</b></td><td>Le quartier est calme ; <b>en revanche</b>, il n’y a pas de commerces.</td></tr><tr><td>Cause</td><td><b>parce que · car · en effet</b></td><td>Elle est absente ; <b>en effet</b>, elle est malade.</td></tr><tr><td>Conséquence</td><td><b>donc · par conséquent · c’est pourquoi</b></td><td>Il y a des travaux, <b>c’est pourquoi</b> la rue est fermée.</td></tr><tr><td>But</td><td><b>afin de</b> + infinitif</td><td>Elle étudie <b>afin de</b> réussir.</td></tr><tr><td>Ordre</td><td><b>d’abord · ensuite · puis · enfin</b></td><td><b>D’abord</b> je lis, <b>puis</b> je prends des notes, <b>enfin</b> je résume.</td></tr><tr><td>Exemple</td><td><b>par exemple</b></td><td>J’aime les sports, <b>par exemple</b> le ski.</td></tr><tr><td>Conclure</td><td><b>pour conclure · en conclusion</b></td><td><b>En conclusion</b>, ce projet est utile.</td></tr></table><p>Pour la cause et la conséquence en détail (comme, puisque, grâce à, tellement… que), voir <a href=\"#cause\">Cause, conséquence et but</a>.</p>"
+      ],
+      [
+        "Opposer : mais, pourtant, en revanche",
+        "<p><b>Mais</b> s’emploie partout. <b>Cependant, néanmoins, toutefois</b> sont plus soignés. <b>Pourtant</b> marque la surprise : on attendait autre chose. Il a beaucoup révisé ; <b>pourtant</b>, il a raté l’examen.</p><div class=\"example\">Le restaurant est cher ; <b>en revanche</b>, la cuisine est excellente.<br>Les chambres sont claires ; <b>par contre</b>, elles sont petites.</div><p><b>En revanche</b> et <b>par contre</b> (plus courant à l’oral) opposent deux côtés d’une même chose, souvent un point positif et un point négatif. Très utile pour peser le pour et le contre à l’oral.</p>"
+      ],
+      [
+        "Bien que, même si, malgré",
+        "<table><tr><th>Construction</th><th>Après</th><th>Exemple</th></tr><tr><td><b>bien que</b></td><td>subjonctif</td><td>Bien qu’il <b>fasse</b> froid, nous sortons.</td></tr><tr><td><b>même si</b></td><td>indicatif</td><td>Même s’il <b>fait</b> froid, nous sortons.</td></tr><tr><td><b>malgré</b></td><td>un nom</td><td>Malgré le <b>froid</b>, nous sortons.</td></tr></table><p>Les trois disent la même chose : l’obstacle n’empêche pas l’action. <b>Même si + il</b> devient <b>même s’il</b>. Comme après si, pas de futur après même si : <b>même s’il pleut demain</b>, nous sortirons. Pour <b>bien que</b>, revois <a href=\"#subjonctif\">le subjonctif</a> : bien que je sois, bien qu’il ait, bien qu’elle puisse.</p>"
+      ],
+      [
+        "Dans un petit texte argumentatif",
+        "<div class=\"example\">À mon avis, il faudrait fermer le centre-ville aux voitures, <b>car</b> elles polluent. <b>Cependant</b>, certains commerçants ont peur de perdre des clients. <b>Par exemple</b>, les livraisons seraient plus compliquées. <b>Pourtant</b>, dans beaucoup de villes, les rues piétonnes attirent du monde. <b>En conclusion</b>, je pense qu’il faut essayer, mais progressivement.</div><p><b>En effet</b> explique ce qu’on vient de dire (il est absent ; en effet, il est malade). <b>Donc</b> donne le résultat (il est malade, donc il est absent). <b>Toutefois</b> = cependant. <b>En outre</b> = de plus.</p>"
+      ]
+    ],
+    "en": "Choose the connector by its function: <span class=\"fr\" lang=\"fr\">en effet</span> gives the reason for what was just said, <span class=\"fr\" lang=\"fr\">donc</span> the result, <span class=\"fr\" lang=\"fr\">toutefois</span> = <span class=\"fr\" lang=\"fr\">cependant</span>, <span class=\"fr\" lang=\"fr\">en outre</span> = <span class=\"fr\" lang=\"fr\">de plus</span>. <span class=\"fr\" lang=\"fr\">Bien que</span> takes the subjunctive, <span class=\"fr\" lang=\"fr\">même si</span> the indicative (never the future), <span class=\"fr\" lang=\"fr\">malgré</span> a noun.",
+    "source": "Cours 17 : Connecteurs.docx (tableau de vingt connecteurs, bien que / même si) ; cours 18 : B1 DONNER SON OPINION.docx (par contre, en revanche) ; cours 19 : B1 - BILAN.pdf, questions 18 à 20 (en effet, toutefois, donc ; en outre, en revanche, cependant, pourtant). Regroupement par fonction et nuances : compléments de référence. Exemples et exercices nouveaux ; le texte de l’exercice 2 n’est pas reproduit.",
+    "q": [
+      [
+        "Il fait beau, ___ je reste à la maison. (opposition)",
+        "pourtant|cependant|néanmoins|toutefois|mais|et pourtant",
+        "Tous ces mots opposent deux idées ; pourtant marque la surprise."
+      ],
+      [
+        "Bien qu’il ___ (être) tard, nous continuons.",
+        "soit",
+        "Bien que + subjonctif : qu’il soit."
+      ],
+      [
+        "Même s’il ___ (pleuvoir) demain, nous sortirons.",
+        "pleut",
+        "Même si + indicatif présent, pas de futur : s’il pleut."
+      ],
+      [
+        "___ le bruit, elle a bien dormi.",
+        "malgré",
+        "Malgré + nom : malgré le bruit."
+      ],
+      [
+        "Le restaurant est cher ; ___, la cuisine est excellente.",
+        "en revanche",
+        "Un point négatif puis un point positif : en revanche.",
+        [
+          "en revanche",
+          "donc",
+          "d’abord"
+        ]
+      ],
+      [
+        "J’ai raté mon train ; ___, je suis arrivé en retard.",
+        "donc",
+        "Le retard est le résultat : donc.",
+        [
+          "donc",
+          "toutefois",
+          "par exemple"
+        ]
+      ],
+      [
+        "Il n’est pas venu ; ___, il était malade.",
+        "en effet",
+        "En effet donne la raison de ce qui précède.",
+        [
+          "en effet",
+          "en conclusion",
+          "malgré"
+        ]
+      ],
+      [
+        "___, je pense que ce projet est une bonne idée. (dernière phrase du texte)",
+        "En conclusion",
+        "Un connecteur de conclusion.",
+        [
+          "En conclusion",
+          "Par exemple",
+          "En effet"
+        ]
+      ],
+      [
+        "Les chambres sont propres. ___, elles sont petites.",
+        "Toutefois",
+        "Une opposition : toutefois (= cependant).",
+        [
+          "Toutefois",
+          "Donc",
+          "En effet"
+        ]
+      ],
+      [
+        "Le train a du retard ; ___ nous arriverons après vingt heures.",
+        "donc",
+        "Une conséquence : donc.",
+        [
+          "donc",
+          "en revanche",
+          "par exemple"
+        ]
+      ],
+      [
+        "Elle est très compétente ; ___, elle parle trois langues.",
+        "en outre",
+        "On ajoute une qualité : en outre (= de plus).",
+        [
+          "en outre",
+          "toutefois",
+          "donc"
+        ]
+      ]
+    ]
+  },
+  {
+    "id": "futurant",
+    "n": "23",
+    "title": "Le futur antérieur",
+    "subtitle": "Une action terminée avant une autre",
+    "lessons": [
+      18
+    ],
+    "tag": "Conjugaison",
+    "color": "teal",
+    "intro": "Dire qu’une action sera finie avant une autre action future ou avant une date.",
+    "sections": [
+      [
+        "Avant, puis après",
+        "<div class=\"example\">Tu partiras en vacances quand tu <b>auras passé</b> ton examen.<br>Quand tu rentreras (à 22 h), j’<b>aurai mangé</b> (à 20 h).<br>Pour mes 30 ans, j’<b>aurai obtenu</b> mon diplôme.</div><p>On imagine une action future <b>préalable</b> : elle sera terminée <b>avant</b> une autre action future, ou avant une date. D’abord (1) tu passes ton examen, ensuite (2) tu pars en vacances : l’action (1) est au futur antérieur, l’action (2) au futur simple.</p>"
+      ],
+      [
+        "Formation",
+        "<div class=\"formula\">avoir / être au futur simple <span>+</span> participe passé</div><table><tr><th></th><th>avoir : manger</th><th>être : aller</th></tr><tr><td>je / j’</td><td>aurai mangé</td><td>serai allé(e)</td></tr><tr><td>tu</td><td>auras mangé</td><td>seras allé(e)</td></tr><tr><td>il / elle / on</td><td>aura mangé</td><td>sera allé / allée</td></tr><tr><td>nous</td><td>aurons mangé</td><td>serons allé(e)s</td></tr><tr><td>vous</td><td>aurez mangé</td><td>serez allé(e)(s)</td></tr><tr><td>ils / elles</td><td>auront mangé</td><td>seront allés / allées</td></tr></table><p>L’auxiliaire et les accords sont ceux du <a href=\"#pc\">passé composé</a> : avec <b>être</b>, accord avec le sujet (elle sera partie, ils seront arrivés, je me serai levé(e)) ; avec <b>avoir</b>, accord avec un COD placé avant (les lettres que j’aurai écrites). Négation et adverbe autour de l’auxiliaire : je <b>n’</b>aurai <b>pas</b> fini ; j’aurai <b>déjà</b> fini. Les 27 verbes sont conjugués dans le <a href=\"#verbes\">répertoire</a>.</p>"
+      ],
+      [
+        "Après quand, dès que, une fois que",
+        "<div class=\"example\"><b>Quand</b> vous <b>aurez lu</b> le texte, vous répondrez aux questions.<br>Je t’appellerai <b>dès que</b> je <b>serai arrivé(e)</b>.<br><b>Une fois que</b> nous <b>aurons mangé</b>, nous sortirons.<br>Il rangera tout <b>aussitôt qu’</b>il <b>aura fini</b>.</div><p>Après <b>quand, dès que, une fois que, aussitôt que</b>, on trouve souvent le futur antérieur : l’action est terminée avant l’autre. Mais c’est l’ordre des actions qui décide, pas le mot : dans <b>quand tu rentreras, j’aurai mangé</b>, le futur antérieur est dans l’autre partie de la phrase, car le repas vient en premier. Avec une date ou <b>déjà</b> : demain à midi, j’<b>aurai</b> déjà <b>terminé</b>.</p>"
+      ],
+      [
+        "Futur simple ou futur antérieur ?",
+        "<table><tr><th>Futur simple</th><th>Futur antérieur</th></tr><tr><td>Quand elle <b>se réveillera</b>, nous <b>partirons</b>.<br>Une action, puis l’autre, tout de suite après.</td><td>Quand elle <b>se réveillera</b>, j’<b>aurai</b> déjà <b>préparé</b> le café.<br>Le café sera prêt <b>avant</b> son réveil.</td></tr></table><p>Dans la même phrase, l’action la plus tôt est au futur antérieur, l’autre au futur simple. Après <b>si</b>, ni futur ni futur antérieur : <b>si tu as fini, tu pourras partir</b> (présent ou passé composé après si). Le futur simple se révise dans <a href=\"#futur\">Parler du futur</a>.</p>"
+      ]
+    ],
+    "en": "The future perfect is <span class=\"fr\" lang=\"fr\">avoir / être</span> in the simple future plus the past participle, with the same auxiliary and agreement rules as the <span class=\"fr\" lang=\"fr\">passé composé</span>. It marks the action that will be finished first. Where English says “when I have finished”, French says <span class=\"fr\" lang=\"fr\">quand j’aurai fini</span>: after <span class=\"fr\" lang=\"fr\">quand</span>, a future action is never in the present tense.",
+    "source": "Cours 18 : LE FUTUR ANTÉRIEUR.docx (idée d’antériorité, exemples, tableau de formation aller / manger, exercices). Dès que, une fois que, aussitôt que, accords, négation et contraste avec le futur simple et avec si : compléments de référence. Exemples et exercices nouveaux.",
+    "q": [
+      [
+        "Quand tu ___ (lire, futur antérieur) ce chapitre, tu pourras faire l’exercice.",
+        "auras lu",
+        "Lire → lu ; avoir au futur : tu auras lu."
+      ],
+      [
+        "Dès que nous ___ (arriver, futur antérieur) à Lyon, nous t’appellerons.",
+        "serons arrivés|serons arrivées",
+        "Arriver prend être ; accord avec nous."
+      ],
+      [
+        "Elle sortira dès qu’elle ___ (finir, futur antérieur) ses devoirs.",
+        "aura fini",
+        "Finir prend avoir : elle aura fini."
+      ],
+      [
+        "Une fois que vous ___ (recevoir, futur antérieur) le colis, vous m’écrirez.",
+        "aurez reçu",
+        "Recevoir → reçu, avec avoir."
+      ],
+      [
+        "D’ici la fin de l’année, nous ___ (déménager, futur antérieur).",
+        "aurons déménagé",
+        "Une action terminée avant une date ; déménager prend avoir."
+      ],
+      [
+        "Ils partiront dès qu’ils ___ (se préparer, futur antérieur).",
+        "se seront préparés|se seront préparées",
+        "Verbe pronominal : être, accord avec le sujet."
+      ],
+      [
+        "Quand elle ___ (se réveiller, futur simple), j’aurai déjà préparé le café.",
+        "se réveillera",
+        "L’action la plus tardive est au futur simple."
+      ],
+      [
+        "Je dînerai à 20 h ; tu rentreras à 22 h. Quand tu rentreras, ___.",
+        "j’aurai dîné",
+        "Le dîner sera terminé avant ton retour : futur antérieur.",
+        [
+          "j’aurai dîné",
+          "je dînerai",
+          "je dîne"
+        ]
+      ],
+      [
+        "Je te rendrai ton livre quand je l’___.",
+        "aurai lu",
+        "Lire d’abord, rendre ensuite : futur antérieur. Le passé composé et le plus-que-parfait ne parlent pas du futur.",
+        [
+          "aurai lu",
+          "ai lu",
+          "avais lu"
+        ]
+      ]
+    ]
+  }
+]);
+modules.find(m=>m.id==='opinions').lessons.push(18);
+modules.find(m=>m.id==='opinions').sections.push(...[["Peser le pour et le contre","<table><tr><th>Le pour</th><th>Le contre</th></tr><tr><td>D’un côté… · D’une part…</td><td>D’un autre côté… · D’autre part…</td></tr><tr><td>C’est vrai que… · Il faut reconnaître que… · D’accord…</td><td>Par contre… · En revanche… · Pourtant… · Mais…</td></tr></table><div class=\"example\"><b>D’une part</b>, les caméras protègent ; <b>d’autre part</b>, elles limitent la liberté.<br><b>C’est vrai que</b> le train est rapide, <b>mais</b> il coûte cher.</div><p>Pour donner son avis, varie : <b>personnellement · à mon avis · pour moi / selon moi · en ce qui me concerne</b>.</p>"],["S’opposer en douceur, conclure","<p><b>Je comprends bien, mais… / cependant… · Je ne suis pas tout à fait d’accord… · Je ne suis pas sûr(e)… · Il faut nuancer…</b></p><div class=\"example\">Je comprends bien, mais il faut nuancer.<br>Je ne pense pas que cela <b>soit</b> toujours le cas / toujours vrai.</div><p>Après <b>je ne pense pas que</b> et <b>je ne suis pas sûr(e) que</b> : subjonctif.</p><p><b>Pour conclure :</b> donc… · par conséquent… · en conclusion… · c’est pourquoi… · c’est la raison pour laquelle… · c’est pour ça que… (à l’oral). Voir aussi <a href=\"#connecteurs\">Les connecteurs logiques</a>.</p>"]]);
+modules.find(m=>m.id==='opinions').q.push(...[["Je ne pense pas que cela ___ (être) toujours le cas.","soit","Je ne pense pas que + subjonctif."],["D’une part, les caméras protègent ; ___, elles limitent la liberté.","d’autre part","D’une part… d’autre part… (comme d’un côté… d’un autre côté…).",["d’autre part","d’un côté","par exemple"]],["C’est ___ que les prix ont augmenté, mais les salaires aussi.","vrai","C’est vrai que… mais… : on reconnaît le « pour » avant le « contre ».",["vrai","pourquoi","dommage"]],["C’est la raison pour ___ je ne suis pas d’accord.","laquelle","Raison est féminin : pour laquelle."]]);
+modules.find(m=>m.id==='opinions').source+=" Cours 18 : B1 DONNER SON OPINION.docx (peser le pour et le contre, donner son avis, s’opposer en douceur, conclure).";
+modules.find(m=>m.id==='pc').lessons.push(19);
+modules.find(m=>m.id==='pc').sections.push(...[["Rappels du cours 19","<div class=\"example\">Elle a mangé <b>une pomme</b>. (COD après le verbe : pas d’accord)<br>La pomme <b>qu’</b>elle a <b>mangée</b> était empoisonnée.<br>Les champignons <b>qu’</b>il a <b>mangés</b> étaient empoisonnés.</div><p>Le participe s’accorde avec le COD placé avant (que, l’, la, les), jamais avec le sujet d’avoir : la pomme qu’ils ont <b>mangée</b>.</p><p><b>On entend l’accord</b> quand le participe finit par -s ou -t : la lettre qu’il a <b>écrite</b> ; la robe qu’elle a <b>mise</b>.</p><p><b>Pronominaux :</b> elles se sont <b>vues</b> (voir quelqu’un : se est COD), mais elles ne se sont pas <b>parlé</b> (parler à quelqu’un : se est COI).</p><p><b>Biographie, frise chronologique :</b> passé composé, même pour une période longue. J’ai étudié quatre ans à l’université, puis j’ai fait un stage. Les Romains <b>ont occupé</b> la Gaule pendant cinq siècles.</p>"]]);
+modules.find(m=>m.id==='pc').q.push(...[["Les champignons qu’elle a ___ (manger) étaient empoisonnés.","mangés","Que = les champignons : COD masculin pluriel placé avant."],["La soupe qu’ils ont ___ (manger) était trop salée.","mangée","Que = la soupe, féminin singulier ; pas d’accord avec ils."],["La veste qu’elle a ___ (mettre) hier est bleue.","mise","Que = la veste, féminin : mise, on entend le s."],["Léa et Inès se sont ___ (voir) hier au café.","vues","Voir quelqu’un : se est COD, accord au féminin pluriel."],["Elles se sont ___ (téléphoner) hier soir.","téléphoné","Téléphoner à quelqu’un : se est COI, pas d’accord."],["Mon oncle ___ (travailler) vingt ans dans une banque, puis il a ouvert un café.","a travaillé","Une étape d’une biographie : passé composé, même pour une longue durée."],["J’ai ___ (craindre) de la perdre.","craint","Craindre → craint (comme peindre → peint)."],["Elle s’est ___ (taire) pendant toute la réunion.","tue","Se taire → tu ; accord avec le sujet féminin : tue."]]);
+modules.find(m=>m.id==='pc').source+=" Cours 19 · TABLEAU RECAP.docx (accord avec le COD placé avant, accord audible, se sont vues / se sont parlé, biographie) et Révisions temps du passé.docx, exercice 14 (participes irréguliers).";
+modules.find(m=>m.id==='choisir').lessons.push(19);
+modules.find(m=>m.id==='choisir').source+=" ; Cours 19 · Révisions PC-IMP.docx, Révisions temps du passé.docx et TABLEAU RECAP.docx (synthèse) : mêmes règles, révisées dans le récit « Le vélo disparu ».";
+modules.find(m=>m.id==='reperes').lessons.push(19);
+modules.find(m=>m.id==='reperes').q.push(...[["Ma sœur se marie ___ deux mois.","dans","Un événement futur : délai avec dans.",["il y a","pendant","dans"]],["Nous avons déménagé ___ cinq ans.","il y a","Un événement passé situé avant maintenant : il y a.",["il y a","pendant","dans"]],["Elle a vécu à Rome ___ quatre ans, puis elle est rentrée à Genève.","pendant","La durée d’une période : pendant.",["il y a","pendant","dans"]]]);
+modules.find(m=>m.id==='reperes').source+=" Cours 19 · Révisions temps du passé.docx, exercice 15 (il y a, pendant, dans).";
+modules.find(m=>m.id==='relatifs').lessons.push(19);
+modules.find(m=>m.id==='relatifs').sections.push(...[["À reconnaître : préposition + lequel","<p>Vu seulement dans le bilan du cours 19 : à reconnaître dans un QCM.</p><details><summary>Dans lequel, sur lequel, pour laquelle…</summary><div class=\"example\">L’hôtel <b>dans lequel</b> nous sommes descendus (= l’hôtel <b>où</b>…).<br>Le matelas <b>sur lequel</b> j’ai dormi était dur.<br>La raison <b>pour laquelle</b> je pars est simple.</div><p>Après une préposition (dans, sur, pour, avec…) et pour une chose : <b>lequel, laquelle, lesquels, lesquelles</b>, comme le nom repris. Pour une personne, <b>avec qui, à qui</b> suffisent. Avec à et de, la forme se contracte : <b>auquel, duquel</b>. Pour un lieu ou un moment, <b>où</b> reste le plus simple : l’été <b>où</b> il a fait si chaud. Ce qui, ce que, ce dont : voir <a href=\"#relief\">La mise en relief</a>.</p></details>"]]);
+modules.find(m=>m.id==='relatifs').q.push(...[["Le canapé ___ je dors est très confortable.","sur lequel","On dort sur un canapé : sur + lequel (masculin).",["sur lequel","duquel","laquelle"]],["La raison ___ je démissionne est personnelle.","pour laquelle","Raison est féminin : pour laquelle.",["pour laquelle","pour lequel","laquelle"]],["C’est la boîte ___ je range mes clés.","dans laquelle","Ranger dans une boîte : dans + laquelle (féminin).",["dans laquelle","dans lequel","dont"]],["Ce sont des vacances dont on ___ longtemps.","se souviendra","Se souvenir de quelque chose → dont. Oublier et rappeler se construisent sans de.",["se souviendra","rappellera","oubliera"]]]);
+modules.find(m=>m.id==='relatifs').source+=" Cours 19 · B1 - BILAN.pdf, questions 1 à 9 (qui, que, dont, où ; préposition + lequel, à reconnaître).";
+modules.find(m=>m.id==='demonstratifs').lessons.push(19);
+modules.find(m=>m.id==='demonstratifs').sections.push(...[["À reconnaître : possessifs, chacun, tout","<p>Vu seulement dans le bilan du cours 19 : à reconnaître dans un QCM.</p><details><summary>Les pronoms possessifs : le mien, la sienne, les leurs…</summary><table><tr><th>C’est à…</th><th>Singulier</th><th>Pluriel</th></tr><tr><td>moi</td><td>le mien · la mienne</td><td>les miens · les miennes</td></tr><tr><td>toi</td><td>le tien · la tienne</td><td>les tiens · les tiennes</td></tr><tr><td>lui / elle</td><td>le sien · la sienne</td><td>les siens · les siennes</td></tr><tr><td>nous</td><td>le nôtre · la nôtre</td><td>les nôtres</td></tr><tr><td>vous</td><td>le vôtre · la vôtre</td><td>les vôtres</td></tr><tr><td>eux / elles</td><td>le leur · la leur</td><td>les leurs</td></tr></table><div class=\"example\">Ces lunettes sont à Félix ? Oui, ce sont <b>les siennes</b>.<br>Ces clés sont à mes parents ? Oui, ce sont <b>les leurs</b>.</div><p>Le pronom prend le genre et le nombre de la <b>chose possédée</b>, pas du possesseur.</p></details><details><summary>Chacun… son, sa, ses</summary><p>Chacun = chaque personne, une à la fois : <b>son, sa, ses</b>. Chacun doit prendre <b>ses</b> responsabilités ; chacun apporte <b>son</b> ordinateur. <b>Leur / leurs</b> va avec ils, elles ou tous.</p></details><details><summary>Tout, quelques, plusieurs, certains</summary><p><b>Tout / toute / tous / toutes</b> + le, la, les + nom = la totalité : <b>toutes</b> les chambres, <b>tous</b> mes amis, <b>tout</b> le monde. Seul, <b>tout</b> = toutes les choses : j’ai déjà <b>tout</b> rangé.</p><p><b>Quelques</b> = un petit nombre ; <b>plusieurs</b> = plus de deux ; <b>certains / certaines</b> = une partie seulement : certains collègues sont absents.</p></details>"]]);
+modules.find(m=>m.id==='demonstratifs').q.push(...[["Ce sac est à Léa ? — Oui, c’est ___.","le sien","Sac : masculin singulier ; une seule propriétaire : le sien.",["le sien","la sienne","le leur"]],["Ces livres sont à mes parents ? — Oui, ce sont ___.","les leurs","Plusieurs propriétaires, plusieurs livres : les leurs.",["les leurs","la leur","les siens"]],["Chacun doit apporter ___ ordinateur.","son","Chacun = une personne à la fois : son.",["son","leur","ses"]],["Il y a des fleurs dans ___ les chambres.","toutes","Les chambres : féminin pluriel, toutes les chambres.",["toutes","tous","tout"]],["___ de mes collègues ne parlent pas français, mais la plupart le parlent.","Certains","Certains = une partie seulement (on ne dit pas « quelques de »).",["Certains","Quelques","Toutes"]]]);
+modules.find(m=>m.id==='demonstratifs').source+=" Cours 19 · B1 - BILAN.pdf, questions 10, 11 et 15 à 17 (pronoms possessifs, chacun, indéfinis : à reconnaître seulement).";
+participleGroups.find(g=>g[0]==='u')[2].push(...[["(se) taire","tu",1],["concevoir","conçu",1]]);
+participleGroups.find(g=>g[0]==='i')[2].push(...[["surprendre","surpris",1]]);
+participleGroups.find(g=>g[0]==='autres')[2].push(...[["(s’)éteindre","éteint",1]]);

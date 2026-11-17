@@ -36,7 +36,7 @@ Buildless static revision website. Hosting directory: `dist`.
 - Preserve module IDs to keep bookmarks working. Add lesson references to existing topics when extending them.
 - New modules have `id`, `n`, `title`, `subtitle`, `lessons`, `tag`, `color`, `intro`, `sections`, `en`, `source`, `q`.
 - Questions are [prompt, accepted answers separated by |, explanation]. Write ___ where the answer goes: it becomes an inline blank; prompts without ___ get an answer line below. Add a fourth item, an array of options containing the answer, to make a choice question. Only use constrained prompts whose answers can be checked reliably. Do not grade open writing by exact matching.
-- The current lesson filter covers 1–16 and a separate Compléments option; increase its range when adding later lessons. Update coverage labels and exam scope only with source evidence.
+- The current lesson filter covers 1–19 and a separate Compléments option; increase its range when adding later lessons. Update coverage labels and exam scope only with source evidence.
 - `participleGroups` lists past participles by final sound (é, u, i, autres), as in the Cours 1 reminder. A third item `1` marks forms met in later stories and homework.
 - Verb array: infinitive, six comma-separated present forms, past participle, optional auxiliary (defaults to avoir). The generator handles the current 27 verbs; review new spelling exceptions explicitly before extending it.
 - No external libraries, analytics or third-party network requests. Fonts (Fraunces, Source Sans 3, SIL OFL) are self-hosted in `dist/fonts/`. No local proficiency scores or saved exercise responses. Google Sheets remains the sole assessed progress record.
@@ -44,7 +44,7 @@ Buildless static revision website. Hosting directory: `dist`.
 
 ## Sources reviewed
 
-Current coverage uses `FrenchB1m_lesson1-16.zip`, reviewed on 15 November 2026. `SOURCE_MANIFEST.json` records all 65 file paths and SHA-256 hashes, including renamed folders and the duplicated homework 7. The original review below used `FrenchB1m_lesson1-8.zip`. Read textual grammar and communication handouts, present verb PDF, exam document and the embedded EN and past-participle images. Image-only narrative exercises were not reproduced. All exercises on the site are newly authored. Supplemental agreement and pronoun-order rules are explicitly labelled.
+Current coverage uses `FrenchB1m_lesson1-19`, reviewed on 17 November 2026. `SOURCE_MANIFEST.json` records all 75 file paths and SHA-256 hashes: the 65 files of `FrenchB1m_lesson1-16.zip` (byte-identical, same paths) and 10 added files for cours 17–19. The 15 November review of the 1–16 archive covered renamed folders and the duplicated homework 7. The original review below used `FrenchB1m_lesson1-8.zip`. Read textual grammar and communication handouts, present verb PDF, exam document and the embedded EN and past-participle images. Image-only narrative exercises were not reproduced. All exercises on the site are newly authored. Supplemental agreement and pronoun-order rules are explicitly labelled.
 
 See `CONTENT_AUDIT.md` for the source-by-source content check and scope decisions. Its latest section (15 November 2026) covers the full archive comparison and lessons 15–16; earlier sections cover lessons 9–14 and the future-tense supplement; the 21 October section records the original review of lessons 1–8.
 
@@ -66,7 +66,7 @@ At that update, scope was Cours 1–14, based on FrenchB1m_lesson1-14.tar. This 
 
 16 modules, 27 verbs and seven verb forms. Module `futur` has no lesson number and appears under Compléments. Cours 12 includes the future of aimer as a comparison for conditional formation, but no standalone future unit was supplied. The supplement covers futur proche/simple and does not expand futur antérieur. Verified persisted course update: 56 files, 14 lessons, 40 existing tracker topics and 13 evidence rows; new supplementary topic 41 is unassessed.
 
-## Current curriculum, 15 November 2026
+## Curriculum update, 15 November 2026 (current totals: see Cours 17–19 below)
 
 20 modules (after folding `generations` into the exam pages), lessons 1–16, 27 verbs and seven verb forms. New IDs: `relatifs`, `relief`, `demonstratifs`, `adverbes`. Existing IDs and the separate `futur` supplement are preserved. Source comparison found 41 files unchanged in place, 14 identical files under renamed lesson folders, one revised DOCX with no substantive exam change, and nine added paths (including two identical copies of homework 7). No existing material moved to another lesson number. The two relative-pronoun handouts are different and both were reviewed, including their embedded images.
 
@@ -96,3 +96,14 @@ QA: syntax checks; headless Chromium (CDP) at 360, 390 and 1280 px for the close
 - Quiz fixes: on phones the récits mode keeps the blank in view (compact header, story so far folded to its last sentence, card scrolled into view on each question); the récits result links to `#choisir/recits`. Shorter search placeholder; "Transforme" anchor gets the section scroll margin.
 
 QA: syntax checks; headless Chromium (CDP) at 360×640, 390×844 and 1280×800: list and text views answered to the score, both quiz modes run to the end with the answer field fully visible on every question load, search, print to PDF, existing routes; no horizontal overflow or console errors. Not tested on a physical phone or with a real keyboard.
+
+## Cours 17–19, 17 November 2026
+
+23 fiches, lessons 1–19, 27 verbs and eight verb forms (the futur antérieur is generated from the futur simple of avoir/être and the participle, with the same agreement rows as the plus-que-parfait).
+
+- New fiches: 21 `cause` (Cause, conséquence et but, cours 17), 22 `connecteurs` (Les connecteurs logiques, cours 17 and the cours 19 bilan), 23 `futurant` (Le futur antérieur, cours 18). `cause` and `connecteurs` sit in chapter 03 after `opinions`; `futurant` in chapter 01 after `futur`. All three have a "Transforme" block.
+- Extended fiches: `opinions` (cours 18: weighing pros and cons, disagreeing gently, concluding), `pc`, `choisir`, `reperes`, `relatifs` and `demonstratifs` (cours 19 revisions). Points seen only in the cours 19 bilan (préposition + lequel, possessive pronouns, chacun + son/ses, indefinites) are short, collapsed and labelled "à reconnaître".
+- Oral page aligned with cours 18 « Présenter un sujet B1 »: cite the source, problématique in one sentence, weigh pros and cons, own examples, brief conclusion, examiner questions; 6–7 min preparation (7 in B1- EXAMEN.docx), monologue ≈ 3 min within a 5–6 min turn, 15 min appointment. Four new topics (14 in total) whose documents cite fictional sources.
+- A fifth récit, « Le vélo disparu ». Quiz filter "Cours 17 à 19".
+
+QA: syntax checks; a Node data check (23 unique modules, options contain answers, pre-existing questions unchanged except appended ones, links resolve, 14 topics); generated futur antérieur checked for aller, manger, être, avoir, s’appeler, venir, prendre, finir, faire and devoir; headless Chromium render of the main routes at 390 px. Overflow and interaction at phone/laptop widths still to be checked in a browser.

@@ -104,3 +104,28 @@ The `generations` module (former fiche 21) was the only theme-based fiche. Its v
 
 The six reading texts in `lectures` (`dist/exam-content.js`), with their vocabulary and questions, are newly authored on course themes (work, interviews, cohabitation, change of career, company history); they are not copied from handouts and are not exam texts.
 The "three texts with questions" format of the reading part comes from the owner's description of the exam, not from a re-read of B1- EXAMEN.docx in this update.
+
+## Cours 17–19, 17 November 2026
+
+Compared `FrenchB1m_lesson1-19` with the 65-file 1–16 manifest by SHA-256: all 65 files are byte-identical at the same paths; 10 files are added (cours 17: CAUSE ET CONSÉQUENCE, CAUSE ET BUT, Connecteurs; cours 18: B1 DONNER SON OPINION, LE FUTUR ANTÉRIEUR, Présenter un sujet B1; cours 19: B1 - BILAN.pdf, Révisions PC-IMP, Révisions temps du passé, TABLEAU RECAP). All ten were read through their text and embedded-image extractions. A draft written by another model was proofread against these handouts before integration; its unsupported claims and wrong French were corrected or dropped (summary below).
+
+| Source | Coverage and decision |
+| --- | --- |
+| CAUSE ET CONSÉQUENCE (table in an image), CAUSE ET BUT | New `cause` fiche: clause vs noun after cause words, the five remarks, consequence connectors with the oral ones flagged, purpose with pour que / de façon que / de manière que + subjunctive. Pour / afin de + infinitive (same subject) and si… que are labelled complements. |
+| Connecteurs.docx | New `connecteurs` fiche grouped by function; bien que / même si / malgré. The exercise-2 text (phones at school) is not reproduced; an independent model paragraph uses the same five connectors. |
+| B1 DONNER SON OPINION | Two sections and four questions added to `opinions` (lesson 18); connector bank on the oral page extended. |
+| LE FUTUR ANTÉRIEUR | New `futurant` fiche and an eighth generated verb form. |
+| Présenter un sujet B1 | Oral steps and preparation advice rewritten in the teacher's order and wording; grid unchanged (it comes from B1- EXAMEN.docx). Four new practice topics on the four themes the handout lists, with fictional outlets. The cours 14 audio it refers to stays excluded. |
+| B1 - BILAN.pdf | Connectors (18–20) in `connecteurs`; relatives (1–9) in `relatifs`; possessives, chacun and indefinites (10, 11, 15–17) as short "à reconnaître" blocks in `demonstratifs`. Items 12–14 (possessive adjectives, y) are already covered by existing fiches. |
+| Révisions PC-IMP, Révisions temps du passé, TABLEAU RECAP | Already covered by `pc`, `imparfait`, `pqp`, `choisir`; added a "Rappels du cours 19" section to `pc` (COD-before agreement, audible -s/-t agreement, se sont vues / se sont parlé, biography in the passé composé), four participles from exercise 14 to the participle table, three il y a / pendant / dans questions to `reperes`, and the récit « Le vélo disparu ». Free-production tasks ("add two pluperfect sentences") are not auto-graded. |
+
+Handout points worth knowing (confirmed on reading):
+- « Comme se place toujours en début de phrase » (CAUSE ET CONSÉQUENCE) vs « souvent » (CAUSE ET BUT). The teacher's simpler rule is used.
+- De sorte que is listed with the indicative (consequence); the `subjonctif` fiche already notes the subjunctive for an intended purpose. Consistent.
+- LE FUTUR ANTÉRIEUR: the table writes « allé(e)-allés(es) » (standard: allé(e)s); exercise 2 lacks a subject (« quand (économiser) » → quand j’aurai économisé); exercise 4 uses « réaliser » without an object (« quand la victime réalisera » = s’en rendra compte). Formation and exercises 1, 3, 5 are correct.
+- B1 - BILAN (read from the page image): 19 reads « spacieuses ___, elles… » with capitalised options, so a full stop seems to be missing (« spacieuses. Toutefois, … »); 18 expects en effet although en outre is arguable; 16 « jours de congés » (usual: jours de congé), certains is arguable next to quelques; 6 does not offer où although « l’hôtel où » is correct; 13 expects y twice (J’y vais souvent, ma copine y habite).
+- Révisions temps du passé, ex. 15, item 4: pendant is expected; « il y a deux ans » is grammatical with another meaning.
+- Révisions PC-IMP: interpeler / interpeller are both accepted spellings (1990 reform); « (ne pas reconnaître) » after « ne m’___ » doubles the ne; « nous (se laisser) » is unusual where « nous nous sommes quittés » is meant; « réaliser » again in the sense of se rendre compte.
+- Oral timing: Présenter un sujet B1 says 6–7 min preparation and a monologue of about 3 min. B1- EXAMEN.docx says « Préparation 7 min – passation (monologue + interaction) 5-6 min » and a 15-minute oral. These do not conflict; the site shows both, and the 5–6 min figure is sourced from the exam document.
+
+Decisions: questions where two answers are grammatical were turned into choice questions or given every valid alternative; futur antérieur gap-fills name the tense, since the futur simple is often also grammatical; whole-sentence transformations give the sentences to link and the connector, never the opening words of the answer, and accept the comma and clause-order variants. The draft's claim that ce qui / ce que / ce dont were missing was wrong (`relief` covers them), so that addition was dropped. Draft newspaper names were replaced by clearly invented ones (Courrier de Valmonde, Le Fil du Lac, L’Écho de Brumeval, Santé Valmonde).
