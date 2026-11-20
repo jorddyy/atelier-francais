@@ -1,6 +1,6 @@
 {
   "archive": "FrenchB1m_lesson1-19",
-  "reviewed": "2026-11-17",
+  "reviewed": "2026-11-20",
   "previous_archive": "FrenchB1m_lesson1-16.zip",
   "files": [
     {
@@ -271,6 +271,14 @@
       "status": "added"
     },
     {
+      "path": "B1- COURS 18 : le futur antérieur, présenter un sujet B1./Préparation orale B1.docx",
+      "lesson": 18,
+      "sha256": "d3246243caa6a1bac3e642eadda1f00612d694abcfdb86b61154f2ef31e58a18",
+      "previous_paths": [],
+      "status": "added",
+      "note": "Added from French_latest (2026-11-20). Oral practice: la malbouffe. Used as oral topic 'malbouffe' in a shortened, rewritten form."
+    },
+    {
       "path": "B1- COURS 19 : révisions./B1 - BILAN.pdf",
       "lesson": 19,
       "sha256": "3495be800fba48edfb241e35dcf77be6d51fd35fc9ee18506b84a67e5b98030c",
@@ -294,9 +302,10 @@
     {
       "path": "B1- COURS 19 : révisions./TABLEAU RECAP.docx",
       "lesson": 19,
-      "sha256": "1c428cee2fefb24df2b55b97acdf5bd67281b1d3d4f1e8f291e3854634567c05",
+      "sha256": "c5a33f38fd126396381502d4dafdada09621dc5c04153e8d3ca85c383402f1e9",
       "previous_paths": [],
-      "status": "added"
+      "status": "added",
+      "note": "Re-saved in French_latest (2026-11-20); text identical, formatting only."
     },
     {
       "path": "B1- COURS 2 : imparfait - PC vs imparfait - présenter son parcours./Edito B1 Pro 3.pdf",

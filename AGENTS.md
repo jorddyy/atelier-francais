@@ -32,8 +32,8 @@ Preserve module IDs and links. Module fields and question format are documented 
 Grammar and conjugations are primary, with compact supporting vocabulary. Listening exercises are excluded. Keep phone/laptop usability and the warm notebook design, rooster and flag branding. Exercise attempts are not saved; the separate Google Sheet (deliberately not linked from the site) is the assessed progress record. The manifest supports installation from the browser menu, but no offline cache is implemented.
 
 ## Hosting
-An earlier private copy is hosted separately; its address is not recorded here.
-This GitHub repository does not automatically deploy to it. Running locally needs no ChatGPT credentials. Publication is a separate operation. Do not commit credentials or tokens.
+The public site is https://jorddyy.github.io/atelier-francais/, deployed from dist/ by .github/workflows/pages.yml on every push to main that touches dist/. An earlier private copy is hosted separately; its address is not recorded here and it is not updated automatically.
+The repository is public. Keep personal details out of the site, commits and these notes: no tracker link, exam room or group code, real names or work email. Commits use the GitHub noreply address set in this repository's git config. Do not commit credentials or tokens.
 
 ## Historical curriculum update, 3 November 2026
 

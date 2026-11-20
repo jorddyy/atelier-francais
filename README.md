@@ -1,6 +1,6 @@
 # L’atelier français
 
-Private source repository for a French B1− study notebook. The live site is (private site). This repository does not automatically publish to that address.
+Source for a French B1− study notebook. The site is published at https://jorddyy.github.io/atelier-francais/ from `dist/` by GitHub Actions on every push to `main`.
 
 ## Run locally
 
