@@ -661,3 +661,19 @@ modules.find(m=>m.id==='demonstratifs').source+=" Cours 19 · B1 - BILAN.pdf, qu
 participleGroups.find(g=>g[0]==='u')[2].push(...[["(se) taire","tu",1],["concevoir","conçu",1]]);
 participleGroups.find(g=>g[0]==='i')[2].push(...[["surprendre","surpris",1]]);
 participleGroups.find(g=>g[0]==='autres')[2].push(...[["(s’)éteindre","éteint",1]]);
+
+// Linked pairs are self-contained so either step also works in a mixed quiz.
+modules.find(m => m.id === 'expressions').prepositions = [
+  ['Elle participe ___ ce projet de quartier.', 'à', 'On participe à quelque chose.'],
+  ['Elle participe à ce projet. Remplace « à ce projet » : elle ___ participe.', 'y', 'Y reprend à + une chose.'],
+  ['Tu t’occupes ___ ce dossier depuis lundi.', 'de', 'On s’occupe de quelque chose.'],
+  ['Tu t’occupes de ce dossier. Remplace « de ce dossier » : tu t’___ occupes.', 'en', 'En reprend de + une chose : tu t’en occupes.'],
+  ['Je postule ___ ce poste de comptable.', 'à', 'On postule à un poste.', ['à','de','chez']],
+  ['Nous sommes titulaires ___ ce diplôme.', 'de', 'Être titulaire de + nom.'],
+  ['Léa est chargée ___ préparer la réunion.', 'de', 'Être chargé de + infinitif.'],
+  ['Elle répond ___ questions du jury. (à + les)', 'aux', 'Répondre à : à + les devient aux.'],
+  ['Elle répond aux questions du jury. Remplace « aux questions du jury » : elle ___ répond.', 'y', 'Y reprend les questions auxquelles elle répond.'],
+  ['Il parle ___ résultats de son stage. (de + les)', 'des', 'Parler de : de + les devient des.'],
+  ['Il parle des résultats de son stage. Remplace « des résultats de son stage » : il ___ parle.', 'en', 'On parle de ces résultats → on en parle.'],
+  ['Elle a besoin ___ temps pour préparer son entretien.', 'de', 'Avoir besoin de + nom.']
+];

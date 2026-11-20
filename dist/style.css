@@ -545,3 +545,8 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
  .reading-questions .question{break-inside:avoid}
  .reading-questions .choices button{background:#fff;border-color:#999;opacity:1!important;text-decoration:none;min-height:0;padding:2px 10px}
 }
+
+.trainer-times {display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr));gap:.5rem 1rem;margin:0 0 1rem;padding:1rem;border:1px solid currentColor;border-radius:.5rem}
+.trainer-times label {display:flex;align-items:center;gap:.5rem;min-height:2.5rem;cursor:pointer}
+.trainer-times input {width:1rem;height:1rem}
+#verb-training .btn:disabled {opacity:.5;cursor:default}
