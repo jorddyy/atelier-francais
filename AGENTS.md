@@ -15,6 +15,7 @@ Open http://localhost:8000. dist can be served at the web root or under a subpat
 - dist/app.js: routing, content rendering, conjugation generation and answer checking.
 - dist/style.css: responsive notebook design and print styles.
 - dist/manifest.webmanifest and dist/icons/: install metadata, rooster logo and flag favicon.
+- dist/sw.js: service worker for offline use (see Offline below).
 - CONTENT_AUDIT.md: previous source comparison and coverage decisions.
 
 ## Checks
@@ -29,11 +30,14 @@ For relevant changes, check the affected page in a browser at phone and laptop w
 Preserve module IDs and links. Module fields and question format are documented in README.md. Add source references and lesson tags, and update the lesson filter and coverage labels when extending beyond lessons 1–19. Original lesson documents are not in this repository; the audit is not a substitute for them.
 
 ## Product context
-Grammar and conjugations are primary, with compact supporting vocabulary. Listening exercises are excluded. Keep phone/laptop usability and the warm notebook design, rooster and flag branding. Exercise attempts are not saved; the separate Google Sheet (deliberately not linked from the site) is the assessed progress record. The manifest supports installation from the browser menu, but no offline cache is implemented.
+Grammar and conjugations are primary, with compact supporting vocabulary. Listening exercises are excluded. Keep phone/laptop usability and the warm notebook design, rooster and flag branding. Exercise attempts are not saved; the separate Google Sheet (deliberately not linked from the site) is the assessed progress record. The manifest supports installation from the browser menu, and dist/sw.js makes the installed site work offline.
 
 ## Hosting
 The public site is https://jorddyy.github.io/atelier-francais/, deployed from dist/ by .github/workflows/pages.yml on every push to main that touches dist/. An earlier private copy is hosted separately; its address is not recorded here and it is not updated automatically.
 The repository is public. Keep personal details out of the site, commits and these notes: no tracker link, exam room or group code, real names or work email. Commits use the GitHub noreply address set in this repository's git config. Do not commit credentials or tokens.
+
+## Offline
+`dist/sw.js` precaches every file in its `FILES` list on the first visit and then serves them cache-first; any navigation gets the cached `index.html` (all routes are hash routes). When you add, rename or remove a file in dist/ that the page loads, update `FILES`, or that file will be missing offline (a missing file also makes the whole install fail, so the cache never fills). The deploy workflow replaces `__VERSION__` with the commit SHA, so each deploy creates a new cache and deletes the old one. Phones get the new version on their first online visit after a deploy, and it shows the next time the site opens. app.js does not register the worker on localhost or 127.0.0.1, so local edits are never served from the cache. Once the cache is ready, the footer shows "✓ Disponible hors ligne".
 
 ## Historical curriculum update, 3 November 2026
 

@@ -230,3 +230,9 @@ function subjunctive(v){
  const p=v[1].split(',');const reflex=v[0]==='s’appeler';const a=reflex?'appell':p[5].slice(0,-3);const b=reflex?'appel':v[0]==='manger'?'mang':p[3].slice(0,-3);
  return ['e','es','e','ions','iez','ent'].map((e,i)=>(reflex?['m’','t’','s’','nous ','vous ','s’'][i]:'')+(i===3||i===4?b:a)+e);
 }
+
+// Offline cache (dist/sw.js). Skipped on localhost so local edits are never served stale.
+if('serviceWorker' in navigator&&!/^(localhost|127\.0\.0\.1)$/.test(location.hostname)){
+ navigator.serviceWorker.register('sw.js').catch(()=>{});
+ navigator.serviceWorker.ready.then(()=>{const f=document.querySelector('footer');if(f&&!f.querySelector('.offline-ready')){const s=document.createElement('span');s.className='offline-ready';s.textContent='✓ Disponible hors ligne';f.appendChild(s);}});
+}
