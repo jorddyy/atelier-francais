@@ -63,7 +63,7 @@ Data shapes in `dist/exam-content.js`:
 - `writingGuide = {types:[{id, title, consigne, plan:[[part, html]], formules:[[label,[phrase]]], modele}], checklist:[[label, exampleHtml]], sujets:[{type, consigne}]}`
 - `extraQuestions = {moduleId:[[prompt, 'answer|alternative', explanation]]}`: whole-sentence transformations shown under "Transforme" on the fiche and drawn by the quiz. "Voir la réponse" shows the first answer only, so put the most natural answer first. Checking ignores case, a final full stop and spaces before ? ! ; :, but not accents or other punctuation.
 
-All question checking goes through `bindQuestions` in app.js. Nothing is saved: no localStorage, timers, checklists, drafts and quiz scores live only in the page (the quiz resumes within a session). Timers are cleared on every route change. Listening stays excluded.
+All question checking goes through `bindQuestions` in app.js. Nothing is saved (the theme choice is the one exception, see Dark theme below): no localStorage, timers, checklists, drafts and quiz scores live only in the page (the quiz resumes within a session). Timers are cleared on every route change. Listening stays excluded.
 
 
 ## Generations fiche folded into exam pages, 15 November 2026
@@ -91,3 +91,7 @@ Current totals: 23 modules (`n` "01"–"23"), lessons 1–19, 27 verbs, eight ve
 - Conventions: material that appears only in the cours 19 bilan (QCM) and not in a teaching handout is labelled "à reconnaître" and kept inside collapsed `<details>`. Oral topic documents start with a citable source and date (« Un article paru sur le site du … le … 2026 : « … » ») and must name fictional outlets, never real newspapers or sites. New `participleGroups` entries from cours 19 use the third item `1`.
 - Conjugation: tense key `futurant` in `conjugated()` reuses `conditional([aux], true)` for the auxiliary and the plus-que-parfait agreement rows. Quiz filter `l17-19` (keys `lA-B` are parsed as inclusive lesson ranges).
 - Oral timing: B1- EXAMEN.docx says 7 min preparation and a 5–6 min turn (monologue + interaction) inside a 15 min appointment; the cours 18 handout says 6–7 min preparation and a monologue of about 3 min. The pages show both; the timer stays at 7:00.
+
+## Dark theme, 22 November 2026
+
+`html[data-theme]` is `light` or `dark`. An inline script in index.html's `<head>` sets it before the stylesheet loads (saved choice from `localStorage.theme`, else the system `prefers-color-scheme`), so there is no flash of light. The sun/moon button `#theme-toggle` in the top bar switches it and saves the choice; app.js also follows system changes while nothing is saved and updates `meta[name=theme-color]`. The dark palette is dimmed warm paper (`--paper:#2d2a25`), deliberately not black. It lives in `@media screen{:root[data-theme=dark]{…}}` at the top of style.css, so printing always uses the light palette. In dark mode body text is weight 430, highlighter bands (`--marker`) are turned off and highlighted words use `--mark-ink` (amber) instead, and the logo switches from `.logo-light` (icons/rooster.svg) to `.logo-dark` (icons/rooster-dark.svg, cream body); both images are in the page so the swap needs no script. Every colour in style.css outside `:root` and print goes through a token; when adding a colour, add a token with both a light and a dark value.

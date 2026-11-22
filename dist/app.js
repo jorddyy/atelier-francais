@@ -22,6 +22,11 @@ function closeMenu(){document.body.classList.remove('menu-open');$('#menu').setA
 // Phone header: the search field opens over the brand row; on laptops it is always visible and these classes have no effect.
 function openSearch(){closeMenu();document.body.classList.add('search-open');$('#search-toggle').setAttribute('aria-expanded','true');$('#search').focus()}
 function closeSearch(refocus){const was=document.body.classList.contains('search-open');document.body.classList.remove('search-open');$('#search-toggle').setAttribute('aria-expanded','false');$('#results').hidden=true;$('#search').value='';if(was&&refocus)$('#search-toggle').focus()}
+(()=>{const b=$('#theme-toggle'),root=document.documentElement,mq=matchMedia('(prefers-color-scheme: dark)');
+ const apply=t=>{root.dataset.theme=t;const d=t==='dark';b.setAttribute('aria-pressed',String(d));document.querySelector('meta[name=theme-color]').content=d?'#2d2a25':'#faf6ed'};
+ apply(root.dataset.theme==='dark'?'dark':'light');
+ b.onclick=()=>{const t=root.dataset.theme==='dark'?'light':'dark';apply(t);try{localStorage.setItem('theme',t)}catch(e){}};
+ mq.addEventListener('change',e=>{let saved=null;try{saved=localStorage.getItem('theme')}catch(_){}if(!saved)apply(e.matches?'dark':'light')});})();
 $('#search-toggle').onclick=openSearch;$('#search-close').onclick=()=>closeSearch(true);
 function cards(lesson='all'){
  const toc=(href,title,sub,n)=>`<li><a href="${href}"><span class="toc-text"><span class="toc-title">${title}</span><small>${sub}</small></span><span class="toc-leader" aria-hidden="true"></span><span class="toc-n" aria-hidden="true">${n}</span></a></li>`;

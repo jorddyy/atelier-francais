@@ -16,6 +16,7 @@ const FILES = [
   'fonts/source-sans-3-latin-wght-italic.woff2',
   'icons/flag.svg',
   'icons/rooster.svg',
+  'icons/rooster-dark.svg',
   'icons/favicon-32.png',
   'icons/apple-touch-icon.png',
   'icons/icon-192.png',
