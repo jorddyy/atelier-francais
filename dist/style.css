@@ -156,7 +156,7 @@ details[open] summary{margin-bottom:-5px}
 .tense-grid p{font-size:16px;margin:0}
 .construct-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0}
 .construct-grid>div{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--bleu);border-radius:6px 6px 10px 10px;padding:14px 16px}
-.construct-grid>.coi{border-top-color:var(--rouge)}
+.construct-grid>.alt{border-top-color:var(--rouge)}
 .construct-grid small{font:italic 15px var(--serif);color:var(--muted)}
 .construct-grid h3{margin:2px 0 4px}
 .construct-grid p{font-size:16px}
@@ -164,8 +164,13 @@ details[open] summary{margin-bottom:-5px}
 .construct-grid ul{list-style:none;padding:0;margin:0 0 10px}
 .construct-grid li{padding:7px 0;border-top:1px dashed var(--line);font:18px/1.45 var(--serif)}
 .construct-grid li span{display:block;font:600 12px/1.6 var(--sans);text-transform:uppercase;letter-spacing:.07em;color:var(--bleu)}
-.construct-grid .coi li span{color:var(--rouge)}
+.construct-grid .alt li span{color:var(--rouge)}
 .construct-grid .trap{font-size:15px;color:var(--muted);margin:0}
+.pair-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px;margin:16px 0 14px}
+.pair-grid>div{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--bleu);border-radius:4px 8px 8px 4px;padding:8px 12px;font:18px/1.4 var(--serif);color:var(--ink)}
+.pair-grid>.solo{border-left-color:var(--rouge)}
+.pair-grid small{display:block;font:600 12px/1.6 var(--sans);text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
+.pair-grid b{font-weight:600}
 .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin:26px 0 10px}
 .timeline>div{padding:22px 16px 0 0;border-top:2px solid var(--ink-soft);position:relative}
 .timeline>div::before{content:'';position:absolute;top:-7px;left:0;width:12px;height:12px;background:var(--paper);border:2px solid var(--rouge);border-radius:50%}
@@ -497,6 +502,8 @@ footer{margin-left:var(--side);padding:16px 48px 16px 88px;border-top:1px solid 
  table{font-size:14px}
  td,th{padding:8px 9px}
  .tense-grid,.construct-grid{grid-template-columns:1fr;gap:10px}
+ .pair-grid{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}
+ .pair-grid>div{font-size:17px;padding:7px 10px}
  .timeline{grid-template-columns:1fr;border-left:2px solid var(--ink-soft);margin-left:6px}
  .timeline>div{border-top:0;padding:0 0 16px 18px}
  .timeline>div::before{top:4px;left:-8px}
