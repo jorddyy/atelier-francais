@@ -55,9 +55,10 @@ const lev1=(a,b)=>{let i=0;while(i<a.length&&i<b.length&&a[i]===b[i])i++;let x=a
 const dets=new Set(['le','la','les','un','une','du','de','des','ce','cet','cette','mon','ma','ton','ta','son','sa']);
 const sameEnd=(a,b)=>a.length>2&&b.length>2&&a.slice(-1)===b.slice(-1)&&(a.length===b.length||a.slice(-2)===b.slice(-2));
 function near(q,value){if(q[0].includes('___'))return null;const p=' '+toks(q[0]).join(' ')+' ',V=toks(value),cased={};q[0].replace(/[‘]/g,'’').replace(/[.,;:!?«»"()…]/g,' ').split(/\s+/).forEach(w=>{if(w)cased[norm(w)]=w});for(const a of q[1].split('|')){const A=toks(a);if(A.length!==V.length)continue;const d=[];let bad=false;for(let k=0;k<A.length&&!bad;k++){if(A[k]===V[k])continue;const copied=(k>0&&p.includes(' '+A[k-1]+' '+A[k]+' '))||(k<A.length-1&&p.includes(' '+A[k]+' '+A[k+1]+' '));if(copied&&lev1(A[k],V[k])&&(dets.has(A[k])&&dets.has(V[k])||sameEnd(A[k],V[k])))d.push([cased[A[k]]||A[k],V[k]]);else bad=true}if(!bad&&d.length<=2)return d}return null}
-function bindQuestions(root,list,onResult=()=>{}){
+// onNext: Enter again on an answer already checked correct moves on (used by the verb test and the quiz).
+function bindQuestions(root,list,onResult=()=>{},onNext=null){
  const say=(el,cls,text)=>{el.className='feedback'+(cls?' '+cls:'');el.textContent=text};
- root.querySelectorAll('form.question').forEach(f=>{const i=+f.dataset.index,q=list[i],input=f.querySelector('input'),feedback=f.querySelector('.feedback');f.onsubmit=e=>{e.preventDefault();if(!input.value.trim())return say(feedback,'','Écris une réponse avant de vérifier.');let ok=q[1].split('|').some(a=>norm(a)===norm(input.value));const slip=ok?null:near(q,input.value);if(slip&&!slip.length)ok=true;if(slip&&slip.length){say(feedback,'almost','Presque ✓ La construction est juste. Attention à la copie : '+slip.map(([e,g])=>'« '+e+' », pas « '+g+' »').join(' ; ')+'. '+q[2]);return onResult(i,true)}say(feedback,ok?'success':'review',ok?'✓ Oui. '+q[2]:'Pas encore. Relis la règle, puis réessaie.');onResult(i,ok)};f.querySelector('.reveal').onclick=()=>{const a=q[1].split('|')[0];say(feedback,'','Réponse : '+a+(/[.!?…]$/.test(a)?' ':'. ')+q[2]);onResult(i,false)}});
+ root.querySelectorAll('form.question').forEach(f=>{const i=+f.dataset.index,q=list[i],input=f.querySelector('input'),feedback=f.querySelector('.feedback');f.onsubmit=e=>{e.preventDefault();if(onNext&&f.dataset.ok===input.value)return onNext();delete f.dataset.ok;if(!input.value.trim())return say(feedback,'','Écris une réponse avant de vérifier.');let ok=q[1].split('|').some(a=>norm(a)===norm(input.value));const slip=ok?null:near(q,input.value);if(slip&&!slip.length)ok=true;if(slip&&slip.length){say(feedback,'almost','Presque ✓ La construction est juste. Attention à la copie : '+slip.map(([e,g])=>'« '+e+' », pas « '+g+' »').join(' ; ')+'. '+q[2]);f.dataset.ok=input.value;return onResult(i,true)}say(feedback,ok?'success':'review',ok?'✓ Oui. '+q[2]:'Pas encore. Relis la règle, puis réessaie.');if(ok)f.dataset.ok=input.value;onResult(i,ok)};f.querySelector('.reveal').onclick=()=>{const a=q[1].split('|')[0];say(feedback,'','Réponse : '+a+(/[.!?…]$/.test(a)?' ':'. ')+q[2]);onResult(i,false)}});
  root.querySelectorAll('.choices').forEach(g=>{const i=+g.dataset.index,q=list[i],feedback=g.nextElementSibling;g.querySelectorAll('button').forEach(b=>b.onclick=()=>{const ok=b.textContent===q[1];b.classList.add(ok?'right':'wrong');say(feedback,ok?'success':'review',ok?'✓ Oui. '+q[2]:'Pas celle-ci. Essaie encore.');onResult(i,ok)})})}
 function conjugated(v,tense){const p=v[1].split(','),reflexive=v[0]==='s’appeler';if(tense==='present')return p;if(tense==='subjonctif')return subjunctive(v);if(tense==='conditionnel')return conditional(v);if(tense==='futur')return conditional(v,true);if(tense==='imparfait'){if(v[0]==='être')return ['étais','étais','était','étions','étiez','étaient'];const stem=reflexive?'appel':p[3].slice(0,-3);return ['ais','ais','ait','ions','iez','aient'].map((end,i)=>{let s=stem;if(v[0]==='manger'&&(i===3||i===4))s='mang';let word=s+end;if(reflexive){const r=['m’','t’','s’','nous ','vous ','s’'][i];word=r+word}return word})}const etre=v[3]==='être';let aux=tense==='pc'?(etre?['suis','es','est','sommes','êtes','sont']:['ai','as','a','avons','avez','ont']):tense==='futurant'?conditional([etre?'être':'avoir'],true):(etre?['étais','étais','était','étions','étiez','étaient']:['avais','avais','avait','avions','aviez','avaient']);return aux.map((a,i)=>{let pp=v[2]+(etre?(i===3||i===4||i===5?'s':''):'');if(reflexive){let r=['me ','te ','se ','nous ','vous ','se '][i];if(/^[aeé]/.test(a))r=['m’','t’','s’','nous ','vous ','s’'][i];a=r+a}return a+' '+pp})}
 const tenses=[['present','Présent'],['imparfait','Imparfait'],['pc','Passé composé'],['pqp','Plus-que-parfait'],['subjonctif','Subjonctif présent (que…)'],['conditionnel','Conditionnel présent'],['futur','Futur simple'],['futurant','Futur antérieur']];
@@ -113,13 +114,13 @@ function verbTrainer(){
         return;
       }
       const question = questions[index];
-      panel.innerHTML = `<h2>Forme ${index+1} sur ${questions.length}</h2><p>Écris la forme sans le sujet, avec le pronom réfléchi si nécessaire.</p>
+      panel.innerHTML = `<h2>Forme ${index+1} sur ${questions.length}</h2><p>Écris la forme sans le sujet, avec le pronom réfléchi si nécessaire. Après une bonne réponse, appuie encore sur Entrée pour continuer.</p>
         ${questionHTML(question,0,index+1)}<button class="btn" id="next-form" disabled>${index+1===questions.length?'Voir le bilan':'Forme suivante'}</button>`;
       const next = $('#next-form');
       bindQuestions(panel,[question],(_,correct) => {
         if(next.disabled && !correct) missed.push(question);
         next.disabled = false;
-      });
+      },() => { index++; show(); const input = panel.querySelector('input'); (input || $('#retry-round') || $('#new-round')).focus(); });
       next.onclick = () => { index++; show(); };
     }
     show();
@@ -222,7 +223,7 @@ function drawQuiz(focus){const s=quizState,n=s.items.length,box=$('#quiz-box'),s
   $('#quiz-again').onclick=()=>newQuiz(s.filter)}
  else{const {q,m}=s.items[s.i];box.innerHTML=`<div class="quiz-progress"><span id="quiz-head" tabindex="-1">Question ${s.i+1} sur ${n}</span><span id="quiz-score">${scoreText(score)}</span></div><div class="progress-bar" aria-hidden="true"><span style="width:${s.i/n*100}%"></span></div><a class="source-tag" href="#${m.id}${s.items[s.i].r?'/recits':''}">Fiche ${m.n} · ${m.title}</a>${s.items[s.i].r?recitHead(s.items[s.i]):''}${questionHTML(q,0,s.i+1)}<div class="answer-row quiz-nav"><button type="button" class="btn primary" id="quiz-next">${s.i+1<n?'Question suivante →':'Voir le résultat'}</button></div>`;
   // Only the first check or reveal counts towards the score; retrying is still allowed.
-  bindQuestions(box,[q],(_,ok)=>{if(s.res[s.i]===undefined){s.res[s.i]=ok;$('#quiz-score').textContent=scoreText(s.res.filter(Boolean).length)}$('#quiz-next').classList.add('ready')});
+  bindQuestions(box,[q],(_,ok)=>{if(s.res[s.i]===undefined){s.res[s.i]=ok;$('#quiz-score').textContent=scoreText(s.res.filter(Boolean).length)}$('#quiz-next').classList.add('ready')},()=>{$('#quiz-next').click();const input=box.querySelector('form.question input');(input||$('#quiz-again')||$('#quiz-head'))?.focus({preventScroll:true})});
   $('#quiz-next').onclick=()=>{if(s.res[s.i]===undefined)s.res[s.i]=false;s.i++;drawQuiz(true)}}
  if(focus){$('#quiz-head').focus({preventScroll:true});scrollCard(box)}}
 
